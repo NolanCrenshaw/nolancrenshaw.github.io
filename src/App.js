@@ -1,17 +1,17 @@
 import React from 'react';
 
 
-const Main = () => {
+const App = () => {
 
 
 // --- Component Render ---
 
     return (
-        <div className="main__root">
-            <div className="main">
+        <div className="app__root">
+            <div className="app">
                 <p>Hello World</p>
             </div>
         </div>
     )
 };
-export default Main;
+export default App;
