@@ -1,3 +1,0 @@
-{
-    cname: 'www.nolancrenshaw.com'
-}
