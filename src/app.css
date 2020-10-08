@@ -1,0 +1,27 @@
+.app__root {
+    width: 100vw;
+    height: 100vh;
+    scrollbar-width: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__textbox span {
+    font-size: 10rem;
+}

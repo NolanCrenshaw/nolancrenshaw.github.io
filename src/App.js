@@ -9,7 +9,9 @@ const App = () => {
     return (
         <div className="app__root">
             <div className="app">
-                <p>Hello World</p>
+                <div className="app__textbox">
+                    <span>Coming Soon</span>
+                </div>
             </div>
         </div>
     )
