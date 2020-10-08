@@ -2,9 +2,6 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image: url(https://ghubpagebucky.s3.us-east-2.amazonaws.com/karsten-wurth-jS0zC2PJ17A-unsplash.jpg);
@@ -14,4 +11,7 @@ body {
 #root {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
