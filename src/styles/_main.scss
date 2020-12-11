@@ -1,6 +1,10 @@
 .main-container {
-  height: 100vh;
+  height: auto;
   width: 100vw;
+
+  overflow: hidden;
+  scrollbar-width: none;
+  z: index 1;
 
   background: rgb(61, 64, 91);
   background: linear-gradient(
@@ -12,5 +16,5 @@
 
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 10vh 90vh;
+  grid-template-rows: 20vh 65vh 35vh;
 }
