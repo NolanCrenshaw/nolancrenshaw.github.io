@@ -5,8 +5,8 @@ const Navbar = () => {
     <>
       <div className="navbar-container">
         <nav>
-          <li id="about_me">About Me</li>
-          <li id="contact">Contact</li>
+          <li id="about_me"></li>
+          <li id="contact"></li>
           <div id="social_box"></div>
         </nav>
       </div>

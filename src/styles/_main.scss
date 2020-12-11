@@ -9,4 +9,8 @@
     rgba(129, 178, 154, 1) 35%,
     rgba(244, 241, 222, 1) 100%
   );
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 10vh 90vh;
 }

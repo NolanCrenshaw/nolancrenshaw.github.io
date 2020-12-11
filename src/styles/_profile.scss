@@ -1,0 +1,23 @@
+.profile-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 3fr;
+
+  div {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: rgb(224, 122, 95);
+    background: radial-gradient(
+      circle,
+      rgba(224, 122, 95, 1) 0%,
+      rgba(61, 64, 91, 1) 100%
+    );
+  }
+}

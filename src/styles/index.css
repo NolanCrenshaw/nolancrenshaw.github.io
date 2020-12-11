@@ -48,10 +48,22 @@ a {
   background: #3d405b;
   background: -webkit-gradient(linear, left top, right top, from(#3d405b), color-stop(35%, #81b29a), to(#f4f1de));
   background: linear-gradient(90deg, #3d405b 0%, #81b29a 35%, #f4f1de 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
+  -ms-grid-rows: 10vh 90vh;
+      grid-template-rows: 10vh 90vh;
 }
 
 .navbar-container {
-  width: 80%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 100%;
   height: 10vh;
   margin: auto;
 }
@@ -111,6 +123,34 @@ a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: green;
+}
+
+.profile-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr;
+  -ms-grid-rows: 1fr 1fr 3fr;
+      grid-template-rows: 1fr 1fr 3fr;
+}
+
+.profile-container div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: #e07a5f;
+  background: radial-gradient(circle, #e07a5f 0%, #3d405b 100%);
 }
 /*# sourceMappingURL=index.css.map */
