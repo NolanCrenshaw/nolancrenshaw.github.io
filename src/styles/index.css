@@ -5,13 +5,112 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 2rem;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #root {
   overflow-x: hidden;
   scrollbar-width: none;
   background-size: cover;
   background-position: center;
-  background-color: #3d405b;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background: #3d405b;
   background: -webkit-gradient(linear, left top, right top, from(#3d405b), color-stop(35%, #81b29a), to(#f4f1de));
   background: linear-gradient(90deg, #3d405b 0%, #81b29a 35%, #f4f1de 100%);
+}
+
+.navbar-container {
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+}
+
+.navbar-container nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  -ms-grid-rows: 10vh;
+      grid-template-rows: 10vh;
+}
+
+.navbar-container nav li {
+  padding: 1rem;
+}
+
+.navbar-container nav #about_me {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navbar-container nav #contact {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navbar-container nav #social_box {
+  width: 100%;
+  height: 100%;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: green;
 }
 /*# sourceMappingURL=index.css.map */
