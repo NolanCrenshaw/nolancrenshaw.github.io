@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  background-size: cover;
+  background-position: center;
+  background-color: #3d405b;
+  background: -webkit-gradient(linear, left top, right top, from(#3d405b), color-stop(35%, #81b29a), to(#f4f1de));
+  background: linear-gradient(90deg, #3d405b 0%, #81b29a 35%, #f4f1de 100%);
+}
+/*# sourceMappingURL=index.css.map */
