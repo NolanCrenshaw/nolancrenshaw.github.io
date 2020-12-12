@@ -39,9 +39,16 @@ a {
   scrollbar-width: none;
   background-size: cover;
   background-position: center;
+  background: linear-gradient(
+    90deg,
+    rgba(61, 64, 91, 1) 0%,
+    rgba(129, 178, 154, 1) 35%,
+    rgba(244, 241, 222, 1) 100%
+  );
 }
 
 @import "main";
+@import "loading";
 @import "navbar";
 @import "profile";
 @import "transition";
