@@ -78,8 +78,7 @@ a {
   height: 30rem;
   width: 30rem;
   border-radius: 50px;
-  background: -webkit-gradient(linear, left top, right top, from(#535ec0), color-stop(35%, #509976), to(#6d6428));
-  background: linear-gradient(90deg, #535ec0 0%, #509976 35%, #6d6428 100%);
+  background: white;
 }
 
 .navbar-container {
@@ -206,6 +205,5 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   z-index: 2;
-  background-color: rebeccapurple;
 }
 /*# sourceMappingURL=index.css.map */
