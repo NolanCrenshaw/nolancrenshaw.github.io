@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import ProfileBlock from "./svg_library/ProfileBlock";
+
 const Profile = () => {
   return (
     <div className="profile-container">
@@ -20,9 +22,10 @@ const Profile = () => {
         <p>Hi.</p>
         <div>
           <h1>I am a </h1>
-          <div></div>
+          <div id="profile_block--bg">
+            <ProfileBlock />
+          </div>
         </div>
-        <p>About me</p>
       </motion.section>
     </div>
   );
