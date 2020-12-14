@@ -9,6 +9,10 @@
     height: 30rem;
     width: 30rem;
     border-radius: 50px;
-    background: white;
+    background: linear-gradient(
+      0deg,
+      rgba(156, 197, 161, 1) 0%,
+      rgba(220, 225, 222, 1) 100%
+    );
   }
 }

@@ -5,13 +5,23 @@ const Profile = () => {
   return (
     <div className="profile-container">
       <motion.div
-        initial={{ opacity: 0, y: -500, scale: 0.2 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ delay: 1, type: "spring", stiffness: 100, duration: 3 }}
+        initial={{ opacity: 0, x: 250, scale: 1 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ delay: 1, duration: 2 }}
       >
-        <img />
+        <img src="/images/51563575.jpg" />
+        {/* <h1>Nolan Crenshaw</h1>
+        <p>Web Developer</p> */}
       </motion.div>
-      <h2>Nolan Crenshaw</h2>
+      <motion.section
+        initial={{ opacity: 0, x: -150, scale: 1 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ delay: 1.5, duration: 1.5 }}
+      >
+        <p>Hi.</p>
+        <h1>I'm a Web Developer</h1>
+        <p>About me</p>
+      </motion.section>
     </div>
   );
 };

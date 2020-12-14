@@ -1,20 +1,18 @@
 .main-container {
-  height: auto;
+  min-height: 100vh;
   width: 100vw;
 
   overflow: hidden;
   scrollbar-width: none;
   z: index 1;
 
-  // background: rgb(61, 64, 91);
   background: linear-gradient(
-    90deg,
-    rgba(61, 64, 91, 1) 0%,
-    rgba(129, 178, 154, 1) 35%,
-    rgba(244, 241, 222, 1) 100%
+    0deg,
+    rgba(156, 197, 161, 1) 0%,
+    rgba(220, 225, 222, 1) 100%
   );
 
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 20vh 65vh 35vh;
+  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-rows: 20vh 65vh 25vh;
 }
