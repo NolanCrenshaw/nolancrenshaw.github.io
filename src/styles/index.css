@@ -52,8 +52,8 @@ a {
   display: grid;
   -ms-grid-columns: 10rem 1fr 10rem;
       grid-template-columns: 10rem 1fr 10rem;
-  -ms-grid-rows: 15vh 75vh 90vh;
-      grid-template-rows: 15vh 75vh 90vh;
+  -ms-grid-rows: 15vh 80vh 80vh;
+      grid-template-rows: 15vh 80vh 80vh;
 }
 
 .loading-container {
@@ -246,6 +246,8 @@ a {
   background-clip: padding-box;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
+  -webkit-box-shadow: 5px 5px 30px black;
+          box-shadow: 5px 5px 30px black;
 }
 
 .profile-container #profile_pic-container img {
@@ -301,28 +303,80 @@ a {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  position: relative;
   background-color: salmon;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 40vh 50vh;
-      grid-template-rows: 40vh 50vh;
+  -ms-grid-columns: 10vw 80vw 10vw;
+      grid-template-columns: 10vw 80vw 10vw;
+  -ms-grid-rows: 10vh 10vh 20vh 20vh 20vh;
+      grid-template-rows: 10vh 10vh 20vh 20vh 20vh;
 }
 
 .transition-container .top-trans_grad {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(white));
   background: linear-gradient(0deg, black 0%, white 100%);
+  background-blend-mode: lighten;
 }
 
 .transition-container .bulk-trans_grad {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
   background-color: black;
+}
+
+.transition-container h1 {
+  font-style: italic;
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
+  font-size: 3.5rem;
+}
+
+.transition-container section {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  height: auto;
+  max-width: 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.transition-container section li {
+  height: 108px;
+  width: 108px;
+  margin: 3rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #logo {

@@ -8,7 +8,7 @@ const Navbar = () => {
         className="navbar-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 4, duration: 3 }}
+        transition={{ delay: 3, duration: 3 }}
       >
         <nav>
           <div className="nav-linkbox">
