@@ -2,7 +2,22 @@
   grid-column: 1/4;
   grid-row: 3/4;
 
-  z-index: 2;
+  background-color: salmon;
 
-  // background-color: rebeccapurple;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 40vh 50vh;
+
+  .top-trans_grad {
+    grid-row: 1/2;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .bulk-trans_grad {
+    grid-row: 2/3;
+    background-color: black;
+  }
 }

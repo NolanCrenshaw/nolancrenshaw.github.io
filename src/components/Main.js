@@ -1,22 +1,22 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Transition from "./Transition";
 
+/*
+initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+*/
+
 const Main = () => {
   return (
     <>
-      <motion.div
-        className="main-container"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
+      <div className="main-container">
         <Navbar />
         <Profile />
         <Transition />
-      </motion.div>
+      </div>
     </>
   );
 };
