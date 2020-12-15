@@ -1,0 +1,194 @@
+#logo {
+  position: relative;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 350;
+  /* stroke-dashoffset: 350; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 223.9;
+  /* stroke-dashoffset: 223.9; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 230.4;
+  /* stroke-dashoffset: 230.4; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 165.9;
+  /* stroke-dashoffset: 165.9; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(8) {
+  stroke-dasharray: 116.6;
+  /* stroke-dashoffset: 116.6; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(9) {
+  stroke-dasharray: 169.5;
+  /* stroke-dashoffset: 169.5; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(10) {
+  stroke-dasharray: 234.6;
+  /* stroke-dashoffset: 234.6; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(11) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+
+/* e inner stroke */
+#logo path:nth-child(12) {
+  stroke-dasharray: 166.4;
+  stroke-dashoffset: 166.4;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(13) {
+  stroke-dasharray: 350;
+  /* stroke-dashoffset: 350; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(14) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(15) {
+  stroke-dasharray: 223.9;
+  /* stroke-dashoffset: 223.9; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(16) {
+  stroke-dasharray: 230.4;
+  /* stroke-dashoffset: 230.4; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(17) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(18) {
+  stroke-dasharray: 165.9;
+  /* stroke-dashoffset: 165.9; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(19) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(20) {
+  stroke-dasharray: 116.6;
+  /* stroke-dashoffset: 116.6; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(21) {
+  stroke-dasharray: 169.5;
+  /* stroke-dashoffset: 169.5; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(22) {
+  stroke-dasharray: 234.6;
+  /* stroke-dashoffset: 234.6; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(23) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+
+/* e outerstroke */
+#logo path:nth-child(24) {
+  stroke-dasharray: 166.4;
+  stroke-dashoffset: 166.4;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(25) {
+  stroke-dasharray: 349.7;
+  stroke-dashoffset: 349.7;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(26) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(27) {
+  stroke-dasharray: 223.9;
+  /* stroke-dashoffset: 223.9; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(28) {
+  stroke-dasharray: 230.4;
+  /* stroke-dashoffset: 230.4; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(29) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(30) {
+  stroke-dasharray: 165.9;
+  /* stroke-dashoffset: 165.9; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(31) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(32) {
+  stroke-dasharray: 116.6;
+  /* stroke-dashoffset: 116.6; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(33) {
+  stroke-dasharray: 169.5;
+  /* stroke-dashoffset: 169.5; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(34) {
+  stroke-dasharray: 234.6;
+  /* stroke-dashoffset: 234.6; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(35) {
+  stroke-dasharray: 200.7;
+  /* stroke-dashoffset: 200.7; */
+  /* animation: line-anim 2s ease forwards; */
+}
+#logo path:nth-child(36) {
+  stroke-dasharray: 121.4;
+  /* stroke-dashoffset: 121.4; */
+  /* animation: line-anim 2s ease forwards; */
+}
+
+@keyframes line-anim {
+  to {
+    /* stroke-dashoffset: 0; */
+  }
+}
