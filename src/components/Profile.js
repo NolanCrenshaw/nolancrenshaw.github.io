@@ -20,7 +20,7 @@ const Profile = () => {
         animate={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ delay: 1.5, duration: 1.5 }}
       >
-        <p>Hi.</p>
+        <p>Hello.</p>
         <div>
           <h1>I am a </h1>
           <div id="profile_block--bg">
