@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 
-const ProfileTag = () => {
+const WebDevSVG = () => {
   // svg totalLength = 4261.9326171875
 
   return (
-    <div className="profiletag-container">
+    <div className="webdevsvg-container">
       <svg
-        id="logo"
+        id="webdev_logo"
         width="506"
         height="74"
         viewBox="0 0 506 74"
@@ -164,4 +164,4 @@ const ProfileTag = () => {
   );
 };
 
-export default ProfileTag;
+export default WebDevSVG;

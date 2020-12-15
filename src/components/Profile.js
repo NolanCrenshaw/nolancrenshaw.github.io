@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import ProfileTag from "./svg_library/ProfileTag";
+import ProfileSVG from "./ProfileSVG";
 
 const Profile = () => {
   return (
@@ -32,7 +32,7 @@ const Profile = () => {
         <div>
           <h1>I am a </h1>
           <div id="profile_block--bg">
-            <ProfileTag />
+            <ProfileSVG />
           </div>
         </div>
       </motion.section>

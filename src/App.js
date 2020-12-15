@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 4000);
+    }, 3000);
   }, []);
 
   return <>{loaded ? <Main /> : <Loading />}</>;

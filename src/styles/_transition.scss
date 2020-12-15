@@ -67,7 +67,20 @@
       justify-content: center;
       align-items: center;
 
-      // background: white;
+      // opacity: 50%;
+      // background-blend-mode: lighten;
+      // fill-opacity: 100%;
+      // border: 2px transparent white;
+      // border-color: a green;
+      // border-radius: 25px;
+      // box-shadow: 4px 4px 2px white;
+      // background-clip: padding-box;
+      // backdrop-filter: blur(40px);
+
+      img {
+        opacity: 100%;
+        fill-opacity: 100%;
+      }
     }
   }
 }

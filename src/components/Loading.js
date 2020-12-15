@@ -8,8 +8,7 @@ const Loading = ({ type, color }) => {
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-          ease: "linear",
-          duration: 2,
+          duration: 1.5,
           repeat: 1,
           repeatType: "reverse",
         }}
