@@ -22,6 +22,7 @@
     width: 40rem;
     height: 40rem;
     border-radius: 100%;
+    border: 10px solid black;
     background-clip: padding-box;
     backdrop-filter: blur(40px);
 
@@ -39,7 +40,10 @@
   section {
     grid-column: 3/4;
     grid-row: 2/3;
-    margin-left: 10rem;
+    margin-left: 8rem;
+    position: relative;
+
+    // background-color: salmon;
 
     display: flex;
     flex-direction: column;
@@ -53,6 +57,8 @@
     #profile_block--bg {
       height: 6rem;
       width: 100%;
+      position: absolute;
+      left: -80px;
 
       // background-color: #808080;
     }

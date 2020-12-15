@@ -200,6 +200,7 @@ a {
   width: 40rem;
   height: 40rem;
   border-radius: 100%;
+  border: 10px solid black;
   background-clip: padding-box;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
@@ -223,7 +224,8 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-left: 10rem;
+  margin-left: 8rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,6 +248,8 @@ a {
 .profile-container section #profile_block--bg {
   height: 6rem;
   width: 100%;
+  position: absolute;
+  left: -80px;
 }
 
 .transition-container {
