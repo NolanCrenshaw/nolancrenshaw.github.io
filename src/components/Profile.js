@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import ProfileBlock from "./svg_library/ProfileBlock";
+import ProfileTag from "./svg_library/ProfileTag";
 
 const Profile = () => {
   return (
@@ -23,7 +24,7 @@ const Profile = () => {
         <div>
           <h1>I am a </h1>
           <div id="profile_block--bg">
-            <ProfileBlock />
+            <ProfileTag />
           </div>
         </div>
       </motion.section>
