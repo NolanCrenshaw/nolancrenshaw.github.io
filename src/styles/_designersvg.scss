@@ -78,21 +78,21 @@
 #designer_logo path:nth-child(11) {
   stroke-dasharray: 192;
   stroke-dashoffset: 192;
-  animation: line-anim 2s ease 2.7s, fade-2-black 2s ease 4.7s;
+  animation: line-anim 2s ease 3s, fade-2-black 2s ease 5s;
   animation-fill-mode: forwards;
   stroke: black;
 }
 #designer_logo path:nth-child(12) {
   stroke-dasharray: 201;
   stroke-dashoffset: 201;
-  animation: line-anim 2s ease 2.7s, fade-2-black 2s ease 4.7s;
+  animation: line-anim 2s ease 3.3s, fade-2-black 2s ease 5.3s;
   animation-fill-mode: forwards;
   stroke: black;
 }
 #designer_logo path:nth-child(13) {
   stroke-dasharray: 122;
   stroke-dashoffset: 122;
-  animation: line-anim 2s ease 2.7s, fade-2-black 2s ease 4.7s;
+  animation: line-anim 2s ease 3.6s, fade-2-black 2s ease 5.6s;
   animation-fill-mode: forwards;
   stroke: black;
 }
