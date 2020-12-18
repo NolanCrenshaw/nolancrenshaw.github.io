@@ -1,8 +1,12 @@
 import React from "react";
 
-const Transition = () => {
+const About = () => {
   return (
-    <div className="transition-container">
+    <div className="about-container">
+      <div id="about_me">
+        <h1>About Me</h1>
+        <div></div>
+      </div>
       <div className="skill-box">
         <li id="javascript_icon">
           <img
@@ -74,12 +78,58 @@ const Transition = () => {
           />
         </li>
       </div>
-      <div className="about_me">
-        <h1>About Me</h1>
-        <div></div>
+      <div className="pitch-box">
+        <div className="text-block">
+          <h3>Hello World</h3>
+          <p>
+            My name is Nolan Crenshaw, and I'm a Full-Stack Developer based out
+            of Chattanooga, TN. I have a passion for building everything from
+            creative animations and intuitive layouts, to the docker containers
+            I use to develop and deploy them.
+          </p>
+        </div>
+        <div className="trait-box">
+          <li>
+            <div>
+              <img
+                alt="Fast Loading"
+                src="https://img.icons8.com/cotton/64/000000/fast-browsing.png"
+              />
+            </div>
+            <h3>Fast</h3>
+            <p>
+              Everything I build is designed to render quickly and run smoothly.
+            </p>
+          </li>
+          <li>
+            <div>
+              <img
+                alt="Security"
+                src="https://img.icons8.com/cotton/64/000000/fingerprint-recognition.png"
+              />
+            </div>
+            <h3>Secure</h3>
+            <p>
+              My work employs safe, best-practices to protect against the
+              dangers that lurk.
+            </p>
+          </li>
+          <li>
+            <div>
+              <img
+                alt="Dynamic Rendering"
+                src="https://img.icons8.com/cotton/64/000000/rocket-take-off.png"
+              />
+            </div>
+            <h3>Dynamic</h3>
+            <p>
+              I create animated, fun, modern webpages that interact with users.
+            </p>
+          </li>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Transition;
+export default About;

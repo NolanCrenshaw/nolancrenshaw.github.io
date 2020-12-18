@@ -2,11 +2,13 @@
   min-height: 100vh;
   width: 100vw;
 
+  background-color: #dce1de;
+
   overflow: hidden;
   scrollbar-width: none;
   z: index 1;
 
   display: grid;
   grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 15vh 85vh 200vh;
+  grid-template-rows: 15vh 85vh auto;
 }
