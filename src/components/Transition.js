@@ -3,10 +3,7 @@ import React from "react";
 const Transition = () => {
   return (
     <div className="transition-container">
-      <div className="top-trans_grad"></div>
-      <div className="bulk-trans_grad"></div>
-      <h1>Proficiencies</h1>
-      <section>
+      <div className="skill-box">
         <li id="javascript_icon">
           <img
             alt="JavaScript"
@@ -58,12 +55,6 @@ const Transition = () => {
             src="https://img.icons8.com/color/96/000000/linux.png"
           />
         </li>
-        <li id="Bash" alt="Bash">
-          <img
-            alt="Bash"
-            src="https://img.icons8.com/color/96/000000/console.png"
-          />
-        </li>
         <li id="postgresql_icon">
           <img
             alt="PostgreSQL"
@@ -82,7 +73,11 @@ const Transition = () => {
             src="https://img.icons8.com/color/96/000000/redux.png"
           />
         </li>
-      </section>
+      </div>
+      <div className="about_me">
+        <h1>About Me</h1>
+        <div></div>
+      </div>
     </div>
   );
 };

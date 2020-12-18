@@ -3,84 +3,59 @@
   grid-row: 3/4;
   position: relative;
 
-  background-color: salmon;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(33, 104, 105, 1) 100%
+  );
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 10vh 10vh 20vh 20vh 20vh;
+  grid-template-rows: 30vh 10vh 20vh 10vh;
 
-  .top-trans_grad {
-    grid-column: 1/4;
-    grid-row: 1/4;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-    background-blend-mode: lighten;
-  }
-  .bulk-trans_grad {
-    grid-column: 1/5;
-    grid-row: 4/6;
-
-    background-color: black;
-  }
-  h1 {
-    font-style: italic;
-    position: absolute;
-    top: 5rem;
-    left: 10rem;
-
-    font-size: 3.5rem;
-  }
-  section {
+  .skill-box {
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 1/2;
     height: auto;
-    max-width: 90%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
     position: relative;
 
-    // background: linear-gradient(
-    //   0deg,
-    //   rgba(255, 255, 255, 1) 0%,
-    //   rgb(143, 224, 143) 100%
-    // );
-
-    // opacity: 100%;
-    // border: 1px transparent white;
-    // border-radius: 25px;
-    // box-shadow: 35px 30px 30px white;
-    // background-clip: padding-box;
-    // backdrop-filter: blur(40px);
-
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 
     li {
-      height: 108px;
-      width: 108px;
-      margin: 3rem;
+      height: 90px;
+      width: 90px;
+      margin: 1rem;
 
       cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      // opacity: 50%;
-      // background-blend-mode: lighten;
-      // fill-opacity: 100%;
-      // border: 2px transparent white;
-      // border-color: a green;
-      // border-radius: 25px;
-      // box-shadow: 4px 4px 2px white;
-      // background-clip: padding-box;
-      // backdrop-filter: blur(40px);
-
       img {
-        opacity: 100%;
-        fill-opacity: 100%;
+        height: 80%;
       }
+    }
+  }
+
+  .about_me {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+      font-style: italic;
+    }
+    div {
+      height: 5px;
+      width: 17.3rem;
+      background-color: white;
     }
   }
 }
