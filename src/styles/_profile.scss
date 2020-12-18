@@ -9,8 +9,12 @@
   #profile_pic-container {
     grid-column: 2/3;
     grid-row: 1/2;
+    width: 40rem;
+    height: 40rem;
     justify-self: center;
     align-self: center;
+
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -20,8 +24,6 @@
     position: relative;
     z-index: 2;
 
-    width: 40rem;
-    height: 40rem;
     border-radius: 100%;
     border: 8px double black;
     background-clip: padding-box;

@@ -45,6 +45,7 @@ a {
 .main-container {
   min-height: 100vh;
   width: 100vw;
+  background-color: #dce1de;
   overflow: hidden;
   scrollbar-width: none;
   z: index 1;
@@ -231,9 +232,12 @@ a {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  width: 40rem;
+  height: 40rem;
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,8 +253,6 @@ a {
           align-items: center;
   position: relative;
   z-index: 2;
-  width: 40rem;
-  height: 40rem;
   border-radius: 100%;
   border: 8px double black;
   background-clip: padding-box;
@@ -306,7 +308,7 @@ a {
   left: -60px;
 }
 
-.bulk-container {
+.about-container {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -320,11 +322,11 @@ a {
   display: grid;
   -ms-grid-columns: 10vw 80vw 10vw;
       grid-template-columns: 10vw 80vw 10vw;
-  -ms-grid-rows: 20vh 15vh 50vh 10vh;
-      grid-template-rows: 20vh 15vh 50vh 10vh;
+  -ms-grid-rows: 20vh 20vh 50vh 10vh;
+      grid-template-rows: 20vh 20vh 50vh 10vh;
 }
 
-.bulk-container #about_me {
+.about-container #about_me {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -349,19 +351,19 @@ a {
           align-items: center;
 }
 
-.bulk-container #about_me h1 {
+.about-container #about_me h1 {
   color: white;
   font-size: 3.5rem;
   font-style: italic;
 }
 
-.bulk-container #about_me div {
+.about-container #about_me div {
   height: 5px;
   width: 10rem;
   background-color: white;
 }
 
-.bulk-container .skill-box {
+.about-container .skill-box {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -382,7 +384,7 @@ a {
           justify-content: center;
 }
 
-.bulk-container .skill-box li {
+.about-container .skill-box li {
   height: 90px;
   width: 90px;
   margin: 1rem;
@@ -398,11 +400,11 @@ a {
           align-items: center;
 }
 
-.bulk-container .skill-box li img {
+.about-container .skill-box li img {
   height: 80%;
 }
 
-.bulk-container .pitch-box {
+.about-container .pitch-box {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -423,7 +425,7 @@ a {
       grid-template-rows: 15% 35% 35% 15%;
 }
 
-.bulk-container .pitch-box .text-block {
+.about-container .pitch-box .text-block {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -432,6 +434,7 @@ a {
   grid-row: 2/5;
   height: 100%;
   width: 100%;
+  padding: 3rem 6rem 3rem 3rem;
   border-radius: 5px;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#9cc5a1));
   background: linear-gradient(0deg, white 0%, #9cc5a1 100%);
@@ -439,7 +442,20 @@ a {
           box-shadow: 5px 5px 5px #b8b8b8;
 }
 
-.bulk-container .pitch-box .trait-box {
+.about-container .pitch-box .text-block h3 {
+  color: #216869;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-container .pitch-box .text-block p {
+  padding-right: 2rem;
+  color: #504f4f;
+  font-weight: 100;
+  text-align: start;
+}
+
+.about-container .pitch-box .trait-box {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2/5;
@@ -466,7 +482,7 @@ a {
           align-items: center;
 }
 
-.bulk-container .pitch-box .trait-box li {
+.about-container .pitch-box .trait-box li {
   height: 100%;
   width: 29%;
   margin: 1rem;
@@ -485,7 +501,7 @@ a {
           align-items: center;
 }
 
-.bulk-container .pitch-box .trait-box li div {
+.about-container .pitch-box .trait-box li div {
   height: 11rem;
   width: 11rem;
   margin-top: 3rem;
@@ -504,12 +520,12 @@ a {
           align-items: center;
 }
 
-.bulk-container .pitch-box .trait-box li h3 {
+.about-container .pitch-box .trait-box li h3 {
   margin-top: 1.2rem;
   color: #2c2c2c;
 }
 
-.bulk-container .pitch-box .trait-box li p {
+.about-container .pitch-box .trait-box li p {
   padding: 1rem;
   color: #504f4f;
   font-size: 1.4rem;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import Navbar from "./Navbar";
 import Profile from "./Profile";
-import Transition from "./Bulk";
+import About from "./About";
 
 const Main = () => {
   return (
@@ -18,7 +18,7 @@ const Main = () => {
         <Router>
           <Navbar />
           <Profile />
-          <Transition />
+          <About />
         </Router>
         <div className="test_space"></div>
       </motion.div>

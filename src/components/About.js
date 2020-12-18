@@ -1,8 +1,8 @@
 import React from "react";
 
-const Bulk = () => {
+const About = () => {
   return (
-    <div className="bulk-container">
+    <div className="about-container">
       <div id="about_me">
         <h1>About Me</h1>
         <div></div>
@@ -79,7 +79,15 @@ const Bulk = () => {
         </li>
       </div>
       <div className="pitch-box">
-        <div className="text-block"></div>
+        <div className="text-block">
+          <h3>Hello World</h3>
+          <p>
+            My name is Nolan Crenshaw, and I'm a Full-Stack Developer based out
+            of Chattanooga, TN. I have a passion for building everything from
+            creative animations and intuitive layouts, to the docker containers
+            I use to develop and deploy them.
+          </p>
+        </div>
         <div className="trait-box">
           <li>
             <div>
@@ -89,7 +97,9 @@ const Bulk = () => {
               />
             </div>
             <h3>Fast</h3>
-            <p>Everything I build is designed to run quickly and smooth.</p>
+            <p>
+              Everything I build is designed to render quickly and run smoothly.
+            </p>
           </li>
           <li>
             <div>
@@ -122,4 +132,4 @@ const Bulk = () => {
   );
 };
 
-export default Bulk;
+export default About;
