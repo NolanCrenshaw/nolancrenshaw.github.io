@@ -1,8 +1,12 @@
 import React from "react";
 
-const Transition = () => {
+const Bulk = () => {
   return (
-    <div className="transition-container">
+    <div className="bulk-container">
+      <div id="about_me">
+        <h1>About Me</h1>
+        <div></div>
+      </div>
       <div className="skill-box">
         <li id="javascript_icon">
           <img
@@ -74,12 +78,8 @@ const Transition = () => {
           />
         </li>
       </div>
-      <div className="about_me">
-        <h1>About Me</h1>
-        <div></div>
-      </div>
     </div>
   );
 };
 
-export default Transition;
+export default Bulk;

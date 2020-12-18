@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
-import Transition from "./Transition";
+import Transition from "./Bulk";
 
 const Main = () => {
   return (

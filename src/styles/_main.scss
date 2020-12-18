@@ -8,5 +8,5 @@
 
   display: grid;
   grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 15vh 85vh 200vh;
+  grid-template-rows: 15vh 85vh auto;
 }

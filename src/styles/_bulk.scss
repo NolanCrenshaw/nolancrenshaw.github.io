@@ -1,4 +1,4 @@
-.transition-container {
+.bulk-container {
   grid-column: 1/4;
   grid-row: 3/4;
   position: relative;
@@ -11,11 +11,11 @@
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 30vh 10vh 20vh 10vh;
+  grid-template-rows: 25vh 10vh 20vh 10vh;
 
   .skill-box {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
     height: auto;
     width: 90%;
     justify-self: center;
@@ -41,11 +41,16 @@
     }
   }
 
-  .about_me {
+  #about_me {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
     justify-self: center;
     align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h1 {
       color: white;
@@ -54,7 +59,7 @@
     }
     div {
       height: 5px;
-      width: 17.3rem;
+      width: 10rem;
       background-color: white;
     }
   }

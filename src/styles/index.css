@@ -52,8 +52,8 @@ a {
   display: grid;
   -ms-grid-columns: 10rem 1fr 10rem;
       grid-template-columns: 10rem 1fr 10rem;
-  -ms-grid-rows: 15vh 85vh 200vh;
-      grid-template-rows: 15vh 85vh 200vh;
+  -ms-grid-rows: 15vh 85vh auto;
+      grid-template-rows: 15vh 85vh auto;
 }
 
 .loading-container {
@@ -297,7 +297,7 @@ a {
   left: -60px;
 }
 
-.transition-container {
+.bulk-container {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -311,17 +311,17 @@ a {
   display: grid;
   -ms-grid-columns: 10vw 80vw 10vw;
       grid-template-columns: 10vw 80vw 10vw;
-  -ms-grid-rows: 30vh 10vh 20vh 10vh;
-      grid-template-rows: 30vh 10vh 20vh 10vh;
+  -ms-grid-rows: 25vh 10vh 20vh 10vh;
+      grid-template-rows: 25vh 10vh 20vh 10vh;
 }
 
-.transition-container .skill-box {
+.bulk-container .skill-box {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  grid-row: 2/3;
   height: auto;
   width: 90%;
   justify-self: center;
@@ -336,7 +336,7 @@ a {
           justify-content: center;
 }
 
-.transition-container .skill-box li {
+.bulk-container .skill-box li {
   height: 90px;
   width: 90px;
   margin: 1rem;
@@ -352,33 +352,44 @@ a {
           align-items: center;
 }
 
-.transition-container .skill-box li img {
+.bulk-container .skill-box li img {
   height: 80%;
 }
 
-.transition-container .about_me {
+.bulk-container .about_me {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-row: 1/2;
+  justify-self: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.transition-container .about_me h1 {
+.bulk-container .about_me h1 {
   color: white;
   font-size: 3.5rem;
   font-style: italic;
 }
 
-.transition-container .about_me div {
+.bulk-container .about_me div {
   height: 5px;
-  width: 17.3rem;
+  width: 10rem;
   background-color: white;
 }
 
