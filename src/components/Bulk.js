@@ -78,6 +78,10 @@ const Bulk = () => {
           />
         </li>
       </div>
+      <div className="pitch-box">
+        <div className="text-block"></div>
+        <div className="trait-box"></div>
+      </div>
     </div>
   );
 };

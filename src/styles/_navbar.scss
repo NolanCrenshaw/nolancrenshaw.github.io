@@ -46,14 +46,20 @@
         justify-content: center;
         align-items: center;
 
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
         &:hover {
           color: black;
           background-color: white;
           box-shadow: 10px 10px 20px black;
-        }
-      }
 
-      #about_me {
+          a {
+            color: black;
+          }
+        }
       }
     }
     #call_to_action {

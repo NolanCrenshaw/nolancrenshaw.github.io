@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -12,12 +13,15 @@ const Navbar = () => {
       >
         <nav>
           <div className="nav-linkbox">
-            <li id="about_me">About me</li>
-            <li id="portfolio">Portfolio</li>
-            <li id="resume">Resume</li>
+            <li>
+              <HashLink smooth to="/#about_me">
+                About me
+              </HashLink>
+            </li>
+            <li>Portfolio</li>
+            <li>Resume</li>
           </div>
           <li id="call_to_action">Let's Talk</li>
-          {/* <div id="social_box"></div> */}
         </nav>
       </motion.div>
     </>
