@@ -80,7 +80,43 @@ const Bulk = () => {
       </div>
       <div className="pitch-box">
         <div className="text-block"></div>
-        <div className="trait-box"></div>
+        <div className="trait-box">
+          <li>
+            <div>
+              <img
+                alt="Fast Loading"
+                src="https://img.icons8.com/cotton/64/000000/fast-browsing.png"
+              />
+            </div>
+            <h3>Fast</h3>
+            <p>Everything I build is designed to run quickly and smooth.</p>
+          </li>
+          <li>
+            <div>
+              <img
+                alt="Security"
+                src="https://img.icons8.com/cotton/64/000000/fingerprint-recognition.png"
+              />
+            </div>
+            <h3>Secure</h3>
+            <p>
+              My work employs safe, best-practices to protect against the
+              dangers that lurk.
+            </p>
+          </li>
+          <li>
+            <div>
+              <img
+                alt="Dynamic Rendering"
+                src="https://img.icons8.com/cotton/64/000000/rocket-take-off.png"
+              />
+            </div>
+            <h3>Dynamic</h3>
+            <p>
+              I create animated, fun, modern webpages that interact with users.
+            </p>
+          </li>
+        </div>
       </div>
     </div>
   );

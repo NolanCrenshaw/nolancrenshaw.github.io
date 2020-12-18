@@ -453,6 +453,67 @@ a {
   background: linear-gradient(0deg, #dce1de 0%, white 100%);
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bulk-container .pitch-box .trait-box li {
+  height: 100%;
+  width: 29%;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bulk-container .pitch-box .trait-box li div {
+  height: 11rem;
+  width: 11rem;
+  margin-top: 3rem;
+  border: 5px solid #216869;
+  border-radius: 90%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#216869), to(white));
+  background: linear-gradient(0deg, #216869 0%, white 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bulk-container .pitch-box .trait-box li h3 {
+  margin-top: 1.2rem;
+  color: #2c2c2c;
+}
+
+.bulk-container .pitch-box .trait-box li p {
+  padding: 1rem;
+  color: #504f4f;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 #webdev_logo {

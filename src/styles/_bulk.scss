@@ -108,6 +108,50 @@
         rgba(255, 255, 255, 1) 100%
       );
       box-shadow: 5px 5px 5px rgb(184, 184, 184);
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        height: 100%;
+        width: 29%;
+        margin: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        div {
+          height: 11rem;
+          width: 11rem;
+          margin-top: 3rem;
+          border: 5px solid #216869;
+          border-radius: 90%;
+          background: linear-gradient(
+            0deg,
+            rgba(33, 104, 105, 1) 0%,
+            rgba(255, 255, 255, 1) 100%
+          );
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        h3 {
+          margin-top: 1.2rem;
+          color: rgb(44, 44, 44);
+        }
+
+        p {
+          padding: 1rem;
+          color: rgb(80, 79, 79);
+          font-size: 1.4rem;
+          text-align: center;
+        }
+      }
     }
   }
 }
