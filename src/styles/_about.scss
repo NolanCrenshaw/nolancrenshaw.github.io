@@ -11,7 +11,7 @@
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 20vh 20vh 50vh 10vh;
+  grid-template-rows: 20vh 20vh 60vh;
 
   #about_me {
     grid-column: 2/3;
@@ -45,6 +45,15 @@
     align-self: flex-start;
     position: relative;
 
+    border: 0.5px solid white;
+    border-radius: 12px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(73, 160, 120, 1) 83%,
+      rgba(73, 160, 120, 1) 100%
+    );
+
     display: flex;
     justify-content: center;
 
@@ -53,7 +62,6 @@
       width: 90px;
       margin: 1rem;
 
-      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -130,11 +138,11 @@
       li {
         height: 100%;
         width: 29%;
-        margin: 1rem;
+        // margin: 1rem;
 
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
 
         div {
@@ -159,6 +167,7 @@
         }
 
         p {
+          height: 30%;
           padding: 1rem;
           color: rgb(80, 79, 79);
           font-size: 1.4rem;

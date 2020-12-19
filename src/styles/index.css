@@ -53,8 +53,8 @@ a {
   display: grid;
   -ms-grid-columns: 10rem 1fr 10rem;
       grid-template-columns: 10rem 1fr 10rem;
-  -ms-grid-rows: 15vh 85vh auto;
-      grid-template-rows: 15vh 85vh auto;
+  -ms-grid-rows: 15vh 85vh 106vh auto 106vh 40vh;
+      grid-template-rows: 15vh 85vh 106vh auto 106vh 40vh;
 }
 
 .loading-container {
@@ -166,7 +166,7 @@ a {
   color: black;
 }
 
-.navbar-container nav #call_to_action {
+.navbar-container nav .call_to_action {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -187,7 +187,7 @@ a {
   cursor: pointer;
 }
 
-.navbar-container nav #call_to_action:hover {
+.navbar-container nav .call_to_action:hover {
   color: black;
   background-color: #fce582;
   border: 4px solid #fdd10c;
@@ -299,13 +299,30 @@ a {
 
 .profile-container section .profile_block {
   position: relative;
+  background-color: sandybrown;
 }
 
 .profile-container section #profile_block--bg {
-  height: 6rem;
+  height: 8rem;
   width: 100%;
   position: absolute;
   left: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.profile-container section #profile_block--bg svg {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .about-container {
@@ -322,8 +339,8 @@ a {
   display: grid;
   -ms-grid-columns: 10vw 80vw 10vw;
       grid-template-columns: 10vw 80vw 10vw;
-  -ms-grid-rows: 20vh 20vh 50vh 10vh;
-      grid-template-rows: 20vh 20vh 50vh 10vh;
+  -ms-grid-rows: 20vh 20vh 60vh;
+      grid-template-rows: 20vh 20vh 60vh;
 }
 
 .about-container #about_me {
@@ -376,6 +393,10 @@ a {
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
+  border: 0.5px solid white;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(83%, #49a078), to(#49a078));
+  background: linear-gradient(90deg, white 0%, #49a078 83%, #49a078 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +409,6 @@ a {
   height: 90px;
   width: 90px;
   margin: 1rem;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +505,6 @@ a {
 .about-container .pitch-box .trait-box li {
   height: 100%;
   width: 29%;
-  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,9 +512,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -526,10 +545,228 @@ a {
 }
 
 .about-container .pitch-box .trait-box li p {
+  height: 30%;
   padding: 1rem;
   color: #504f4f;
   font-size: 1.4rem;
   text-align: center;
+}
+
+.portfolio-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#216869));
+  background: linear-gradient(0deg, white 0%, #216869 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5vw 90vw 5vw;
+      grid-template-columns: 5vw 90vw 5vw;
+  -ms-grid-rows: 20vh auto 5vh;
+      grid-template-rows: 20vh auto 5vh;
+}
+
+.portfolio-container #portfolio {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-container #portfolio h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.portfolio-container #portfolio div {
+  height: 5px;
+  width: 10rem;
+  background-color: white;
+}
+
+.portfolio-container .project-box {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  min-height: 86vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-container .project-box .project {
+  min-height: 50vh;
+  width: 90%;
+  margin: 3rem;
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 3% 15%;
+      grid-template-columns: 60% 3% 15%;
+  -ms-grid-rows: 15% 10% 80% 8%;
+      grid-template-rows: 15% 10% 80% 8%;
+}
+
+.portfolio-container .project-box .project div:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dce1de), to(white));
+  background: linear-gradient(0deg, #dce1de 0%, white 100%);
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 5px #b8b8b8;
+          box-shadow: 5px 5px 5px #b8b8b8;
+  z-index: 3;
+}
+
+.portfolio-container .project-box .project div:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  padding: 1rem 2rem 0 12%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#9cc5a1));
+  background: linear-gradient(0deg, white 0%, #9cc5a1 100%);
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 5px #b8b8b8;
+          box-shadow: 5px 5px 5px #b8b8b8;
+  z-index: 2;
+}
+
+.portfolio-container .project-box .project div:nth-child(2) h2 {
+  text-align: right;
+  color: #216869;
+  font-style: italic;
+}
+
+.portfolio-container .project-box .project div:nth-child(2) h3 {
+  margin-bottom: 1rem;
+  text-align: right;
+  color: #1f2421;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.portfolio-container .project-box .project div:nth-child(2) p {
+  text-align: start;
+  color: #504f4f;
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.resume-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#216869));
+  background: linear-gradient(0deg, white 0%, #216869 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10vw 80vw 10vw;
+      grid-template-columns: 10vw 80vw 10vw;
+  -ms-grid-rows: 20vh 20vh 50vh 10vh;
+      grid-template-rows: 20vh 20vh 50vh 10vh;
+}
+
+.resume-container #resume {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-container #resume h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.resume-container #resume div {
+  height: 5px;
+  width: 10rem;
+  background-color: white;
+}
+
+.footer-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  height: 40vh;
+  width: 100%;
+  background-color: #1f2421;
 }
 
 #webdev_logo {

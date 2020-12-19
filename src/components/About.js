@@ -82,11 +82,13 @@ const About = () => {
         <div className="text-block">
           <h3>Hello World</h3>
           <p>
-            My name is Nolan Crenshaw, and I'm a Full-Stack Developer based out
+            My name is Nolan Crenshaw, and I am a Full-Stack Developer based out
             of Chattanooga, TN. I have a passion for building everything from
             creative animations and intuitive layouts, to the docker containers
             I use to develop and deploy them.
           </p>
+          {/* Figure out Call to Action Route */}
+          <li className="call_to_action">Let's Talk</li>
         </div>
         <div className="trait-box">
           <li>

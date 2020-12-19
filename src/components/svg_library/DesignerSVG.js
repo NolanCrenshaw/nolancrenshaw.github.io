@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const DesignerSVG = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <svg
         id="designer_logo"
         width="488"
@@ -61,7 +66,7 @@ const DesignerSVG = () => {
           fill="white"
         />
       </svg>
-    </div>
+    </motion.div>
   );
 };
 
