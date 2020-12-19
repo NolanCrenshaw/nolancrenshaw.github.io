@@ -27,8 +27,12 @@ const Navbar = () => {
             <a href="https://www.linkedin.com/in/nolan-crenshaw-a10b381a0/">
               <motion.img
                 whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.5, repeat: Infinity },
+                  scale: 1.2,
+                  transition: {
+                    duration: 0.4,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  },
                 }}
                 src="https://img.icons8.com/color/48/000000/linkedin.png"
               />
@@ -36,14 +40,30 @@ const Navbar = () => {
             <a href="https://angel.co/u/nolan-crenshaw">
               <motion.img
                 whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.5, repeat: Infinity },
+                  scale: 1.2,
+                  transition: {
+                    duration: 0.4,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  },
                 }}
                 src="https://img.icons8.com/color/50/000000/angelist.png"
               />
             </a>
           </div>
-          <li className="call_to_action">Let's Talk</li>
+          <motion.li
+            whileHover={{
+              scale: 1.2,
+              transition: {
+                duration: 0.5,
+                repeatType: "reverse",
+                repeat: Infinity,
+              },
+            }}
+            className="call_to_action"
+          >
+            Let's Talk
+          </motion.li>
         </nav>
       </motion.div>
     </>
