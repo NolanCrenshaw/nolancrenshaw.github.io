@@ -18,7 +18,7 @@ const ProfileSVG = () => {
       } else if (profileSVG === "seo") {
         setProfileSVG("webdev");
       }
-    }, 10000);
+    }, 9000);
   }, [profileSVG]);
 
   if (profileSVG === "webdev") {

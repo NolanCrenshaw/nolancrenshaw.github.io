@@ -125,7 +125,7 @@ const About = () => {
             </div>
             <h3>Dynamic</h3>
             <p>
-              I create animated, fun, modern webpages that interact with users.
+              I create fun, animated, modern webpages that interact with users.
             </p>
           </li>
         </div>

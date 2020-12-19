@@ -53,8 +53,8 @@ a {
   display: grid;
   -ms-grid-columns: 10rem 1fr 10rem;
       grid-template-columns: 10rem 1fr 10rem;
-  -ms-grid-rows: 15vh 85vh 106vh auto 106vh 40vh;
-      grid-template-rows: 15vh 85vh 106vh auto 106vh 40vh;
+  -ms-grid-rows: 15vh 85vh 106vh auto 106vh 20vh;
+      grid-template-rows: 15vh 85vh 106vh auto 106vh 20vh;
 }
 
 .loading-container {
@@ -166,6 +166,49 @@ a {
   color: black;
 }
 
+.navbar-container nav .nav-socialbox {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-right: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container nav .nav-socialbox a {
+  height: 7rem;
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container nav .nav-socialbox a img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.navbar-container nav .nav-socialbox a:nth-child(2) img {
+  height: 3rem;
+  width: 3rem;
+}
+
 .navbar-container nav .call_to_action {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -247,10 +290,11 @@ a {
 }
 
 .profile-container #profile_pic-container img {
-  height: 30rem;
-  width: 30rem;
+  height: 33rem;
+  width: 33rem;
   margin: 2rem;
   border-radius: 180%;
+  border: 5px solid black;
 }
 
 .profile-container #profile_pic-container h2 {
@@ -748,7 +792,7 @@ a {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6/7;
-  height: 40vh;
+  height: 20vh;
   width: 100%;
   background-color: #1f2421;
 }
