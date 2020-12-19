@@ -111,6 +111,24 @@
         font-weight: 100;
         text-align: start;
       }
+      li {
+        width: 15rem;
+        margin: 2rem;
+        color: white;
+        background-color: #216869;
+
+        padding: 1.2rem 2.5rem;
+        border-radius: 5px;
+        border: 4px solid black;
+        box-shadow: 10px 10px 20px rgba(31, 36, 33, 0.5);
+        cursor: pointer;
+
+        &:hover {
+          color: black;
+          background-color: #fce582;
+          border: 4px solid #fdd10c;
+        }
+      }
     }
 
     .trait-box {

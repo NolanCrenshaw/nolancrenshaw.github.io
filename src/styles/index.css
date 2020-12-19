@@ -504,6 +504,25 @@ a {
   text-align: start;
 }
 
+.about-container .pitch-box .text-block li {
+  width: 15rem;
+  margin: 2rem;
+  color: white;
+  background-color: #216869;
+  padding: 1.2rem 2.5rem;
+  border-radius: 5px;
+  border: 4px solid black;
+  -webkit-box-shadow: 10px 10px 20px rgba(31, 36, 33, 0.5);
+          box-shadow: 10px 10px 20px rgba(31, 36, 33, 0.5);
+  cursor: pointer;
+}
+
+.about-container .pitch-box .text-block li:hover {
+  color: black;
+  background-color: #fce582;
+  border: 4px solid #fdd10c;
+}
+
 .about-container .pitch-box .trait-box {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
