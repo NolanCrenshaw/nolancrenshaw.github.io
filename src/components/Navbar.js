@@ -13,21 +13,15 @@ const Navbar = () => {
       >
         <nav>
           <div className="nav-linkbox">
-            <li>
-              <HashLink smooth to="/#about_me">
-                About me
-              </HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="/#portfolio">
-                Portfolio
-              </HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="/#resume">
-                Resume
-              </HashLink>
-            </li>
+            <HashLink smooth to="/#about_me">
+              <li>About me</li>
+            </HashLink>
+            <HashLink smooth to="/#portfolio">
+              <li>Portfolio</li>
+            </HashLink>
+            <HashLink smooth to="/#resume">
+              <li>Resume</li>
+            </HashLink>
           </div>
           <li className="call_to_action">Let's Talk</li>
         </nav>
