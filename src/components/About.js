@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -88,7 +89,19 @@ const About = () => {
             I use to develop and deploy them.
           </p>
           {/* Figure out Call to Action Route */}
-          <li className="call_to_action">Let's Talk</li>
+          <motion.li
+            whileHover={{
+              scale: 1.2,
+              transition: {
+                duration: 0.5,
+                repeatType: "reverse",
+                repeat: Infinity,
+              },
+            }}
+            className="call_to_action"
+          >
+            Hire Me!
+          </motion.li>
         </div>
         <div className="trait-box">
           <li>
