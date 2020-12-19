@@ -54,15 +54,22 @@
 
     .profile_block {
       position: relative;
+      background-color: sandybrown;
     }
 
     #profile_block--bg {
-      height: 6rem;
+      height: 8rem;
       width: 100%;
       position: absolute;
       left: -60px;
 
-      // background-color: #808080;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      svg {
+        justify-self: start;
+        align-self: flex-end;
+      }
     }
   }
 }

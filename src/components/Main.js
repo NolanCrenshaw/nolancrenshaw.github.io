@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import About from "./About";
+import Portfolio from "./Portfolio";
+import Resume from "./Resume";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -19,6 +22,9 @@ const Main = () => {
           <Navbar />
           <Profile />
           <About />
+          <Portfolio />
+          <Resume />
+          <Footer />
         </Router>
         <div className="test_space"></div>
       </motion.div>

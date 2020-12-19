@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const SeoSVG = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <svg
         id="seo_logo"
         width="434"
@@ -52,7 +57,7 @@ const SeoSVG = () => {
           fill="white"
         />
       </svg>
-    </div>
+    </motion.div>
   );
 };
 

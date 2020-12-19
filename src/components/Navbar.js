@@ -18,10 +18,18 @@ const Navbar = () => {
                 About me
               </HashLink>
             </li>
-            <li>Portfolio</li>
-            <li>Resume</li>
+            <li>
+              <HashLink smooth to="/#portfolio">
+                Portfolio
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="/#resume">
+                Resume
+              </HashLink>
+            </li>
           </div>
-          <li id="call_to_action">Let's Talk</li>
+          <li className="call_to_action">Let's Talk</li>
         </nav>
       </motion.div>
     </>

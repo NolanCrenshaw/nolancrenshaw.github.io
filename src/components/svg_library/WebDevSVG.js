@@ -1,10 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const WebDevSVG = () => {
-  // svg totalLength = 4261.9326171875
-
   return (
-    <div className="webdevsvg-container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <svg
         id="webdev_logo"
         width="506"
@@ -160,7 +163,7 @@ const WebDevSVG = () => {
           mask="url(#path-1-outside-1)"
         />
       </svg>
-    </div>
+    </motion.div>
   );
 };
 
