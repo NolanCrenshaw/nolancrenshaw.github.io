@@ -55,12 +55,13 @@
     );
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     li {
       height: 90px;
       width: 90px;
-      margin: 1rem;
+      // margin: 1rem;
 
       display: flex;
       justify-content: center;
@@ -77,12 +78,8 @@
     grid-row: 3/4;
     height: 100%;
     width: 100%;
-    // margin: 2rem;
-    // padding: 2rem;
     justify-self: center;
     align-self: center;
-
-    // background-color: salmon;
 
     display: grid;
     grid-template-columns: 45% 5% 5% 45%;

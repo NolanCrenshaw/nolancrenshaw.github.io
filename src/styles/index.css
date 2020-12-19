@@ -428,6 +428,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -436,7 +438,6 @@ a {
 .about-container .skill-box li {
   height: 90px;
   width: 90px;
-  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,6 +697,7 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2/5;
+  heigth: auto;
   padding: 1rem 2rem 0 12%;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#9cc5a1));
   background: linear-gradient(0deg, white 0%, #9cc5a1 100%);
