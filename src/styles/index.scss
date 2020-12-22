@@ -34,6 +34,11 @@ li {
 a {
   text-decoration: none;
 }
+.scrim {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+}
 #root {
   overflow-x: hidden;
   scrollbar-width: none;
@@ -44,7 +49,7 @@ a {
 @import "main";
 @import "loading";
 @import "navbar";
-@import "profile";
+@import "splash";
 @import "about";
 @import "portfolio";
 @import "resume";
@@ -53,3 +58,4 @@ a {
 @import "programmersvg";
 @import "designersvg";
 @import "seosvg";
+@import "downarrowsvg";

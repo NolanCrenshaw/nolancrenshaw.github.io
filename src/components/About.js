@@ -3,10 +3,32 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div id="about_me">
+    <div className="about-container" id="about_me">
+      <div id="about_me--head">
         <h1>About Me</h1>
         <div></div>
+      </div>
+      <div className="introduction-box">
+        <div id="profile_picture-container">
+          <motion.div
+            initial={{ opacity: 0, x: 250, scale: 1 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ delay: 0, duration: 2 }}
+          >
+            <motion.img
+              initial={{ opacity: 0, x: 250, scale: 1 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ delay: 1, duration: 2 }}
+              src="/images/51563575.jpg"
+            />
+          </motion.div>
+        </div>
+        <div id="vita-container">
+          <div>
+            <h1>Test</h1>
+            <p>Test again</p>
+          </div>
+        </div>
       </div>
       <div className="skill-box">
         <li id="javascript_icon">
@@ -93,9 +115,7 @@ const About = () => {
             whileHover={{
               scale: 1.2,
               transition: {
-                duration: 0.5,
-                repeatType: "reverse",
-                repeat: Infinity,
+                duration: 0.3,
               },
             }}
             className="call_to_action"

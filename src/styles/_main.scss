@@ -2,6 +2,8 @@
   min-height: 100vh;
   width: 100vw;
 
+  justify-self: center;
+
   background-color: #dce1de;
 
   overflow: hidden;
@@ -10,5 +12,5 @@
 
   display: grid;
   grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 15vh 85vh 106vh auto 106vh 20vh;
+  grid-template-rows: 106vh auto auto 106vh 20vh;
 }

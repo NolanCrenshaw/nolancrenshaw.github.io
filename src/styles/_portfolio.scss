@@ -1,6 +1,6 @@
 .portfolio-container {
   grid-column: 1/4;
-  grid-row: 4/5;
+  grid-row: 3/4;
   position: relative;
   height: 100%;
   width: 100%;
@@ -8,14 +8,14 @@
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(33, 104, 105, 1) 100%
+    rgb(0, 0, 0) 100%
   );
 
   display: grid;
   grid-template-columns: 5vw 90vw 5vw;
   grid-template-rows: 20vh auto 5vh;
 
-  #portfolio {
+  #portfolio--head {
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: center;
