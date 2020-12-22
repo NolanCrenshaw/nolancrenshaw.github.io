@@ -35,6 +35,13 @@ a {
   text-decoration: none;
 }
 
+.scrim {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
 #root {
   overflow-x: hidden;
   scrollbar-width: none;
@@ -276,56 +283,6 @@ a {
   width: 100%;
   position: absolute;
   bottom: 0;
-  opacity: 40%;
-}
-
-.profile-container #profile_pic-container {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  width: 40rem;
-  height: 40rem;
-  justify-self: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  z-index: 2;
-  border-radius: 100%;
-  border: 8px double black;
-  background-clip: padding-box;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
-  -webkit-box-shadow: 5px 5px 30px black;
-          box-shadow: 5px 5px 30px black;
-}
-
-.profile-container #profile_pic-container img {
-  height: 33rem;
-  width: 33rem;
-  margin: 2rem;
-  border-radius: 180%;
-  border: 5px solid black;
-}
-
-.profile-container #profile_pic-container h2 {
-  font-style: italic;
 }
 
 .profile-container section {
@@ -354,8 +311,10 @@ a {
 }
 
 .profile-container section p {
+  color: white;
+  font-weight: 500;
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5rem;
   right: 100px;
 }
 
@@ -368,6 +327,8 @@ a {
 }
 
 .profile-container section h2 {
+  position: relative;
+  left: 80px;
   font-size: 2.5rem;
 }
 
@@ -375,7 +336,69 @@ a {
   height: 8rem;
   width: 100%;
   position: absolute;
-  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.profile-container section #profile_svg svg {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.profile-container .next_arrow-container {
+  position: absolute;
+  max-heigth: 20vh;
+  width: 100%;
+  bottom: 10vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-container .next_arrow-container .next_arrow {
+  height: 5rem;
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-container .next_arrow-container a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-container .next_arrow-container a svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1476,5 +1499,13 @@ a {
   to {
     fill: black;
   }
+}
+
+#downarrowsvg {
+  fill: #000000;
+}
+
+#downarrowsvg g {
+  mix-blend-mode: normal;
 }
 /*# sourceMappingURL=index.css.map */

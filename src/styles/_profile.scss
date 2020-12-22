@@ -13,45 +13,43 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-
-    opacity: 40%;
   }
 
-  #profile_pic-container {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 40rem;
-    height: 40rem;
-    justify-self: center;
-    align-self: center;
+  // #profile_pic-container {
+  //   grid-column: 2/3;
+  //   grid-row: 2/3;
+  //   width: 40rem;
+  //   height: 40rem;
+  //   justify-self: center;
+  //   align-self: center;
 
-    background-color: white;
+  //   background-color: white;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
 
-    position: relative;
-    z-index: 2;
+  //   position: relative;
+  //   z-index: 2;
 
-    border-radius: 100%;
-    border: 8px double black;
-    background-clip: padding-box;
-    backdrop-filter: blur(40px);
-    box-shadow: 5px 5px 30px black;
+  //   border-radius: 100%;
+  //   border: 8px double black;
+  //   background-clip: padding-box;
+  //   backdrop-filter: blur(40px);
+  //   box-shadow: 5px 5px 30px black;
 
-    img {
-      height: 33rem;
-      width: 33rem;
-      margin: 2rem;
-      border-radius: 180%;
-      border: 5px solid black;
-    }
-    h2 {
-      font-style: italic;
-    }
-  }
+  //   img {
+  //     height: 33rem;
+  //     width: 33rem;
+  //     margin: 2rem;
+  //     border-radius: 180%;
+  //     border: 5px solid black;
+  //   }
+  //   h2 {
+  //     font-style: italic;
+  //   }
+  // }
 
   section {
     grid-column: 2/3;
@@ -67,8 +65,10 @@
     align-items: center;
 
     p {
+      color: rgb(255, 255, 255);
+      font-weight: 500;
       position: relative;
-      font-size: 3rem;
+      font-size: 2.5rem;
       right: 100px;
     }
     h1 {
@@ -79,6 +79,8 @@
       font-weight: 800;
     }
     h2 {
+      position: relative;
+      left: 80px;
       font-size: 2.5rem;
     }
 
@@ -86,11 +88,46 @@
       height: 8rem;
       width: 100%;
       position: absolute;
-      left: 0;
 
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      svg {
+        justify-self: start;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .next_arrow-container {
+    position: absolute;
+    // grid-column: 1/4;
+    max-heigth: 20vh;
+    width: 100%;
+    bottom: 10vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .next_arrow {
+      height: 5rem;
+      width: 5rem;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

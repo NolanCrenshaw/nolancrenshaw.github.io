@@ -1,6 +1,8 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import ProfileSVG from "./ProfileSVG";
+import DownArrowSVG from "./svg_library/DownArrowSVG";
 
 import Navbar from "./Navbar";
 
@@ -39,10 +41,12 @@ const Profile = () => {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ delay: 1, duration: 4 }}
       >
-        <p>Hello. My name is </p>
-        <h1>Nolan Crenshaw</h1>
+        <div className="scrim">
+          <p>Hello. My name is </p>
+          <h1>Nolan Crenshaw</h1>
+        </div>
         <div>
-          <h2>I am a </h2>
+          <h2>and I am a </h2>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -53,6 +57,13 @@ const Profile = () => {
           </motion.div>
         </div>
       </motion.section>
+      <div className="next_arrow-container">
+        <motion.div whileHover={{ scale: 1.5 }} className="next_arrow">
+          <HashLink smooth to="/#about_me">
+            <DownArrowSVG />
+          </HashLink>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
