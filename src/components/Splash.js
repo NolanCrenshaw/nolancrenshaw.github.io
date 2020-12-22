@@ -1,6 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
+
 import SplashSVG from "./SplashSVG";
 import DownArrowSVG from "./svg_library/DownArrowSVG";
 

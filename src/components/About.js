@@ -1,7 +1,21 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const [pic, inView, entry] = useInView();
+  const picControl = useAnimation();
+
+  const sequence = async () => {
+    await picControl.start({ opacity: 1, x: 0 });
+  };
+
+  useEffect(() => {
+    if (inView) {
+      sequence();
+    }
+  }, [inView]);
+
   return (
     <div className="about-container" id="about_me">
       <div id="about_me--head">
@@ -9,15 +23,15 @@ const About = () => {
         <div></div>
       </div>
       <div className="introduction-box">
-        <div id="profile_picture-container">
+        <div ref={pic} id="profile_picture-container">
           <motion.div
-            initial={{ opacity: 0, x: 250, scale: 1 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ delay: 0, duration: 2 }}
+            initial={{ opacity: 0, x: 250 }}
+            animate={picControl}
+            transition={{ delay: 0.5, duration: 2 }}
           >
             <motion.img
-              initial={{ opacity: 0, x: 250, scale: 1 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
+              initial={{ opacity: 0, x: 250 }}
+              animate={picControl}
               transition={{ delay: 1, duration: 2 }}
               src="/images/51563575.jpg"
             />
