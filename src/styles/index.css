@@ -371,7 +371,7 @@ a {
       grid-template-rows: 20vh 20vh 60vh;
 }
 
-.about-container #about_me {
+.about-container #about_me--head {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -396,13 +396,13 @@ a {
           align-items: center;
 }
 
-.about-container #about_me h1 {
+.about-container #about_me--head h1 {
   color: white;
   font-size: 3.5rem;
   font-style: italic;
 }
 
-.about-container #about_me div {
+.about-container #about_me--head div {
   height: 5px;
   width: 10rem;
   background-color: white;
@@ -620,7 +620,7 @@ a {
       grid-template-rows: 20vh auto 5vh;
 }
 
-.portfolio-container #portfolio {
+.portfolio-container #portfolio--head {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -645,13 +645,13 @@ a {
           align-items: center;
 }
 
-.portfolio-container #portfolio h1 {
+.portfolio-container #portfolio--head h1 {
   color: white;
   font-size: 3.5rem;
   font-style: italic;
 }
 
-.portfolio-container #portfolio div {
+.portfolio-container #portfolio--head div {
   height: 5px;
   width: 10rem;
   background-color: white;
@@ -837,7 +837,7 @@ a {
       grid-template-rows: 20vh 20vh 50vh 10vh;
 }
 
-.resume-container #resume {
+.resume-container #resume--head {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -862,13 +862,13 @@ a {
           align-items: center;
 }
 
-.resume-container #resume h1 {
+.resume-container #resume--head h1 {
   color: white;
   font-size: 3.5rem;
   font-style: italic;
 }
 
-.resume-container #resume div {
+.resume-container #resume--head div {
   height: 5px;
   width: 10rem;
   background-color: white;

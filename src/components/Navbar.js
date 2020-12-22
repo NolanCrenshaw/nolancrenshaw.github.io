@@ -29,9 +29,7 @@ const Navbar = () => {
                 whileHover={{
                   scale: 1.2,
                   transition: {
-                    duration: 0.4,
-                    repeat: Infinity,
-                    repeatType: "reverse",
+                    duration: 0.3,
                   },
                 }}
                 src="https://img.icons8.com/color/48/000000/linkedin.png"
@@ -42,9 +40,7 @@ const Navbar = () => {
                 whileHover={{
                   scale: 1.2,
                   transition: {
-                    duration: 0.4,
-                    repeat: Infinity,
-                    repeatType: "reverse",
+                    duration: 0.3,
                   },
                 }}
                 src="https://img.icons8.com/color/50/000000/angelist.png"
@@ -56,8 +52,6 @@ const Navbar = () => {
               scale: 1.2,
               transition: {
                 duration: 0.5,
-                repeatType: "reverse",
-                repeat: Infinity,
               },
             }}
             className="call_to_action"

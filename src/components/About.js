@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div id="about_me">
+    <div className="about-container" id="about_me">
+      <div id="about_me--head">
         <h1>About Me</h1>
         <div></div>
       </div>

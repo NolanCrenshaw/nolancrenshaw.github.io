@@ -2,8 +2,8 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <div className="portfolio-container">
-      <div id="portfolio">
+    <div className="portfolio-container" id="portfolio">
+      <div id="portfolio--head">
         <h1>Portfolio</h1>
         <div></div>
       </div>
