@@ -26,7 +26,6 @@ const Main = () => {
           <Resume />
           <Footer />
         </Router>
-        <div className="test_space"></div>
       </motion.div>
     </>
   );

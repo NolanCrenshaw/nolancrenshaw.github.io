@@ -4,4 +4,22 @@
   height: 20vh;
   width: 100%;
   background-color: #1f2421;
+
+  .credits {
+    margin: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    span {
+      color: white;
+      a {
+        margin: 0 5px;
+        color: gray;
+        text-decoration: none;
+      }
+    }
+  }
 }

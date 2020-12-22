@@ -11,7 +11,7 @@
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 20vh 20vh 60vh;
+  grid-template-rows: 20vh 80vh 20vh 60vh 20vh;
 
   #about_me--head {
     grid-column: 2/3;
@@ -36,9 +36,85 @@
     }
   }
 
-  .skill-box {
+  .introduction-box {
     grid-column: 2/3;
     grid-row: 2/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #profile_picture-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 30rem;
+        height: 30rem;
+        justify-self: center;
+        align-self: center;
+
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        z-index: 2;
+
+        border-radius: 100%;
+        border: 8px double black;
+        background-clip: padding-box;
+        backdrop-filter: blur(40px);
+        box-shadow: 5px 5px 30px black;
+
+        img {
+          height: 28rem;
+          width: 28rem;
+          margin: 2rem;
+          border-radius: 180%;
+          border: 5px solid black;
+        }
+        h2 {
+          font-style: italic;
+        }
+      }
+    }
+
+    #vita-container {
+      height: 100%;
+      width: 50%;
+      padding: 3rem 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      div {
+        height: auto;
+        width: 100%;
+        padding: 4rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        box-shadow: 1rem 1rem 1rem rgb(22, 22, 22);
+        background-color: black;
+      }
+    }
+  }
+
+  .skill-box {
+    grid-column: 2/3;
+    grid-row: 3/4;
     height: auto;
     width: 90%;
     justify-self: center;
@@ -61,7 +137,6 @@
     li {
       height: 90px;
       width: 90px;
-      // margin: 1rem;
 
       display: flex;
       justify-content: center;
@@ -75,7 +150,7 @@
 
   .pitch-box {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
     height: 100%;
     width: 100%;
     justify-self: center;
@@ -125,8 +200,13 @@
 
         &:hover {
           color: black;
+          font-weight: 500;
           background-color: #fce582;
-          border: 4px solid #fdd10c;
+          border: 4px solid #bb9a06;
+          box-shadow: 20px 20px 50px rgba(31, 36, 33, 0.5);
+
+          transition: all;
+          transition-duration: 1s;
         }
       }
     }
