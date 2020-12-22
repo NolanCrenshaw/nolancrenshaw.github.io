@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Navbar from "./Navbar";
-import Profile from "./Profile";
+import Profile from "./Splash";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";

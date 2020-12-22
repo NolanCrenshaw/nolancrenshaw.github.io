@@ -259,7 +259,7 @@ a {
           transition-duration: 1s;
 }
 
-.profile-container {
+.splash-container {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -278,14 +278,14 @@ a {
       grid-template-rows: 15vh 91vh;
 }
 
-.profile-container #profile_background {
+.splash-container #splash_background {
   height: auto;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 
-.profile-container section {
+.splash-container section {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -310,7 +310,7 @@ a {
           align-items: center;
 }
 
-.profile-container section p {
+.splash-container section p {
   color: white;
   font-weight: 500;
   position: relative;
@@ -318,7 +318,7 @@ a {
   right: 100px;
 }
 
-.profile-container section h1 {
+.splash-container section h1 {
   position: relative;
   left: 50px;
   color: white;
@@ -326,13 +326,13 @@ a {
   font-weight: 800;
 }
 
-.profile-container section h2 {
+.splash-container section h2 {
   position: relative;
   left: 80px;
   font-size: 2.5rem;
 }
 
-.profile-container section #profile_svg {
+.splash-container section #splash_svg {
   height: 8rem;
   width: 100%;
   position: absolute;
@@ -347,14 +347,14 @@ a {
           align-items: flex-end;
 }
 
-.profile-container section #profile_svg svg {
+.splash-container section #splash_svg svg {
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.profile-container .next_arrow-container {
+.splash-container .next_arrow-container {
   position: absolute;
   max-heigth: 20vh;
   width: 100%;
@@ -371,7 +371,7 @@ a {
           align-items: center;
 }
 
-.profile-container .next_arrow-container .next_arrow {
+.splash-container .next_arrow-container .next_arrow {
   height: 5rem;
   width: 5rem;
   display: -webkit-box;
@@ -385,7 +385,7 @@ a {
           align-items: center;
 }
 
-.profile-container .next_arrow-container a {
+.splash-container .next_arrow-container a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +398,7 @@ a {
           align-items: center;
 }
 
-.profile-container .next_arrow-container a svg {
+.splash-container .next_arrow-container a svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

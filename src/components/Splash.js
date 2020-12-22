@@ -1,25 +1,25 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
-import ProfileSVG from "./ProfileSVG";
+import SplashSVG from "./SplashSVG";
 import DownArrowSVG from "./svg_library/DownArrowSVG";
 
 import Navbar from "./Navbar";
 
-const Profile = () => {
+const Splash = () => {
   return (
     <motion.div
-      className="profile-container"
+      className="splash-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       <motion.img
-        id="profile_background"
+        id="splash_background"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 5 }}
-        alt="profile background"
+        alt="splash background"
         src="./images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg"
       />
       <Navbar />
@@ -38,9 +38,9 @@ const Profile = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 4, duration: 1 }}
-            id="profile_svg"
+            id="splash_svg"
           >
-            <ProfileSVG />
+            <SplashSVG />
           </motion.div>
         </div>
       </motion.section>
@@ -65,4 +65,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Splash;
