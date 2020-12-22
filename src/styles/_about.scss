@@ -1,12 +1,12 @@
 .about-container {
   grid-column: 1/4;
-  grid-row: 3/4;
+  grid-row: 2/3;
   position: relative;
 
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(33, 104, 105, 1) 100%
+    rgb(0, 0, 0) 100%
   );
 
   display: grid;

@@ -19,7 +19,7 @@ const Main = () => {
         className="main-container"
       >
         <Router>
-          <Navbar />
+          {/* <Navbar /> */}
           <Profile />
           <About />
           <Portfolio />

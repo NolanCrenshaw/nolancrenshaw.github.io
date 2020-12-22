@@ -1,14 +1,25 @@
 .profile-container {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  position: relative;
 
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 3fr 5fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 15vh 91vh;
+
+  #profile_background {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    opacity: 40%;
+  }
 
   #profile_pic-container {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
     width: 40rem;
     height: 40rem;
     justify-self: center;
@@ -43,34 +54,43 @@
   }
 
   section {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-left: 8rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 10rem;
     position: relative;
+
+    color: black;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 
-    .profile_block {
+    p {
       position: relative;
-      background-color: sandybrown;
+      font-size: 3rem;
+      right: 100px;
+    }
+    h1 {
+      position: relative;
+      left: 50px;
+      color: white;
+      font-size: 4rem;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: 2.5rem;
     }
 
-    #profile_block--bg {
+    #profile_svg {
       height: 8rem;
       width: 100%;
       position: absolute;
-      left: -60px;
+      left: 0;
 
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-      svg {
-        justify-self: start;
-        align-self: flex-end;
-      }
+      justify-content: center;
+      align-items: center;
     }
   }
 }

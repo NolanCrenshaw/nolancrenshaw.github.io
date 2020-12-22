@@ -51,7 +51,7 @@ const Navbar = () => {
             whileHover={{
               scale: 1.2,
               transition: {
-                duration: 0.5,
+                duration: 0.3,
               },
             }}
             className="call_to_action"
