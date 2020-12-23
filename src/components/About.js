@@ -9,7 +9,7 @@ const About = () => {
   const [viewed, setViewed] = useState(false);
 
   const sequence = async () => {
-    await picControl.start({ opacity: 1, x: 0 });
+    await picControl.start({ opacity: 1, x: 0, rotate: 0 });
   };
 
   const skills = [
@@ -32,12 +32,12 @@ const About = () => {
       <div className="introduction-box">
         <div ref={pic} id="profile_picture-container">
           <motion.div
-            initial={{ opacity: 0, x: 250 }}
+            initial={{ opacity: 0, x: 500 }}
             animate={picControl}
             transition={{ delay: 0.5, duration: 2 }}
           >
             <motion.img
-              initial={{ opacity: 0, x: 250 }}
+              initial={{ opacity: 0, x: 650, rotate: -250 }}
               animate={picControl}
               transition={{ delay: 1, duration: 2 }}
               src="/images/51563575.jpg"

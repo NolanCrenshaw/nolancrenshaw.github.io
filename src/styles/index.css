@@ -495,6 +495,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .about-container .introduction-box #profile_picture-container div {
@@ -574,10 +575,15 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-radius: 8px;
-  -webkit-box-shadow: 5rem 5rem 5rem black;
-          box-shadow: 5rem 5rem 5rem black;
+  opacity: 85%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 0.1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  -webkit-box-shadow: 3rem 3rem 15rem black;
+          box-shadow: 3rem 3rem 15rem black;
   background-color: black;
+  z-index: 3;
 }
 
 .about-container .introduction-box #vita-container .typing-box span {
@@ -704,8 +710,8 @@ a {
   border-radius: 5px;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
   background: linear-gradient(0deg, white 0%, #25e26e 100%);
-  -webkit-box-shadow: 5px 5px 5px #b8b8b8;
-          box-shadow: 5px 5px 5px #b8b8b8;
+  -webkit-box-shadow: 5px 5px 20px #b8b8b8;
+          box-shadow: 5px 5px 20px #b8b8b8;
 }
 
 .about-container .pitch-box .text-block h3 {

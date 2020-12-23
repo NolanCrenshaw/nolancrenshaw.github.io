@@ -50,6 +50,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 2;
       div {
         width: 30rem;
         height: 30rem;
@@ -105,10 +106,14 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-        // border: 4px double rgb(161, 160, 160);
-        border-radius: 8px;
-        box-shadow: 5rem 5rem 5rem black;
+        opacity: 85%;
+        backdrop-filter: blur(10px);
+        border: 0.1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        box-shadow: 3rem 3rem 15rem black;
         background-color: black;
+
+        z-index: 3;
 
         span {
           width: 100%;
@@ -204,9 +209,9 @@
       background: linear-gradient(
         0deg,
         rgba(255, 255, 255, 1) 0%,
-        rgba(37, 226, 110, 1) 100%
+        $_cyberpunk-green 100%
       );
-      box-shadow: 5px 5px 5px rgb(184, 184, 184);
+      box-shadow: 5px 5px 20px rgb(184, 184, 184);
 
       h3 {
         color: #216869;
