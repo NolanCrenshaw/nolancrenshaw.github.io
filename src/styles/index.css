@@ -624,22 +624,22 @@ a {
 }
 
 .about-container .skill-box {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   height: auto;
-  width: 90%;
+  width: 100%;
   justify-self: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
-  border: 0.5px solid white;
-  border-radius: 12px;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #25e26e), to(#49a078));
-  background: linear-gradient(90deg, white 0%, #25e26e 50%, #49a078 100%);
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #25e26e), to(white));
+  background: linear-gradient(90deg, white 0%, #25e26e 50%, white 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

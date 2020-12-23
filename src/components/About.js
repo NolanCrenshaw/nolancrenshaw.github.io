@@ -12,6 +12,10 @@ const About = () => {
     await picControl.start({ opacity: 1, x: 0 });
   };
 
+  const skills = [
+    // TODO - add skill icons to array, and map into component
+  ];
+
   useEffect(() => {
     if (inView) {
       sequence();
@@ -103,6 +107,18 @@ const About = () => {
             src="https://img.icons8.com/color/96/000000/css3.png"
           />
         </li>
+        <li id="react_icon">
+          <img
+            alt="React"
+            src="https://img.icons8.com/color/96/000000/react-native.png"
+          />
+        </li>
+        <li id="redux_icon">
+          <img
+            alt="Redux"
+            src="https://img.icons8.com/color/96/000000/redux.png"
+          />
+        </li>
         <li id="sass_icon">
           <img
             alt="Sass"
@@ -128,18 +144,6 @@ const About = () => {
           <img
             alt="PostgreSQL"
             src="https://img.icons8.com/color/96/000000/postgreesql.png"
-          />
-        </li>
-        <li id="react_icon">
-          <img
-            alt="React"
-            src="https://img.icons8.com/color/96/000000/react-native.png"
-          />
-        </li>
-        <li id="redux_icon">
-          <img
-            alt="Redux"
-            src="https://img.icons8.com/color/96/000000/redux.png"
           />
         </li>
       </div>
