@@ -48,7 +48,7 @@ const Splash = () => {
       <div className="next_arrow-container">
         <motion.div
           initial={{ scale: 1 }}
-          animate={{ scale: 1.2 }}
+          animate={{ scale: 1.3 }}
           transition={{
             delay: 8,
             duration: 0.5,

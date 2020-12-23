@@ -495,6 +495,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .about-container .introduction-box #profile_picture-container div {
@@ -574,11 +575,15 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border: 4px double #a1a0a0;
-  border-radius: 8px;
-  -webkit-box-shadow: 1rem 1rem 1rem #504f4f;
-          box-shadow: 1rem 1rem 1rem #504f4f;
+  opacity: 85%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 0.1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  -webkit-box-shadow: 3rem 3rem 15rem black;
+          box-shadow: 3rem 3rem 15rem black;
   background-color: black;
+  z-index: 3;
 }
 
 .about-container .introduction-box #vita-container .typing-box span {
@@ -596,8 +601,11 @@ a {
 }
 
 .about-container .introduction-box #vita-container .typing-box span div,
-.about-container .introduction-box #vita-container .typing-box span pre {
+.about-container .introduction-box #vita-container .typing-box span pre,
+.about-container .introduction-box #vita-container .typing-box span p {
   font-size: 1.8rem;
+  color: #25e26e;
+  font-family: "Inconsolata", monospace;
 }
 
 .about-container .introduction-box #vita-container .typing-box span .mock_bash {
@@ -624,22 +632,22 @@ a {
 }
 
 .about-container .skill-box {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   height: auto;
-  width: 90%;
+  width: 100%;
   justify-self: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
-  border: 0.5px solid white;
-  border-radius: 12px;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #25e26e), to(#49a078));
-  background: linear-gradient(90deg, white 0%, #25e26e 50%, #49a078 100%);
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #25e26e), to(white));
+  background: linear-gradient(90deg, white 0%, #25e26e 50%, white 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,8 +710,8 @@ a {
   border-radius: 5px;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
   background: linear-gradient(0deg, white 0%, #25e26e 100%);
-  -webkit-box-shadow: 5px 5px 5px #b8b8b8;
-          box-shadow: 5px 5px 5px #b8b8b8;
+  -webkit-box-shadow: 5px 5px 20px #b8b8b8;
+          box-shadow: 5px 5px 20px #b8b8b8;
 }
 
 .about-container .pitch-box .text-block h3 {
@@ -925,7 +933,7 @@ a {
   grid-row: 1/4;
   background: -webkit-gradient(linear, left bottom, left top, from(#dce1de), to(white));
   background: linear-gradient(0deg, #dce1de 0%, white 100%);
-  border-radius: 8px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
   z-index: 3;
@@ -942,7 +950,7 @@ a {
   padding: 1rem 2rem 0 12%;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
   background: linear-gradient(0deg, white 0%, #25e26e 100%);
-  border-radius: 8px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
   z-index: 2;
@@ -972,19 +980,13 @@ a {
 }
 
 .portfolio-container .project-box .project:nth-child(2) {
-  min-height: 50vh;
-  width: 90%;
-  margin: 3rem;
-  padding: 3rem;
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 38% 4% 58%;
       grid-template-columns: 38% 4% 58%;
   -ms-grid-rows: 15% 10% 65% 10%;
       grid-template-rows: 15% 10% 65% 10%;
 }
 
-.portfolio-container .project-box .project:nth-child(2) div:nth-child(1) {
+.portfolio-container .project-box .project:nth-child(2) .project_slides {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
@@ -993,50 +995,31 @@ a {
   grid-row: 1/4;
   background: -webkit-gradient(linear, left bottom, left top, from(#dce1de), to(white));
   background: linear-gradient(0deg, #dce1de 0%, white 100%);
-  border-radius: 8px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
-  z-index: 3;
 }
 
-.portfolio-container .project-box .project:nth-child(2) div:nth-child(2) {
+.portfolio-container .project-box .project:nth-child(2) .project_description {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2/5;
-  heigth: auto;
+  height: auto;
   padding: 1rem 12% 0 2rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#9cc5a1));
-  background: linear-gradient(0deg, white 0%, #9cc5a1 100%);
-  border-radius: 8px;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
+  background: linear-gradient(0deg, white 0%, #25e26e 100%);
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
-  z-index: 2;
 }
 
-.portfolio-container .project-box .project:nth-child(2) div:nth-child(2) h2 {
+.portfolio-container .project-box .project:nth-child(2) .project_description h2 {
   text-align: left;
-  color: #216869;
-  font-style: italic;
 }
 
-.portfolio-container .project-box .project:nth-child(2) div:nth-child(2) h3 {
-  margin-bottom: 1rem;
+.portfolio-container .project-box .project:nth-child(2) .project_description h3 {
   text-align: left;
-  color: #1f2421;
-  font-size: 2rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.portfolio-container .project-box .project:nth-child(2) div:nth-child(2) p {
-  text-align: start;
-  color: #504f4f;
-  font-size: 1.8rem;
-  font-weight: 100;
-  font-style: italic;
 }
 
 .resume-container {

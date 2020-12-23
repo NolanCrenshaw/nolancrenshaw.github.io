@@ -9,8 +9,12 @@ const About = () => {
   const [viewed, setViewed] = useState(false);
 
   const sequence = async () => {
-    await picControl.start({ opacity: 1, x: 0 });
+    await picControl.start({ opacity: 1, x: 0, rotate: 0 });
   };
+
+  const skills = [
+    // TODO - add skill icons to array, and map into component
+  ];
 
   useEffect(() => {
     if (inView) {
@@ -28,12 +32,12 @@ const About = () => {
       <div className="introduction-box">
         <div ref={pic} id="profile_picture-container">
           <motion.div
-            initial={{ opacity: 0, x: 250 }}
+            initial={{ opacity: 0, x: 500 }}
             animate={picControl}
             transition={{ delay: 0.5, duration: 2 }}
           >
             <motion.img
-              initial={{ opacity: 0, x: 250 }}
+              initial={{ opacity: 0, x: 650, rotate: -250 }}
               animate={picControl}
               transition={{ delay: 1, duration: 2 }}
               src="/images/51563575.jpg"
@@ -54,20 +58,23 @@ const About = () => {
                   <Typist.Delay ms={2000} />
                   <pre>{"                         cat >about_me.txt"}</pre>
                   <Typist.Delay ms={500} />
-                  <pre>Hello World.</pre>
+                  <pre>Once again, my Name is Nolan Crenshaw.</pre>
                   <Typist.Delay ms={500} />
                   <pre>
                     I am a Full-Stack Developer based in Chattanooga TN.
                   </pre>
                   <Typist.Delay ms={500} />
-                  <pre>
-                    I Graduated from University of Tennessee with BA in
-                    Philosophy.
-                  </pre>
+                  <p>
+                    My projects are all about clean code, and attractive designs
+                    built with modern tech. Take this portfolio site for
+                    instance. What you're looking at was built up from
+                    create-react-app, styled with Sass, and deployed from the
+                    command line through gh-pages.
+                  </p>
                 </Typist>
               </span>
             ) : (
-              <p>Loading</p>
+              <p>Loading...</p>
             )}
           </div>
         </div>
@@ -103,6 +110,18 @@ const About = () => {
             src="https://img.icons8.com/color/96/000000/css3.png"
           />
         </li>
+        <li id="react_icon">
+          <img
+            alt="React"
+            src="https://img.icons8.com/color/96/000000/react-native.png"
+          />
+        </li>
+        <li id="redux_icon">
+          <img
+            alt="Redux"
+            src="https://img.icons8.com/color/96/000000/redux.png"
+          />
+        </li>
         <li id="sass_icon">
           <img
             alt="Sass"
@@ -128,18 +147,6 @@ const About = () => {
           <img
             alt="PostgreSQL"
             src="https://img.icons8.com/color/96/000000/postgreesql.png"
-          />
-        </li>
-        <li id="react_icon">
-          <img
-            alt="React"
-            src="https://img.icons8.com/color/96/000000/react-native.png"
-          />
-        </li>
-        <li id="redux_icon">
-          <img
-            alt="Redux"
-            src="https://img.icons8.com/color/96/000000/redux.png"
           />
         </li>
       </div>
