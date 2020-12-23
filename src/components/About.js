@@ -58,20 +58,23 @@ const About = () => {
                   <Typist.Delay ms={2000} />
                   <pre>{"                         cat >about_me.txt"}</pre>
                   <Typist.Delay ms={500} />
-                  <pre>Hello World.</pre>
+                  <pre>Once again, my Name is Nolan Crenshaw.</pre>
                   <Typist.Delay ms={500} />
                   <pre>
                     I am a Full-Stack Developer based in Chattanooga TN.
                   </pre>
                   <Typist.Delay ms={500} />
-                  <pre>
-                    I Graduated from University of Tennessee with BA in
-                    Philosophy.
-                  </pre>
+                  <p>
+                    My projects are all about clean code, and attractive designs
+                    built with modern tech. Take this portfolio site for
+                    instance. What you're looking at was built up from
+                    create-react-app, styled with Sass, and deployed from the
+                    command line through gh-pages.
+                  </p>
                 </Typist>
               </span>
             ) : (
-              <p>Loading</p>
+              <p>Loading...</p>
             )}
           </div>
         </div>

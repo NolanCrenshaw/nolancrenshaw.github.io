@@ -105,9 +105,9 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-        border: 4px double rgb(161, 160, 160);
+        // border: 4px double rgb(161, 160, 160);
         border-radius: 8px;
-        box-shadow: 1rem 1rem 1rem rgb(80, 79, 79);
+        box-shadow: 5rem 5rem 5rem black;
         background-color: black;
 
         span {
@@ -118,8 +118,11 @@
           flex-wrap: wrap;
 
           div,
-          pre {
+          pre,
+          p {
             font-size: 1.8rem;
+            color: rgb(37, 226, 110);
+            font-family: "Inconsolata", monospace;
           }
 
           .mock_bash {
