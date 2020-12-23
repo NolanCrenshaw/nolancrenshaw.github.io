@@ -927,7 +927,7 @@ a {
   grid-row: 1/4;
   background: -webkit-gradient(linear, left bottom, left top, from(#dce1de), to(white));
   background: linear-gradient(0deg, #dce1de 0%, white 100%);
-  border-radius: 8px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
   z-index: 3;
@@ -944,7 +944,7 @@ a {
   padding: 1rem 2rem 0 12%;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
   background: linear-gradient(0deg, white 0%, #25e26e 100%);
-  border-radius: 8px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
   z-index: 2;
@@ -974,12 +974,6 @@ a {
 }
 
 .portfolio-container .project-box .project:nth-child(2) {
-  min-height: 50vh;
-  width: 90%;
-  margin: 3rem;
-  padding: 3rem;
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 38% 4% 58%;
       grid-template-columns: 38% 4% 58%;
   -ms-grid-rows: 15% 10% 65% 10%;
@@ -995,10 +989,8 @@ a {
   grid-row: 1/4;
   background: -webkit-gradient(linear, left bottom, left top, from(#dce1de), to(white));
   background: linear-gradient(0deg, #dce1de 0%, white 100%);
-  border-radius: 8px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
-  z-index: 3;
 }
 
 .portfolio-container .project-box .project:nth-child(2) .project_description {
@@ -1008,37 +1000,20 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2/5;
-  heigth: auto;
+  height: auto;
   padding: 1rem 12% 0 2rem;
   background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
   background: linear-gradient(0deg, white 0%, #25e26e 100%);
-  border-radius: 8px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
-  z-index: 2;
 }
 
 .portfolio-container .project-box .project:nth-child(2) .project_description h2 {
   text-align: left;
-  color: #216869;
-  font-style: italic;
 }
 
 .portfolio-container .project-box .project:nth-child(2) .project_description h3 {
-  margin-bottom: 1rem;
   text-align: left;
-  color: #1f2421;
-  font-size: 2rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.portfolio-container .project-box .project:nth-child(2) .project_description p {
-  text-align: start;
-  color: #504f4f;
-  font-size: 1.8rem;
-  font-weight: 100;
-  font-style: italic;
 }
 
 .resume-container {
