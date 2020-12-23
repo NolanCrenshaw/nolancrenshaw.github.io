@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Typist from "react-typist";
 
 const About = () => {
   const [pic, inView, entry] = useInView();
   const picControl = useAnimation();
+  const [viewed, setViewed] = useState(false);
 
   const sequence = async () => {
     await picControl.start({ opacity: 1, x: 0 });
@@ -13,6 +15,7 @@ const About = () => {
   useEffect(() => {
     if (inView) {
       sequence();
+      setViewed(true);
     }
   }, [inView]);
 
@@ -38,9 +41,34 @@ const About = () => {
           </motion.div>
         </div>
         <div id="vita-container">
-          <div>
-            <h1>Test</h1>
-            <p>Test again</p>
+          <div className="typing-box">
+            {viewed ? (
+              <span>
+                <div className="mock_bash">
+                  <pre id="mock_id">nolan@Terminal:</pre>
+                  <pre id="mock_location">~/mysite</pre>
+                  <pre id="mock_start">$ </pre>
+                </div>
+
+                <Typist avgTypingDelay={85} cursor={{ show: false }}>
+                  <Typist.Delay ms={2000} />
+                  <pre>{"                         cat >about_me.txt"}</pre>
+                  <Typist.Delay ms={500} />
+                  <pre>Hello World.</pre>
+                  <Typist.Delay ms={500} />
+                  <pre>
+                    I am a Full-Stack Developer based in Chattanooga TN.
+                  </pre>
+                  <Typist.Delay ms={500} />
+                  <pre>
+                    I Graduated from University of Tennessee with BA in
+                    Philosophy.
+                  </pre>
+                </Typist>
+              </span>
+            ) : (
+              <p>Loading</p>
+            )}
           </div>
         </div>
       </div>
