@@ -424,8 +424,8 @@ a {
   display: grid;
   -ms-grid-columns: 10vw 80vw 10vw;
       grid-template-columns: 10vw 80vw 10vw;
-  -ms-grid-rows: 20vh 80vh 20vh 60vh 20vh;
-      grid-template-rows: 20vh 80vh 20vh 60vh 20vh;
+  -ms-grid-rows: 20vh 60vh 20vh 60vh 20vh;
+      grid-template-rows: 20vh 60vh 20vh 60vh 20vh;
 }
 
 .about-container #about_me--head {
@@ -485,7 +485,7 @@ a {
 
 .about-container .introduction-box #profile_picture-container {
   height: 100%;
-  width: 50%;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,7 +542,7 @@ a {
 
 .about-container .introduction-box #vita-container {
   height: 100%;
-  width: 50%;
+  width: 65%;
   padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,10 +553,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #25e26e;
+  font-family: "Inconsolata", monospace;
 }
 
-.about-container .introduction-box #vita-container div {
-  height: auto;
+.about-container .introduction-box #vita-container .typing-box {
+  height: 60%;
   width: 100%;
   padding: 4rem;
   display: -webkit-box;
@@ -569,15 +571,56 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  border: 2px solid white;
-  border-radius: 20px;
-  -webkit-box-shadow: 1rem 1rem 1rem #161616;
-          box-shadow: 1rem 1rem 1rem #161616;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 4px double #a1a0a0;
+  border-radius: 8px;
+  -webkit-box-shadow: 1rem 1rem 1rem #504f4f;
+          box-shadow: 1rem 1rem 1rem #504f4f;
   background-color: black;
+}
+
+.about-container .introduction-box #vita-container .typing-box span {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-container .introduction-box #vita-container .typing-box span div,
+.about-container .introduction-box #vita-container .typing-box span pre {
+  font-size: 1.8rem;
+}
+
+.about-container .introduction-box #vita-container .typing-box span .mock_bash {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about-container .introduction-box #vita-container .typing-box span .mock_bash #mock_id {
+  color: #3df310;
+}
+
+.about-container .introduction-box #vita-container .typing-box span .mock_bash #mock_location {
+  color: #1f6ee4;
+}
+
+.about-container .introduction-box #vita-container .typing-box span .mock_bash #mock_start {
+  color: #25e26e;
 }
 
 .about-container .skill-box {
@@ -595,8 +638,8 @@ a {
   position: relative;
   border: 0.5px solid white;
   border-radius: 12px;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(83%, #49a078), to(#49a078));
-  background: linear-gradient(90deg, white 0%, #49a078 83%, #49a078 100%);
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #25e26e), to(#49a078));
+  background: linear-gradient(90deg, white 0%, #25e26e 50%, #49a078 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,8 +700,8 @@ a {
   width: 100%;
   padding: 3rem 6rem 3rem 3rem;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#9cc5a1));
-  background: linear-gradient(0deg, white 0%, #9cc5a1 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
+  background: linear-gradient(0deg, white 0%, #25e26e 100%);
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;
 }
@@ -897,8 +940,8 @@ a {
   grid-row: 2/5;
   heigth: auto;
   padding: 1rem 2rem 0 12%;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#9cc5a1));
-  background: linear-gradient(0deg, white 0%, #9cc5a1 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#25e26e));
+  background: linear-gradient(0deg, white 0%, #25e26e 100%);
   border-radius: 8px;
   -webkit-box-shadow: 5px 5px 5px #b8b8b8;
           box-shadow: 5px 5px 5px #b8b8b8;

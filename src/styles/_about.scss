@@ -11,7 +11,7 @@
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 20vh 80vh 20vh 60vh 20vh;
+  grid-template-rows: 20vh 60vh 20vh 60vh 20vh;
 
   #about_me--head {
     grid-column: 2/3;
@@ -46,7 +46,7 @@
 
     #profile_picture-container {
       height: 100%;
-      width: 50%;
+      width: 35%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -87,27 +87,57 @@
 
     #vita-container {
       height: 100%;
-      width: 50%;
+      width: 65%;
       padding: 3rem 0;
       display: flex;
       justify-content: flex-start;
       align-items: center;
 
-      div {
-        height: auto;
+      color: rgb(37, 226, 110);
+      font-family: "Inconsolata", monospace;
+
+      .typing-box {
+        height: 60%;
         width: 100%;
         padding: 4rem;
-
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
 
-        color: white;
-        border: 2px solid white;
-        border-radius: 20px;
-        box-shadow: 1rem 1rem 1rem rgb(22, 22, 22);
+        border: 4px double rgb(161, 160, 160);
+        border-radius: 8px;
+        box-shadow: 1rem 1rem 1rem rgb(80, 79, 79);
         background-color: black;
+
+        span {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          div,
+          pre {
+            font-size: 1.8rem;
+          }
+
+          .mock_bash {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+
+            #mock_id {
+              color: rgb(61, 243, 16);
+            }
+            #mock_location {
+              color: rgb(31, 110, 228);
+            }
+            #mock_start {
+              color: rgb(37, 226, 110);
+            }
+          }
+        }
       }
     }
   }
@@ -126,7 +156,7 @@
     background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(73, 160, 120, 1) 83%,
+      rgb(37, 226, 110) 50%,
       rgba(73, 160, 120, 1) 100%
     );
 
@@ -171,7 +201,7 @@
       background: linear-gradient(
         0deg,
         rgba(255, 255, 255, 1) 0%,
-        rgba(156, 197, 161, 1) 100%
+        rgba(37, 226, 110, 1) 100%
       );
       box-shadow: 5px 5px 5px rgb(184, 184, 184);
 

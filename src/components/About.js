@@ -1,7 +1,24 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Typist from "react-typist";
 
 const About = () => {
+  const [pic, inView, entry] = useInView();
+  const picControl = useAnimation();
+  const [viewed, setViewed] = useState(false);
+
+  const sequence = async () => {
+    await picControl.start({ opacity: 1, x: 0 });
+  };
+
+  useEffect(() => {
+    if (inView) {
+      sequence();
+      setViewed(true);
+    }
+  }, [inView]);
+
   return (
     <div className="about-container" id="about_me">
       <div id="about_me--head">
@@ -9,24 +26,49 @@ const About = () => {
         <div></div>
       </div>
       <div className="introduction-box">
-        <div id="profile_picture-container">
+        <div ref={pic} id="profile_picture-container">
           <motion.div
-            initial={{ opacity: 0, x: 250, scale: 1 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ delay: 0, duration: 2 }}
+            initial={{ opacity: 0, x: 250 }}
+            animate={picControl}
+            transition={{ delay: 0.5, duration: 2 }}
           >
             <motion.img
-              initial={{ opacity: 0, x: 250, scale: 1 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
+              initial={{ opacity: 0, x: 250 }}
+              animate={picControl}
               transition={{ delay: 1, duration: 2 }}
               src="/images/51563575.jpg"
             />
           </motion.div>
         </div>
         <div id="vita-container">
-          <div>
-            <h1>Test</h1>
-            <p>Test again</p>
+          <div className="typing-box">
+            {viewed ? (
+              <span>
+                <div className="mock_bash">
+                  <pre id="mock_id">nolan@Terminal:</pre>
+                  <pre id="mock_location">~/mysite</pre>
+                  <pre id="mock_start">$ </pre>
+                </div>
+
+                <Typist avgTypingDelay={85} cursor={{ show: false }}>
+                  <Typist.Delay ms={2000} />
+                  <pre>{"                         cat >about_me.txt"}</pre>
+                  <Typist.Delay ms={500} />
+                  <pre>Hello World.</pre>
+                  <Typist.Delay ms={500} />
+                  <pre>
+                    I am a Full-Stack Developer based in Chattanooga TN.
+                  </pre>
+                  <Typist.Delay ms={500} />
+                  <pre>
+                    I Graduated from University of Tennessee with BA in
+                    Philosophy.
+                  </pre>
+                </Typist>
+              </span>
+            ) : (
+              <p>Loading</p>
+            )}
           </div>
         </div>
       </div>
