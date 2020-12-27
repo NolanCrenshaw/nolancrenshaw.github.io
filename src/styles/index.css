@@ -62,8 +62,8 @@ a {
   display: grid;
   -ms-grid-columns: 10rem 1fr 10rem;
       grid-template-columns: 10rem 1fr 10rem;
-  -ms-grid-rows: 106vh auto auto 106vh 20vh;
-      grid-template-rows: 106vh auto auto 106vh 20vh;
+  -ms-grid-rows: 97vh auto auto 106vh 20vh;
+      grid-template-rows: 97vh auto auto 106vh 20vh;
 }
 
 .loading-container {
@@ -97,9 +97,19 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   width: 100%;
-  min-height: 15vh;
+  min-height: 12vh;
   margin: auto;
+  -webkit-box-shadow: 0 1rem 5rem black;
+          box-shadow: 0 1rem 5rem black;
   z-index: 5;
+}
+
+@media (max-width: 1023px) {
+  .navbar-container {
+    background-color: white;
+    -webkit-box-shadow: 0 3rem 8rem black;
+            box-shadow: 0 3rem 8rem black;
+  }
 }
 
 .navbar-container nav {
@@ -107,8 +117,8 @@ a {
   display: grid;
   -ms-grid-columns: 10vw 1fr 3fr 10vw;
       grid-template-columns: 10vw 1fr 3fr 10vw;
-  -ms-grid-rows: 15vh;
-      grid-template-rows: 15vh;
+  -ms-grid-rows: 12vh;
+      grid-template-rows: 12vh;
 }
 
 .navbar-container nav li {
@@ -151,10 +161,9 @@ a {
   padding: 1rem;
   margin: 1rem;
   cursor: pointer;
-  font-size: 1.6rem;
-  border: 1px solid white;
+  font-size: 2rem;
+  font-weight: 600;
   border-radius: 5px;
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,29 +243,37 @@ a {
   grid-row: 1/2;
   justify-self: flex-end;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-  color: white;
-  background-color: #216869;
+  height: 4.8rem;
+  width: 16rem;
   padding: 1.2rem 2.5rem;
-  border-radius: 5px;
-  border: 2px solid white;
+  margin: 1rem;
+  cursor: pointer;
+  color: black;
+  background-color: white;
   -webkit-box-shadow: 10px 10px 20px rgba(31, 36, 33, 0.5);
           box-shadow: 10px 10px 20px rgba(31, 36, 33, 0.5);
-  cursor: pointer;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar-container nav .call_to_action:hover {
-  color: black;
-  font-weight: 500;
-  background-color: #fce582;
-  border: 4px solid #bb9a06;
-  -webkit-box-shadow: 20px 20px 50px rgba(31, 36, 33, 0.5);
-          box-shadow: 20px 20px 50px rgba(31, 36, 33, 0.5);
+  color: white;
+  background-color: black;
   -webkit-transition: all;
   transition: all;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
 }
 
 .splash-container {
@@ -267,6 +284,7 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   position: relative;
+  background-color: black;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -274,8 +292,8 @@ a {
           justify-content: center;
   -ms-grid-columns: 1fr 4fr 1fr;
       grid-template-columns: 1fr 4fr 1fr;
-  -ms-grid-rows: 15vh 91vh;
-      grid-template-rows: 15vh 91vh;
+  -ms-grid-rows: 12vh 30vh 55vh;
+      grid-template-rows: 12vh 30vh 55vh;
 }
 
 .splash-container #splash_background {
@@ -288,11 +306,10 @@ a {
           transform: translateX(-50%);
 }
 
-@media (max-width: 904px) {
+@media (max-width: 1024px) {
   .splash-container #splash_background {
-    min-width: auto;
-    width: auto;
     height: 100%;
+    width: auto;
   }
 }
 
@@ -303,10 +320,10 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: 10rem;
+  margin-top: 8em;
   position: relative;
   mix-blend-mode: hard-light;
-  color: black;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,40 +331,32 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.splash-container section p {
-  color: white;
-  font-weight: 500;
-  position: relative;
-  font-size: 2.5rem;
-  right: 100px;
-}
-
 .splash-container section h1 {
   position: relative;
-  left: 50px;
-  color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .splash-container section h2 {
   position: relative;
-  left: 80px;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
 }
 
 .splash-container section #splash_svg {
   height: 8rem;
   width: 100%;
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +379,7 @@ a {
   position: absolute;
   max-heigth: 20vh;
   width: 100%;
-  bottom: 10vh;
+  bottom: 0;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,8 +439,7 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(black));
-  background: linear-gradient(0deg, white 0%, black 100%);
+  background-color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10vw 80vw 10vw;

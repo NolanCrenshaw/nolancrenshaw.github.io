@@ -30,11 +30,11 @@ const Splash = () => {
         transition={{ delay: 1, duration: 4 }}
       >
         <div className="scrim">
-          <p>Hello. My name is </p>
+          <h2>Hello. My name is </h2>
           <h1>Nolan Crenshaw</h1>
+          <h2>and I am a </h2>
         </div>
         <div>
-          <h2>and I am a </h2>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

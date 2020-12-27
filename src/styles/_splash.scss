@@ -3,10 +3,12 @@
   grid-row: 1/2;
   position: relative;
 
+  background-color: black;
+
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 15vh 91vh;
+  grid-template-rows: 12vh 30vh 55vh;
 
   #splash_background {
     height: auto;
@@ -16,51 +18,48 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include media("<splash_image") {
-      min-width: auto;
-      width: auto;
+    @include media("<=desktop") {
       height: 100%;
+      width: auto;
     }
   }
 
   section {
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 10rem;
+    margin-top: 8em;
     position: relative;
     mix-blend-mode: hard-light;
 
-    color: black;
+    color: white;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
-    p {
-      color: rgb(255, 255, 255);
-      font-weight: 500;
-      position: relative;
-      font-size: 2.5rem;
-      right: 100px;
-    }
     h1 {
       position: relative;
-      left: 50px;
-      color: white;
-      font-size: 4rem;
+      // left: 40px;
+
+      font-size: 5rem;
       font-weight: 800;
+      text-align: center;
     }
     h2 {
       position: relative;
-      left: 80px;
-      font-size: 2.5rem;
+      // left: 150px;
+
+      font-size: 3rem;
+      font-weight: 400;
+      font-style: italic;
+
+      text-align: center;
     }
 
     #splash_svg {
       height: 8rem;
       width: 100%;
-      position: absolute;
 
       display: flex;
       justify-content: flex-start;
@@ -77,7 +76,7 @@
     position: absolute;
     max-heigth: 20vh;
     width: 100%;
-    bottom: 10vh;
+    bottom: 0;
     overflow: hidden;
     display: flex;
     justify-content: center;

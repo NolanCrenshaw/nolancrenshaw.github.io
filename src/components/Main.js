@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import Navbar from "./Navbar";
-import Profile from "./Splash";
+import Splash from "./Splash";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
@@ -19,8 +18,7 @@ const Main = () => {
         className="main-container"
       >
         <Router>
-          {/* <Navbar /> */}
-          <Profile />
+          <Splash />
           <About />
           <Portfolio />
           <Resume />
