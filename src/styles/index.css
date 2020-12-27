@@ -850,6 +850,12 @@ a {
       grid-template-rows: 20vh auto 5vh;
 }
 
+@media (min-width: 321px) and (max-width: 768px) {
+  .portfolio-container {
+    background: green;
+  }
+}
+
 .portfolio-container #portfolio--head {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;

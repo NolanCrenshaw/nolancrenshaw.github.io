@@ -1,4 +1,7 @@
 .portfolio-container {
+  @include media(">phone", "<=tablet") {
+    background: green;
+  }
   grid-column: 1/4;
   grid-row: 3/4;
   position: relative;
