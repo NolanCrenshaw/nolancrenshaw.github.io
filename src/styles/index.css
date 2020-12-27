@@ -283,6 +283,17 @@ a {
   width: 100%;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 904px) {
+  .splash-container #splash_background {
+    min-width: auto;
+    width: auto;
+    height: 100%;
+  }
 }
 
 .splash-container section {
@@ -294,6 +305,7 @@ a {
   grid-row: 2/3;
   margin-top: 10rem;
   position: relative;
+  mix-blend-mode: hard-light;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
