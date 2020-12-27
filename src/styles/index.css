@@ -503,68 +503,10 @@ a {
           align-items: center;
 }
 
-.about-container .introduction-box #profile_picture-container {
-  height: 100%;
-  width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 2;
-}
-
-.about-container .introduction-box #profile_picture-container div {
-  width: 30rem;
-  height: 30rem;
-  justify-self: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  z-index: 2;
-  border-radius: 100%;
-  border: 8px double black;
-  background-clip: padding-box;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
-  -webkit-box-shadow: 5px 5px 30px black;
-          box-shadow: 5px 5px 30px black;
-}
-
-.about-container .introduction-box #profile_picture-container div img {
-  height: 28rem;
-  width: 28rem;
-  margin: 2rem;
-  border-radius: 180%;
-  border: 5px solid black;
-}
-
-.about-container .introduction-box #profile_picture-container div h2 {
-  font-style: italic;
-}
-
 .about-container .introduction-box #vita-container {
   height: 100%;
-  width: 65%;
-  padding: 3rem 0;
+  width: 90%;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,9 +521,9 @@ a {
 }
 
 .about-container .introduction-box #vita-container .typing-box {
-  height: 60%;
+  height: 100%;
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,10 +540,6 @@ a {
   opacity: 85%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border: 0.1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
-  -webkit-box-shadow: 3rem 3rem 15rem black;
-          box-shadow: 3rem 3rem 15rem black;
   background-color: black;
   z-index: 3;
 }
@@ -623,7 +561,8 @@ a {
 .about-container .introduction-box #vita-container .typing-box span div,
 .about-container .introduction-box #vita-container .typing-box span pre,
 .about-container .introduction-box #vita-container .typing-box span p {
-  font-size: 1.8rem;
+  margin: 0.5rem;
+  font-size: 2.8rem;
   color: #25e26e;
   font-family: "Inconsolata", monospace;
 }

@@ -4,12 +4,18 @@ import { useInView } from "react-intersection-observer";
 import Typist from "react-typist";
 
 const About = () => {
-  const [pic, inView, entry] = useInView();
+  const [typeBox, inView, entry] = useInView();
   const picControl = useAnimation();
   const [viewed, setViewed] = useState(false);
 
   const sequence = async () => {
     await picControl.start({ opacity: 1, x: 0, rotate: 0 });
+  };
+
+  const sequenceDelay = async () => {
+    await setTimeout(() => {
+      setViewed(true);
+    }, 2500);
   };
 
   const skills = [
@@ -18,19 +24,19 @@ const About = () => {
 
   useEffect(() => {
     if (inView) {
-      sequence();
-      setViewed(true);
+      // sequence();
+      sequenceDelay();
     }
   }, [inView]);
 
   return (
     <div className="about-container" id="about_me">
-      <div id="about_me--head">
+      {/* <div id="about_me--head">
         <h1>About Me</h1>
         <div></div>
-      </div>
+      </div> */}
       <div className="introduction-box">
-        <div ref={pic} id="profile_picture-container">
+        {/* <div ref={pic} id="profile_picture-container">
           <motion.div
             initial={{ opacity: 0, x: 500 }}
             animate={picControl}
@@ -43,9 +49,9 @@ const About = () => {
               src="/images/51563575.jpg"
             />
           </motion.div>
-        </div>
+        </div> */}
         <div id="vita-container">
-          <div className="typing-box">
+          <div className="typing-box" ref={typeBox}>
             {viewed ? (
               <span>
                 <div className="mock_bash">
@@ -54,23 +60,22 @@ const About = () => {
                   <pre id="mock_start">$ </pre>
                 </div>
 
-                <Typist avgTypingDelay={85} cursor={{ show: false }}>
+                <Typist avgTypingDelay={75} cursor={{ show: false }}>
                   <Typist.Delay ms={2000} />
-                  <pre>{"                         cat >about_me.txt"}</pre>
-                  <Typist.Delay ms={500} />
-                  <pre>Once again, my Name is Nolan Crenshaw.</pre>
+                  <pre>{"                           cat >about_me.txt"}</pre>
                   <Typist.Delay ms={500} />
                   <pre>
                     I am a Full-Stack Developer based in Chattanooga TN.
                   </pre>
                   <Typist.Delay ms={500} />
-                  <p>
+                  <pre></pre>
+                  {/* <p>
                     My projects are all about clean code, and attractive designs
                     built with modern tech. Take this portfolio site for
                     instance. What you're looking at was built up from
                     create-react-app, styled with Sass, and deployed from the
                     command line through gh-pages.
-                  </p>
+                  </p> */}
                 </Typist>
               </span>
             ) : (
