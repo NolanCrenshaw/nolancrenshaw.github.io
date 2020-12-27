@@ -3,11 +3,12 @@
   grid-row: 2/3;
   position: relative;
 
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(0, 0, 0) 100%
-  );
+  background-color: black;
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   rgb(0, 0, 0) 100%
+  // );
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
