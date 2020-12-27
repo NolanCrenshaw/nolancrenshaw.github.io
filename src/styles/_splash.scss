@@ -16,10 +16,9 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include media("<splash_image") {
-      min-width: auto;
-      width: auto;
+    @include media("<=desktop") {
       height: 100%;
+      width: auto;
     }
   }
 

@@ -288,11 +288,10 @@ a {
           transform: translateX(-50%);
 }
 
-@media (max-width: 904px) {
+@media (max-width: 1024px) {
   .splash-container #splash_background {
-    min-width: auto;
-    width: auto;
     height: 100%;
+    width: auto;
   }
 }
 
