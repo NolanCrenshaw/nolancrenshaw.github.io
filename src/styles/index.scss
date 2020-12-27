@@ -47,6 +47,7 @@ a {
   background-position: center;
 }
 
+@import "../../node_modules/include-media/dist/include-media";
 @import "main";
 @import "loading";
 @import "navbar";
