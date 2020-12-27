@@ -1,8 +1,10 @@
-//Package Imports
-// @import "../../node_modules/"
-// @import "../../node_modules/include-media/dist/include-media.scss";
-
 // Variable Definitions
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1024px,
+  splash_image: 905px,
+);
 $_min_content_height: 90vh;
 $_cyberpunk-green: rgba(37, 226, 110, 1);
 
