@@ -4,11 +4,6 @@
   position: relative;
 
   background-color: black;
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(255, 255, 255, 1) 0%,
-  //   rgb(0, 0, 0) 100%
-  // );
 
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
@@ -45,52 +40,52 @@
     justify-content: center;
     align-items: center;
 
-    #profile_picture-container {
-      height: 100%;
-      width: 35%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 2;
-      div {
-        width: 30rem;
-        height: 30rem;
-        justify-self: center;
-        align-self: center;
+    // #profile_picture-container {
+    //   height: 100%;
+    //   width: 35%;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   z-index: 2;
+    //   div {
+    //     width: 30rem;
+    //     height: 30rem;
+    //     justify-self: center;
+    //     align-self: center;
 
-        background-color: white;
+    //     background-color: white;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
 
-        position: relative;
-        z-index: 2;
+    //     position: relative;
+    //     z-index: 2;
 
-        border-radius: 100%;
-        border: 8px double black;
-        background-clip: padding-box;
-        backdrop-filter: blur(40px);
-        box-shadow: 5px 5px 30px black;
+    //     border-radius: 100%;
+    //     border: 8px double black;
+    //     background-clip: padding-box;
+    //     backdrop-filter: blur(40px);
+    //     box-shadow: 5px 5px 30px black;
 
-        img {
-          height: 28rem;
-          width: 28rem;
-          margin: 2rem;
-          border-radius: 180%;
-          border: 5px solid black;
-        }
-        h2 {
-          font-style: italic;
-        }
-      }
-    }
+    //     img {
+    //       height: 28rem;
+    //       width: 28rem;
+    //       margin: 2rem;
+    //       border-radius: 180%;
+    //       border: 5px solid black;
+    //     }
+    //     h2 {
+    //       font-style: italic;
+    //     }
+    //   }
+    // }
 
     #vita-container {
       height: 100%;
-      width: 65%;
-      padding: 3rem 0;
+      width: 90%;
+      padding: 2rem 0;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -99,9 +94,9 @@
       font-family: "Inconsolata", monospace;
 
       .typing-box {
-        height: 60%;
+        height: 100%;
         width: 100%;
-        padding: 4rem;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -109,9 +104,9 @@
 
         opacity: 85%;
         backdrop-filter: blur(10px);
-        border: 0.1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 3px;
-        box-shadow: 3rem 3rem 15rem black;
+        // border: 0.1px solid rgba(255, 255, 255, 0.2);
+        // border-radius: 3px;
+        // box-shadow: 3rem 3rem 15rem black;
         background-color: black;
 
         z-index: 3;
@@ -126,7 +121,8 @@
           div,
           pre,
           p {
-            font-size: 1.8rem;
+            margin: 0.5rem;
+            font-size: 2.8rem;
             color: rgb(37, 226, 110);
             font-family: "Inconsolata", monospace;
           }
