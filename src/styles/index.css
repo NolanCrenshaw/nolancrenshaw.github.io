@@ -38,8 +38,8 @@ a {
 .scrim {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15rem rgba(0, 0, 0, 0.5);
 }
 
 #root {
@@ -99,6 +99,7 @@ a {
   width: 100%;
   min-height: 12vh;
   margin: auto;
+  text-transform: uppercase;
   -webkit-box-shadow: 0 1rem 5rem black;
           box-shadow: 0 1rem 5rem black;
   z-index: 5;
@@ -191,6 +192,12 @@ a {
   color: black;
 }
 
+@media (max-width: 1023px) {
+  .navbar-container nav .nav-linkbox {
+    display: none;
+  }
+}
+
 .navbar-container nav .nav-socialbox {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -229,9 +236,24 @@ a {
   width: 4rem;
 }
 
-.navbar-container nav .nav-socialbox a:nth-child(2) img {
-  height: 3rem;
-  width: 3rem;
+@media (max-width: 1023px) {
+  .navbar-container nav .nav-socialbox a {
+    height: 80%;
+    width: auto;
+  }
+  .navbar-container nav .nav-socialbox a img {
+    height: 8rem;
+    width: 8rem;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar-container nav .nav-socialbox {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
 }
 
 .navbar-container nav .call_to_action {
@@ -274,6 +296,150 @@ a {
   transition: all;
   -webkit-transition-duration: 0.75s;
           transition-duration: 0.75s;
+}
+
+@media (max-width: 1023px) {
+  .navbar-container nav .call_to_action {
+    height: 11rem;
+    width: 24rem;
+    margin-right: 4rem;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    background-color: black;
+  }
+}
+
+.navbar-container nav .hamburger {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .navbar-container nav .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-container nav .hamburger #hamburger_button {
+    height: 60%;
+    width: 60%;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-container nav .hamburger #hamburger_button div {
+    width: 8rem;
+    height: 12px;
+    margin: 0.8rem 0;
+    background-color: black;
+    border-radius: 5px;
+  }
+}
+
+.navbar-container nav .hamburger .drop_closed {
+  display: none;
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.navbar-container nav .hamburger .drop_open {
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  height: auto;
+  width: 50vw;
+  background-color: white;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.navbar-container nav .hamburger .drop_open a {
+  height: 8rem;
+  width: 100%;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container nav .hamburger .drop_open a div {
+  height: 90%;
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  -webkit-box-shadow: 2rem 2rem 30rem rgba(31, 30, 30, 0.5);
+          box-shadow: 2rem 2rem 30rem rgba(31, 30, 30, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container nav .hamburger .drop_open a div span {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-container nav .hamburger .drop_open a div:hover {
+  color: gray;
+  background-color: black;
+}
+
+@media (max-width: 1023px) {
+  .navbar-container nav {
+    -ms-grid-columns: 25vw 1fr 10vw;
+        grid-template-columns: 25vw 1fr 10vw;
+  }
 }
 
 .splash-container {
@@ -320,10 +486,11 @@ a {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-top: 8em;
+  margin-top: 12em;
   position: relative;
   mix-blend-mode: hard-light;
   color: white;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,15 +508,15 @@ a {
 
 .splash-container section h1 {
   position: relative;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 800;
   text-align: center;
 }
 
 .splash-container section h2 {
   position: relative;
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 2.8rem;
+  font-weight: 800;
   font-style: italic;
   text-align: center;
 }
@@ -357,22 +524,24 @@ a {
 .splash-container section #splash_svg {
   height: 8rem;
   width: 100%;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .splash-container section #splash_svg svg {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .splash-container .next_arrow-container {

@@ -5,6 +5,7 @@
   min-height: 12vh;
   margin: auto;
 
+  text-transform: uppercase;
   box-shadow: 0 1rem 5rem black;
 
   z-index: 5;
@@ -72,7 +73,12 @@
           }
         }
       }
+
+      @include media("<desktop") {
+        display: none;
+      }
     }
+
     .nav-socialbox {
       grid-column: 3/4;
       grid-row: 1/2;
@@ -93,10 +99,21 @@
           height: 4rem;
           width: 4rem;
         }
+
+        @include media("<desktop") {
+          height: 80%;
+          width: auto;
+
+          img {
+            height: 8rem;
+            width: 8rem;
+            margin: 0 2rem;
+          }
+        }
       }
-      a:nth-child(2) img {
-        height: 3rem;
-        width: 3rem;
+
+      @include media("<desktop") {
+        grid-column: 2/3;
       }
     }
     .call_to_action {
@@ -129,6 +146,115 @@
         transition: all;
         transition-duration: 0.75s;
       }
+
+      @include media("<desktop") {
+        height: 11rem;
+        width: 24rem;
+        margin-right: 4rem;
+
+        color: white;
+        font-size: 2.5rem;
+        border-radius: 20px;
+        background-color: black;
+      }
+    }
+
+    .hamburger {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      height: 100%;
+      width: 100%;
+
+      display: none;
+      position: relative;
+
+      @include media("<desktop") {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #hamburger_button {
+          height: 60%;
+          width: 60%;
+
+          cursor: pointer;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            width: 8rem;
+            height: 12px;
+            margin: 0.8rem 0;
+            background-color: black;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .drop_closed {
+        display: none;
+        transition: all ease-in-out;
+        transition-duration: 1s;
+      }
+      .drop_open {
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        height: auto;
+        width: 50vw;
+
+        background-color: white;
+
+        transition-property: all;
+        transition-duration: 1s;
+
+        a {
+          height: 8rem;
+          width: 100%;
+          margin: 0.5rem;
+
+          text-decoration: none;
+          color: black;
+          font-size: 4rem;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            height: 90%;
+            width: 90%;
+
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-shadow: 2rem 2rem 30rem rgba(31, 30, 30, 0.5);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+              height: 100%;
+              width: 100%;
+              text-align: center;
+            }
+
+            &:hover {
+              color: gray;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+
+    @include media("<desktop") {
+      grid-template-columns: 25vw 1fr 10vw;
     }
   }
 }

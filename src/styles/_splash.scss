@@ -27,11 +27,12 @@
   section {
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 8em;
+    margin-top: 12em;
     position: relative;
     mix-blend-mode: hard-light;
 
-    color: white;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 
     display: flex;
     flex-direction: column;
@@ -40,18 +41,16 @@
 
     h1 {
       position: relative;
-      // left: 40px;
 
-      font-size: 5rem;
+      font-size: 6rem;
       font-weight: 800;
       text-align: center;
     }
     h2 {
       position: relative;
-      // left: 150px;
 
-      font-size: 3rem;
-      font-weight: 400;
+      font-size: 2.8rem;
+      font-weight: 800;
       font-style: italic;
 
       text-align: center;
@@ -60,14 +59,15 @@
     #splash_svg {
       height: 8rem;
       width: 100%;
+      margin-top: 1rem;
 
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
 
       svg {
-        justify-self: start;
-        align-self: flex-end;
+        justify-self: center;
+        align-self: center;
       }
     }
   }
