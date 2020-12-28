@@ -25,16 +25,14 @@ const Splash = () => {
       />
       <Navbar />
       <motion.section
-        initial={{ opacity: 0, y: -450, scale: 1 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 4 }}
       >
         <div className="scrim">
-          <h2>Hello. My name is </h2>
+          <h2>My name is </h2>
           <h1>Nolan Crenshaw</h1>
           <h2>and I am a </h2>
-        </div>
-        <div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

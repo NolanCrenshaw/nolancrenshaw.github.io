@@ -72,6 +72,13 @@ const Navbar = () => {
           >
             Let's Talk
           </motion.li>
+          <div className="hamburger">
+            <div id="hamburger_button">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
         </nav>
       </motion.div>
     </>
