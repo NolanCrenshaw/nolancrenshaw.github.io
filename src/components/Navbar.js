@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const [dropMenu, setDropMenu] = useState("drop_closed");
+
+  const handleHamburger = () => {
+    dropMenu === "drop_closed"
+      ? setDropMenu("drop_open")
+      : setDropMenu("drop_closed");
+  };
+
   return (
     <>
       <motion.div
@@ -73,10 +81,35 @@ const Navbar = () => {
             Let's Talk
           </motion.li>
           <div className="hamburger">
-            <div id="hamburger_button">
+            <div id="hamburger_button" onClick={handleHamburger}>
               <div></div>
               <div></div>
               <div></div>
+            </div>
+            <div className={dropMenu}>
+              <ul>
+                <li>
+                  <HashLink smooth to="/#about_me">
+                    <div>
+                      <span>About me</span>
+                    </div>
+                  </HashLink>
+                </li>
+                <li>
+                  <HashLink smooth to="/#portfolio">
+                    <div>
+                      <span>Portfolio</span>
+                    </div>
+                  </HashLink>
+                </li>
+                <li>
+                  <HashLink smooth to="/#resume">
+                    <div>
+                      <span>Resume</span>
+                    </div>
+                  </HashLink>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>

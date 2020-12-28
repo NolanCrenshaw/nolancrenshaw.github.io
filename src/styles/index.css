@@ -311,7 +311,6 @@ a {
 }
 
 .navbar-container nav .hamburger {
-  display: none;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -320,6 +319,8 @@ a {
   grid-row: 1/2;
   height: 100%;
   width: 100%;
+  display: none;
+  position: relative;
 }
 
 @media (max-width: 1023px) {
@@ -335,8 +336,9 @@ a {
             align-items: center;
   }
   .navbar-container nav .hamburger #hamburger_button {
-    height: 100%;
-    width: 100%;
+    height: 60%;
+    width: 60%;
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,23 +349,96 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar-container nav .hamburger #hamburger_button div {
-    width: 9rem;
+    width: 8rem;
     height: 12px;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
     background-color: black;
     border-radius: 5px;
   }
 }
 
+.navbar-container nav .hamburger .drop_closed {
+  display: none;
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.navbar-container nav .hamburger .drop_open {
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  height: auto;
+  width: 50vw;
+  background-color: white;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.navbar-container nav .hamburger .drop_open a {
+  height: 8rem;
+  width: 100%;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container nav .hamburger .drop_open a div {
+  height: 90%;
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  -webkit-box-shadow: 2rem 2rem 30rem rgba(31, 30, 30, 0.5);
+          box-shadow: 2rem 2rem 30rem rgba(31, 30, 30, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container nav .hamburger .drop_open a div span {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-container nav .hamburger .drop_open a div:hover {
+  color: gray;
+  background-color: black;
+}
+
 @media (max-width: 1023px) {
   .navbar-container nav {
-    -ms-grid-columns: 17vw 1fr 10vw;
-        grid-template-columns: 17vw 1fr 10vw;
+    -ms-grid-columns: 25vw 1fr 10vw;
+        grid-template-columns: 25vw 1fr 10vw;
   }
 }
 
