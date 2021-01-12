@@ -51,7 +51,9 @@ a {
 }
 
 @import "../../node_modules/include-media/dist/include-media";
+
 @import "main";
+@import "landing";
 @import "loading";
 @import "navbar";
 @import "splash";
