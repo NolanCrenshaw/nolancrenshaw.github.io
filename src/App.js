@@ -7,7 +7,7 @@ const App = () => {
   /*
   Manages Loading Splash
   */
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
