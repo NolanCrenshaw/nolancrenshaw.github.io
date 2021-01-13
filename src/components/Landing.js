@@ -148,26 +148,34 @@ const Landing = () => {
             </motion.li>
           </ul>
         </motion.div>
-        <div className="about-me">
-          <span>My Story</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-arrow-right"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="#efa649"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <line x1="13" y1="18" x2="19" y2="12" />
-            <line x1="13" y1="6" x2="19" y2="12" />
-          </svg>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 150 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 2, duration: 1.5 }}
+          className="about-me"
+        >
+          <motion.div whileHover={{ scale: 1.2, x: 10 }}>
+            <span>My Story</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-arrow-right"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#efa649"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="13" y1="18" x2="19" y2="12" />
+              <line x1="13" y1="6" x2="19" y2="12" />
+            </svg>
+            <div />
+          </motion.div>
+        </motion.div>
       </div>
       <div className="landing_bottom">
         <motion.section
@@ -176,7 +184,10 @@ const Landing = () => {
           transition={{ delay: 3.5, duration: 1 }}
         >
           <div className="contact-box">
-            <div className="contact_link">
+            <motion.div
+              whileHover={{ scale: 1.2, x: 20 }}
+              className="contact_link"
+            >
               <span>Contact Me</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +206,8 @@ const Landing = () => {
                 <line x1="13" y1="18" x2="19" y2="12" />
                 <line x1="13" y1="6" x2="19" y2="12" />
               </svg>
-            </div>
+              <div />
+            </motion.div>
             <h2>I'm available to work.</h2>
             <p>What's your project? </p>
           </div>

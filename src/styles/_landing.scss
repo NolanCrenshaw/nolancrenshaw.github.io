@@ -154,16 +154,36 @@
     .about-me {
       grid-column: 3/4;
       grid-row: 3/4;
+      position: relative;
       color: $_yellow;
       font-size: 1.5rem;
 
-      cursor: pointer;
+      div:nth-child(1) {
+        width: 10rem;
+        cursor: pointer;
 
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      svg {
-        margin: 1px 0 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        svg {
+          margin: 1px 0 0 1rem;
+        }
+        div {
+          height: 1px;
+          width: 0;
+          position: absolute;
+          top: 25px;
+          left: 0;
+          background-color: none;
+          transition: all;
+          transition-duration: 1s;
+        }
+        &:hover {
+          div {
+            width: 9rem;
+            background-color: $_yellow;
+          }
+        }
       }
     }
   }
@@ -202,6 +222,7 @@
           margin-top: 1rem;
         }
         .contact_link {
+          position: relative;
           color: $_yellow;
           font-size: 1.5rem;
 
@@ -212,6 +233,22 @@
           align-items: flex-start;
           svg {
             margin: 1px 0 0 1rem;
+          }
+          div {
+            height: 1px;
+            width: 0;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: none;
+            transition: all;
+            transition-duration: 1s;
+          }
+          &:hover {
+            div {
+              width: 11.4rem;
+              background-color: $_yellow;
+            }
           }
         }
       }

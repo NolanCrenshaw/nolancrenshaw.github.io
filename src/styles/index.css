@@ -298,8 +298,13 @@ a {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  position: relative;
   color: #efa649;
   font-size: 1.5rem;
+}
+
+.landing-container .landing_top .about-me div:nth-child(1) {
+  width: 10rem;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,8 +317,26 @@ a {
           align-items: flex-start;
 }
 
-.landing-container .landing_top .about-me svg {
+.landing-container .landing_top .about-me div:nth-child(1) svg {
   margin: 1px 0 0 1rem;
+}
+
+.landing-container .landing_top .about-me div:nth-child(1) div {
+  height: 1px;
+  width: 0;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: none;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.landing-container .landing_top .about-me div:nth-child(1):hover div {
+  width: 9rem;
+  background-color: #efa649;
 }
 
 .landing-container .landing_bottom {
@@ -363,6 +386,7 @@ a {
 }
 
 .landing-container .landing_bottom section .contact-box .contact_link {
+  position: relative;
   color: #efa649;
   font-size: 1.5rem;
   cursor: pointer;
@@ -379,6 +403,24 @@ a {
 
 .landing-container .landing_bottom section .contact-box .contact_link svg {
   margin: 1px 0 0 1rem;
+}
+
+.landing-container .landing_bottom section .contact-box .contact_link div {
+  height: 1px;
+  width: 0;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: none;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.landing-container .landing_bottom section .contact-box .contact_link:hover div {
+  width: 11.4rem;
+  background-color: #efa649;
 }
 
 .landing-container .landing_bottom section div:nth-child(2) {
