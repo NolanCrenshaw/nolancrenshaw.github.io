@@ -98,7 +98,7 @@ a {
 }
 
 .landing-container .landing_top {
-  height: 75vh;
+  height: 70vh;
   max-width: 1080px;
   padding: 0 5rem 0 5rem;
   position: relative;
@@ -124,7 +124,7 @@ a {
   height: 60rem;
   width: auto;
   position: absolute;
-  top: -10rem;
+  top: -13rem;
   left: -20rem;
   z-index: 0;
 }
@@ -312,7 +312,7 @@ a {
 }
 
 .landing-container .landing_bottom {
-  height: 25vh;
+  height: 30vh;
   width: 100%;
   padding: 0 5rem 0 5rem;
   position: relative;
@@ -329,15 +329,18 @@ a {
 .landing-container .landing_bottom section {
   width: 100%;
   max-width: 1080px;
-  padding-left: 5rem;
-  -ms-grid-row-align: center;
+  padding: 0 5rem;
+  -ms-flex-item-align: center;
       align-self: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 0.6fr 1fr;
-      grid-template-columns: 1fr 0.6fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-container .landing_bottom section .contact-box {
@@ -374,10 +377,14 @@ a {
 }
 
 .landing-container .landing_bottom section div:nth-child(2) {
-  max-width: 300px;
+  max-width: 500px;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+}
+
+.landing-container .landing_bottom section div:nth-child(2) p {
+  margin-top: 0.5rem;
 }
 
 .loading-container {

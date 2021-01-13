@@ -166,10 +166,14 @@ const Landing = () => {
             <p>What's your project? </p>
           </div>
           <div>
-            <h2>Front-end or back-end, either way I can help.</h2>
+            <h2>
+              Whether you need front-end or back-end work, I can help find a
+              solution.
+            </h2>
             <p>
-              I'm also ready to handle your SEO site-optimization and UI/UX
-              design needs.
+              Let me build you a modern, responsive website, and/or an API to
+              talk to one. I'm also ready to handle your SEO site-optimization
+              and UI/UX design needs.
             </p>
           </div>
         </section>
