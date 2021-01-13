@@ -1,11 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
     <div className="landing-container">
       <div className="landing_top">
         <div className="personal_image">
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: -150 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 2, duration: 1.5 }}
             alt="portrait"
             src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_png.png"
           />
@@ -29,11 +33,27 @@ const Landing = () => {
           </svg>
         </div>
         <div className="name-box">
-          <h1>Nolan</h1>
-          <h1>Crenshaw.</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 1.5 }}
+          >
+            Nolan
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 1.5 }}
+          >
+            Crenshaw.
+          </motion.h1>
           <div />
         </div>
-        <nav>
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3, duration: 2 }}
+        >
           <ul>
             <li>
               <span>Skills</span>
@@ -48,17 +68,27 @@ const Landing = () => {
               <div />
             </li>
           </ul>
-        </nav>
-        <div className="intro-box">
+        </motion.nav>
+        <motion.div
+          initial={{ opacity: 0, x: 150 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 2, duration: 1.5 }}
+          className="intro-box"
+        >
           <h3>- Who I Am.</h3>
           <h2>A Full-Stack Developer based in Chattanooga, TN.</h2>
           <p>
             Hire me to join your team. Or contact me to talk about your project.
           </p>
-        </div>
-        <div className="social-links">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3, duration: 2 }}
+          className="social-links"
+        >
           <ul>
-            <li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-linkedin"
@@ -78,8 +108,8 @@ const Landing = () => {
                 <line x1="12" y1="16" x2="12" y2="11" />
                 <path d="M16 16v-3a2 2 0 0 0 -4 0" />
               </svg>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-github"
@@ -95,8 +125,8 @@ const Landing = () => {
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
               </svg>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-dribbble"
@@ -115,9 +145,9 @@ const Landing = () => {
                 <path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" />
                 <path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" />
               </svg>
-            </li>
+            </motion.li>
           </ul>
-        </div>
+        </motion.div>
         <div className="about-me">
           <span>My Story</span>
           <svg
@@ -140,7 +170,11 @@ const Landing = () => {
         </div>
       </div>
       <div className="landing_bottom">
-        <section>
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 3.5, duration: 1 }}
+        >
           <div className="contact-box">
             <div className="contact_link">
               <span>Contact Me</span>
@@ -176,7 +210,7 @@ const Landing = () => {
               and UI/UX design needs.
             </p>
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );

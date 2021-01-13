@@ -60,19 +60,24 @@ a {
 
 .main-container {
   min-height: 100vh;
-  width: 100vw;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  background-color: #dce1de;
+  width: 100%;
+  justify-self: center;
   overflow: hidden;
   scrollbar-width: none;
   z: index 1;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 10rem 1fr 10rem;
-      grid-template-columns: 10rem 1fr 10rem;
-  -ms-grid-rows: 97vh auto auto 106vh 20vh;
-      grid-template-rows: 97vh auto auto 106vh 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-container {
@@ -1467,11 +1472,12 @@ a {
   grid-row: 5/6;
   height: 20vh;
   width: 100%;
-  background-color: #1f2421;
+  background-color: #1d1e29;
 }
 
 .footer-container .credits {
-  margin: 3rem;
+  height: 70%;
+  padding: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1482,20 +1488,21 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .footer-container .credits span {
-  color: white;
+  color: #ebebec;
+  font-size: 1.2rem;
 }
 
 .footer-container .credits span a {
   margin: 0 5px;
-  color: gray;
+  color: #999aa2;
   text-decoration: none;
 }
 

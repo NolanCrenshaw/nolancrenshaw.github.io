@@ -1,16 +1,15 @@
 .main-container {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 
   justify-self: center;
-
-  background-color: #dce1de;
 
   overflow: hidden;
   scrollbar-width: none;
   z: index 1;
 
-  display: grid;
-  grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 97vh auto auto 106vh 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
