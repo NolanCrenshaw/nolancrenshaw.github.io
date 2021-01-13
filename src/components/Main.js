@@ -8,6 +8,7 @@ import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 
 import Landing from "./Landing";
+import Contact from "./Contact";
 import Footer from "./Footer";
 
 const Main = () => {
@@ -21,6 +22,7 @@ const Main = () => {
       >
         <Router>
           <Landing />
+          <Contact />
           <Footer />
         </Router>
       </motion.div>

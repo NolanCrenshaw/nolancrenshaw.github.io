@@ -1505,6 +1505,11 @@ a {
   background-color: white;
 }
 
+.contact-container {
+  height: 80vh;
+  width: 100%;
+}
+
 .footer-container {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
