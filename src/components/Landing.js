@@ -47,7 +47,9 @@ const Landing = () => {
         <div className="intro-box">
           <h3>- Who I Am.</h3>
           <h2>A Full-Stack Developer based in Chattanooga, TN.</h2>
-          <p></p>
+          <p>
+            Hire me to join your team. Or contact me to talk about your project.
+          </p>
         </div>
         <div className="social-links">
           <ul>
@@ -58,6 +60,23 @@ const Landing = () => {
         </div>
         <div className="about-me">
           <span>My Story</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-right"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#efa649"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="13" y1="18" x2="19" y2="12" />
+            <line x1="13" y1="6" x2="19" y2="12" />
+          </svg>
         </div>
       </div>
       <div className="landing_bottom"></div>

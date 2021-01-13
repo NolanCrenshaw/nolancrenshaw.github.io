@@ -95,8 +95,8 @@ a {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.5fr 1fr;
-      grid-template-columns: 1fr 0.5fr 1fr;
+  -ms-grid-columns: 1fr 0.7fr 1fr;
+      grid-template-columns: 1fr 0.7fr 1fr;
   -ms-grid-rows: 16vh 40vh 17vh;
       grid-template-rows: 16vh 40vh 17vh;
 }
@@ -109,7 +109,6 @@ a {
   -ms-grid-row-span: 2;
   grid-row: 2/4;
   position: relative;
-  background-color: rgba(0, 255, 255, 0.075);
 }
 
 .landing-container .landing_top .landing_icon {
@@ -183,6 +182,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #999aa2;
+  font-size: 2.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -193,8 +200,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.3rem;
-  font-weight: 500;
 }
 
 .landing-container .landing_top nav ul li div {
@@ -202,6 +207,18 @@ a {
   width: 5px;
   margin-top: 0.5rem;
   border-radius: 50%;
+  background-color: #999aa2;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.landing-container .landing_top nav ul li:hover {
+  color: #ebebec;
+}
+
+.landing-container .landing_top nav ul li:hover div {
   background-color: #efa649;
 }
 
@@ -231,7 +248,7 @@ a {
 .landing-container .landing_top .intro-box p {
   margin-top: 2rem;
   color: #999aa2;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -242,6 +259,7 @@ a {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  cursor: pointer;
 }
 
 .landing-container .landing_top .social-links ul {
@@ -263,6 +281,20 @@ a {
   grid-row: 3/4;
   color: #efa649;
   font-size: 1.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.landing-container .landing_top .about-me svg {
+  margin: 1px 0 0 1rem;
 }
 
 .landing-container .landing_bottom {

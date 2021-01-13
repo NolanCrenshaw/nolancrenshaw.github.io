@@ -23,18 +23,13 @@
 
     // background-color: salmon;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 0.7fr 1fr;
     grid-template-rows: 16vh 40vh 17vh;
 
     .personal_image {
       grid-column: 2/3;
       grid-row: 2/4;
-
-      // height: 600px;
-      // width: 200px;
       position: relative;
-
-      background-color: rgba(0, 255, 255, 0.075);
     }
 
     .landing_icon {
@@ -83,18 +78,33 @@
         li {
           margin-right: 3rem;
           display: flex;
+
+          color: $_offgray;
+          font-size: 2.3rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all;
+          transition-duration: 0.5s;
+
           flex-direction: column;
           justify-content: flex-end;
           align-items: center;
 
-          font-size: 2.3rem;
-          font-weight: 500;
           div {
             height: 5px;
             width: 5px;
             margin-top: 0.5rem;
             border-radius: 50%;
-            background-color: $_yellow;
+            background-color: $_offgray;
+            transition: all;
+            transition-duration: 0.5s;
+          }
+
+          &:hover {
+            color: $_offwhite;
+            div {
+              background-color: $_yellow;
+            }
           }
         }
       }
@@ -119,7 +129,7 @@
       p {
         margin-top: 2rem;
         color: $_offgray;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 400;
       }
     }
@@ -127,7 +137,8 @@
     .social-links {
       grid-column: 1/2;
       grid-row: 3/4;
-      // margin-left: 10rem;
+      cursor: pointer;
+
       ul {
         display: flex;
         li {
@@ -141,6 +152,15 @@
       grid-row: 3/4;
       color: $_yellow;
       font-size: 1.5rem;
+
+      cursor: pointer;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      svg {
+        margin: 1px 0 0 1rem;
+      }
     }
   }
   .landing_bottom {
