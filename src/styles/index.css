@@ -66,6 +66,12 @@ a {
       grid-template-rows: 97vh auto auto 106vh 20vh;
 }
 
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  background-color: aqua;
+}
+
 .loading-container {
   min-height: 100vh;
   min-width: 100vw;

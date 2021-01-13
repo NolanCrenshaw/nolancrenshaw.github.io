@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Main from "./components/Main";
+import Landing from "./components/Landing";
 import Loading from "./components/Loading";
 
 const App = () => {
+  /*
+  Manages Loading Splash
+  */
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -11,6 +15,6 @@ const App = () => {
     }, 4000);
   }, []);
 
-  return <>{loaded ? <Main /> : <Loading />}</>;
+  return <>{loaded ? <Landing /> : <Loading />}</>;
 };
 export default App;
