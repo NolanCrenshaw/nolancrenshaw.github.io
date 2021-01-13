@@ -101,11 +101,11 @@
           align-items: center;
 
           div {
-            height: 5px;
-            width: 5px;
+            height: 6px;
+            width: 6px;
             margin-top: 0.5rem;
             border-radius: 50%;
-            background-color: $_offgray;
+            background-color: none;
             transition: all;
             transition-duration: 0.5s;
           }

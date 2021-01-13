@@ -223,11 +223,11 @@ a {
 }
 
 .landing-container .landing_top nav ul li div {
-  height: 5px;
-  width: 5px;
+  height: 6px;
+  width: 6px;
   margin-top: 0.5rem;
   border-radius: 50%;
-  background-color: #999aa2;
+  background-color: none;
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 0.5s;
