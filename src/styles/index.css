@@ -163,6 +163,7 @@ a {
   height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
   background: -webkit-gradient(linear, right top, left top, from(#333646), to(#252734));
   background: linear-gradient(to left, #333646 0%, #252734 100%);
   color: #ebebec;
@@ -306,7 +307,25 @@ a {
           align-items: center;
 }
 
-.landing-container .landing_top nav ul li div {
+.landing-container .landing_top nav ul li a {
+  text-decoration: none;
+  color: #999aa2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-container .landing_top nav ul li a div {
   height: 6px;
   width: 6px;
   margin-top: 0.5rem;
@@ -318,11 +337,11 @@ a {
           transition-duration: 0.5s;
 }
 
-.landing-container .landing_top nav ul li:hover {
+.landing-container .landing_top nav ul li a:hover {
   color: #ebebec;
 }
 
-.landing-container .landing_top nav ul li:hover div {
+.landing-container .landing_top nav ul li a:hover div {
   background-color: #efa649;
 }
 
@@ -465,10 +484,26 @@ a {
 }
 
 .landing-container .landing_bottom section .contact-box .contact_link {
+  height: 2.3rem;
+  width: 12rem;
   position: relative;
   color: #efa649;
   font-size: 1.5rem;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.landing-container .landing_bottom section .contact-box .contact_link a {
+  text-decoration: none;
+  color: #efa649;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
