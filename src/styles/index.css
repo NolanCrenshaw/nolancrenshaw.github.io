@@ -551,12 +551,12 @@ a {
 .skills-container {
   min-height: 100vh;
   width: 100%;
-  padding: 20rem 0;
+  padding: 5rem 0;
   background-color: #1d1e29;
 }
 
 .skills-container section {
-  height: 60vh;
+  height: 75vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -571,45 +571,135 @@ a {
           align-items: center;
 }
 
-.skills-container section h1 {
-  color: #999aa2;
-  font-size: 5rem;
-  z-index: 3;
-}
-
-.skills-container section #elipse_one {
+.skills-container section #shape_one {
   height: 1000px;
   width: 1000px;
   position: absolute;
   top: -20%;
-  right: -20%;
+  right: -30%;
   z-index: 2;
   border-radius: 50%;
-  background-color: #efa649;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #efa649), to(white));
+  background: linear-gradient(90deg, #efa649 40%, white 100%);
+}
+
+.skills-container section #shape_two {
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  bottom: -50%;
+  left: -30%;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  z-index: 2;
+  background: linear-gradient(250deg, #efa649 40%, white 100%);
+}
+
+.skills-container section #shape_three {
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  top: 35%;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #efa649), to(white));
+  background: linear-gradient(90deg, #efa649 40%, white 100%);
 }
 
 .skills-container section .text-box {
   height: 100%;
   width: 30%;
+  padding: 3rem;
+  z-index: 4;
 }
 
 .skills-container section .text-box h1 {
-  color: #999aa2;
+  color: #ebebec;
   font-size: 5rem;
+}
+
+.skills-container section .text-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills-container section .text-box ul li {
+  margin-right: 0.8rem;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container section .text-box ul li img {
+  height: 40px;
+  width: 40px;
+}
+
+.skills-container section .text-box ul .icon_scrim {
+  height: 40px;
+  width: 40px;
+  margin: 0 0.7rem;
+  padding: 0.3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(white 0%, rgba(255, 255, 255, 0.7) 100%);
+}
+
+.skills-container section .text-box ul .icon_scrim img {
+  height: 35px;
+  width: 35px;
+}
+
+.skills-container section .text-box h3 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.skills-container section .text-box p {
+  color: #ebebec;
 }
 
 .skills-container section .glass_panel {
   height: 80%;
   width: 50%;
-  padding: 2rem;
+  padding: 3rem;
+  overflow: hidden;
   z-index: 3;
   border: 1px solid rgba(255, 255, 255, 0.699);
   border-radius: 24px;
-  -webkit-box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.5), 3rem 3rem 5rem rgba(255, 255, 255, 0.3);
-          box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.5), 3rem 3rem 5rem rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.5), 2rem 2rem 3rem rgba(255, 255, 255, 0.3);
+          box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.5), 2rem 2rem 3rem rgba(255, 255, 255, 0.3);
   background: linear-gradient(45deg, rgba(248, 248, 255, 0.39) 0%, rgba(218, 218, 221, 0.39) 100%);
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container section .glass_panel div {
+  height: 100%;
+  width: 100%;
+}
+
+.skills-container section .glass_panel div svg {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .loading-container {
