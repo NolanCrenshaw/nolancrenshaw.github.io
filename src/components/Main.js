@@ -8,6 +8,7 @@ import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 
 import Landing from "./Landing";
+import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -22,6 +23,7 @@ const Main = () => {
       >
         <Router>
           <Landing />
+          <Skills />
           <Contact />
           <Footer />
         </Router>
