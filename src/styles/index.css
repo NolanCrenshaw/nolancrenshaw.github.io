@@ -548,6 +548,70 @@ a {
   margin-top: 0.5rem;
 }
 
+.skills-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20rem 0;
+  background-color: #1d1e29;
+}
+
+.skills-container section {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container section h1 {
+  color: #999aa2;
+  font-size: 5rem;
+  z-index: 3;
+}
+
+.skills-container section #elipse_one {
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: #efa649;
+}
+
+.skills-container section .text-box {
+  height: 100%;
+  width: 30%;
+}
+
+.skills-container section .text-box h1 {
+  color: #999aa2;
+  font-size: 5rem;
+}
+
+.skills-container section .glass_panel {
+  height: 80%;
+  width: 50%;
+  padding: 2rem;
+  z-index: 3;
+  border: 1px solid rgba(255, 255, 255, 0.699);
+  border-radius: 24px;
+  -webkit-box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.5), 3rem 3rem 5rem rgba(255, 255, 255, 0.3);
+          box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.5), 3rem 3rem 5rem rgba(255, 255, 255, 0.3);
+  background: linear-gradient(45deg, rgba(248, 248, 255, 0.39) 0%, rgba(218, 218, 221, 0.39) 100%);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
 .loading-container {
   min-height: 100vh;
   min-width: 100vw;
