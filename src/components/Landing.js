@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { HashLink } from "react-router-hash-link";
 
 const Landing = () => {
   return (
@@ -56,21 +57,27 @@ const Landing = () => {
         >
           <ul>
             <li>
-              <span>Skills</span>
-              <div />
+              <HashLink smooth to="about_me">
+                <span>Skills</span>
+                <div />
+              </HashLink>
             </li>
             <li>
-              <span>Works</span>
-              <div />
+              <HashLink smooth to="works">
+                <span>Works</span>
+                <div />
+              </HashLink>
             </li>
             <li>
-              <span>Blog</span>
-              <div />
+              <HashLink smooth to="#contact">
+                <span>Contact</span>
+                <div />
+              </HashLink>
             </li>
           </ul>
         </motion.nav>
         <motion.div
-          initial={{ opacity: 0, x: 150 }}
+          initial={{ opacity: 0, x: 250 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 2, duration: 1.5 }}
           className="intro-box"
@@ -78,7 +85,8 @@ const Landing = () => {
           <h3>- Who I Am.</h3>
           <h2>A Full-Stack Developer based in Chattanooga, TN.</h2>
           <p>
-            Hire me to join your team. Or contact me to talk about your project.
+            Hire me to join your team. Or contact me to talk about a project I
+            can help you with.
           </p>
         </motion.div>
         <motion.div
@@ -189,36 +197,37 @@ const Landing = () => {
         >
           <div className="contact-box">
             <motion.div
-              whileHover={{ scale: 1.2, x: 20 }}
+              whileHover={{ scale: 1.2, x: 10 }}
               className="contact_link"
             >
-              <span>Contact Me</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-arrow-right"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="#efa649"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <line x1="13" y1="18" x2="19" y2="12" />
-                <line x1="13" y1="6" x2="19" y2="12" />
-              </svg>
-              <div />
+              <HashLink smooth to="#contact">
+                <span>Contact Me</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-arrow-right"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#efa649"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <line x1="13" y1="18" x2="19" y2="12" />
+                  <line x1="13" y1="6" x2="19" y2="12" />
+                </svg>
+                <div />
+              </HashLink>
             </motion.div>
             <h2>I'm available to work.</h2>
             <p>What's your project? </p>
           </div>
           <div>
             <h2>
-              Whether you need front-end or back-end work, I can help find a
-              solution.
+              Whether it's front-end or back-end, I can provide solutions.
             </h2>
             <p>
               Let me build you a modern, responsive website, and/or an API to

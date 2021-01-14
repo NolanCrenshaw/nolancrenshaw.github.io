@@ -21,8 +21,9 @@ const Contact = () => {
           <h2>Let me know what you think.</h2>
           <p>
             I'm working hard to show what I can offer. Do you like what you see?
-            Did you experience any bugs or rendering problems? Was this site not
-            optimized for your browser or device? Please give me a heads up!
+            Did you experience any bugs or rendering problems? Was this site
+            optimized for your browser or device? Please share any thoughts you
+            might have.
           </p>
         </div>
       </section>

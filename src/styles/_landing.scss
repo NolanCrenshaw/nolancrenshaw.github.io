@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
 
+  overflow: hidden;
   background: linear-gradient(
     to left,
     rgb(51, 54, 70) 0%,
@@ -100,20 +101,30 @@
           justify-content: flex-end;
           align-items: center;
 
-          div {
-            height: 6px;
-            width: 6px;
-            margin-top: 0.5rem;
-            border-radius: 50%;
-            background-color: none;
-            transition: all;
-            transition-duration: 0.5s;
-          }
+          a {
+            text-decoration: none;
+            color: $_offgray;
 
-          &:hover {
-            color: $_offwhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             div {
-              background-color: $_yellow;
+              height: 6px;
+              width: 6px;
+              margin-top: 0.5rem;
+              border-radius: 50%;
+              background-color: none;
+              transition: all;
+              transition-duration: 0.5s;
+            }
+
+            &:hover {
+              color: $_offwhite;
+              div {
+                background-color: $_yellow;
+              }
             }
           }
         }
@@ -205,10 +216,6 @@
       padding: 0 5rem;
       align-self: center;
 
-      // display: grid;
-      // grid-template-columns: 1fr 0.6fr 1fr;
-      // grid-template-rows: 1fr;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -221,7 +228,10 @@
         p {
           margin-top: 1rem;
         }
+
         .contact_link {
+          height: 2.3rem;
+          width: 12rem;
           position: relative;
           color: $_yellow;
           font-size: 1.5rem;
@@ -231,6 +241,13 @@
           display: flex;
           justify-content: flex-start;
           align-items: flex-start;
+          a {
+            text-decoration: none;
+            color: $_yellow;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
           svg {
             margin: 1px 0 0 1rem;
           }
