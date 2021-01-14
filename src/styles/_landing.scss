@@ -32,10 +32,10 @@
       position: relative;
 
       img {
-        height: 60rem;
+        height: calc(55rem + 5%);
         width: auto;
         position: absolute;
-        top: -13rem;
+        bottom: 0;
         left: -20rem;
         z-index: 0;
       }

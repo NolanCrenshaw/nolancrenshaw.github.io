@@ -206,10 +206,10 @@ a {
 }
 
 .landing-container .landing_top .personal_image img {
-  height: 60rem;
+  height: calc(55rem + 5%);
   width: auto;
   position: absolute;
-  top: -13rem;
+  bottom: 0;
   left: -20rem;
   z-index: 0;
 }
@@ -613,6 +613,19 @@ a {
   width: 30%;
   padding: 3rem;
   z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .skills-container section .text-box h1 {
