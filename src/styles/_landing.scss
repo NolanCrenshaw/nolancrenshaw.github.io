@@ -32,10 +32,10 @@
       position: relative;
 
       img {
-        height: 60rem;
+        height: calc(55rem + 5%);
         width: auto;
         position: absolute;
-        top: -13rem;
+        bottom: 0;
         left: -20rem;
         z-index: 0;
       }
@@ -176,6 +176,15 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+
+        a {
+          text-decoration: none;
+          color: $_yellow;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+
         svg {
           margin: 1px 0 0 1rem;
         }

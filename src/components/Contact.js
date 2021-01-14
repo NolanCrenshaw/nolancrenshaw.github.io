@@ -11,6 +11,7 @@ const Contact = () => {
         <div className="contact_infobox">
           <h2>Schedule a meeting.</h2>
           <p>I'm available for hire!</p>
+          <br />
           <p>
             Please feel free to contact me if you think I might be a good fit
             with your company. Or perhaps you would like to procure my services

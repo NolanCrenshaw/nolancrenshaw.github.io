@@ -1,181 +1,67 @@
-import React, { useState, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Typist from "react-typist";
+import React from "react";
 
 const About = () => {
-  const [typeBox, inView, entry] = useInView();
-  const picControl = useAnimation();
-  const [viewed, setViewed] = useState(false);
-
-  const sequence = async () => {
-    await picControl.start({ opacity: 1, x: 0, rotate: 0 });
-  };
-
-  const sequenceDelay = async () => {
-    await setTimeout(() => {
-      setViewed(true);
-    }, 2500);
-  };
-
-  const skills = [
-    // TODO - add skill icons to array, and map into component
-  ];
-
-  useEffect(() => {
-    if (inView) {
-      // sequence();
-      sequenceDelay();
-    }
-  }, [inView]);
-
   return (
-    <div className="about-container" id="about_me">
-      <div className="introduction-box">
-        <div className="text-block">
-          <h3>Hello World</h3>
-          <p>
-            My name is Nolan Crenshaw, and I am a Full-Stack Developer based out
-            of Chattanooga, TN. I have a passion for building everything from
-            creative animations and intuitive layouts, to the docker containers
-            I use to develop and deploy them.
-          </p>
-          {/* Figure out Call to Action Route */}
-          <motion.li
-            whileHover={{
-              scale: 1.2,
-              transition: {
-                duration: 0.3,
-              },
-            }}
-            className="call_to_action"
-          >
-            Hire Me!
-          </motion.li>
-        </div>
+    <div className="about-container" id="about">
+      <div>
+        <h1>About Me.</h1>
+        <p>
+          I am Web-Developer living in Chattanooga, Tennessee. My core languages
+          are JavaScript and Python, with a focus on React and Flask frameworks.
+          Coding began in earnest for me when I managed to automate some daily
+          Excel tasks in VBA for an employer. After that 'ah-ha' moment, I began
+          learning from a variety of tutorials and Udemy courses. I made the
+          leap into serious programming when I was accepted into an intense six
+          month bootcamp with App Academy. Graduating didn't put an end to my
+          education, but it put all the pieces into place for me to truly start
+          absorbing all that the development world has to offer.
+        </p>
       </div>
-      <div className="introduction-box_rightBar" />
-      <div className="skill-box">
-        <li id="javascript_icon">
+      <h1>Life Beyond Programming.</h1>
+      <ul>
+        <li>
+          <h1>Raft Guide</h1>
           <img
-            alt="JavaScript"
-            src="https://img.icons8.com/color/96/000000/javascript.png"
+            id="rafting_pic"
+            alt="rafting"
+            src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/raftguiding.png"
           />
-        </li>
-        <li id="python_icon">
-          <img
-            alt="Python"
-            src="https://img.icons8.com/color/96/000000/python.png"
-          />
-        </li>
-        <li id="nodejs_icon">
-          <img
-            alt=" Node JS"
-            src="https://img.icons8.com/color/96/000000/nodejs.png"
-          />
-        </li>
-        <li id="html5_icon">
-          <img
-            alt="HTML5"
-            src="https://img.icons8.com/color/96/000000/html-5.png"
-          />
-        </li>
-        <li id="css3_icon">
-          <img
-            alt="CSS"
-            src="https://img.icons8.com/color/96/000000/css3.png"
-          />
-        </li>
-        <li id="react_icon">
-          <img
-            alt="React"
-            src="https://img.icons8.com/color/96/000000/react-native.png"
-          />
-        </li>
-        <li id="redux_icon">
-          <img
-            alt="Redux"
-            src="https://img.icons8.com/color/96/000000/redux.png"
-          />
-        </li>
-        <li id="sass_icon">
-          <img
-            alt="Sass"
-            src="https://img.icons8.com/color/96/000000/sass.png"
-          />
-        </li>
-        <li id="git_icon">
-          <img alt="Git" src="https://img.icons8.com/color/96/000000/git.png" />
-        </li>
-        <li id="docker_icon">
-          <img
-            alt="Docker"
-            src="https://img.icons8.com/color/96/000000/docker.png"
-          />
-        </li>
-        <li id="linux_icon">
-          <img
-            alt="Linux"
-            src="https://img.icons8.com/color/96/000000/linux.png"
-          />
-        </li>
-        <li id="postgresql_icon">
-          <img
-            alt="PostgreSQL"
-            src="https://img.icons8.com/color/96/000000/postgreesql.png"
-          />
-        </li>
-      </div>
-      <div className="pitch-box">
-        <div className="text-block">
-          <h3>Hello World</h3>
-          <p>
-            My name is Nolan Crenshaw, and I am a Full-Stack Developer based out
-            of Chattanooga, TN. I have a passion for building everything from
-            creative animations and intuitive layouts, to the docker containers
-            I use to develop and deploy them.
-          </p>
-        </div>
-        <div className="trait-box">
-          <li>
-            <div>
-              <img
-                alt="Fast Loading"
-                src="https://img.icons8.com/cotton/64/000000/fast-browsing.png"
-              />
-            </div>
-            <h3>Fast</h3>
+          <div>
+            <h2>Raft Guide</h2>
             <p>
-              Everything I build is designed to render quickly and run smoothly.
+              White water is a huge passion of mine. I've worked in Uganda, New
+              Zealand, and all over the States. Living in East TN allows me to
+              pick up the random weekend trip.
             </p>
-          </li>
-          <li>
-            <div>
-              <img
-                alt="Security"
-                src="https://img.icons8.com/cotton/64/000000/fingerprint-recognition.png"
-              />
-            </div>
-            <h3>Secure</h3>
+          </div>
+        </li>
+        <li>
+          <h1>Family</h1>
+          <img
+            id="dad_pic"
+            alt="dad portrait"
+            src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_with_baby.png"
+          />
+          <div>
+            <h2>Family</h2>
             <p>
-              My work employs safe, best-practices to protect against the
-              dangers that lurk.
+              I would me amiss to not list my beautiful family. I've gone full
+              dad these days, and I have the bad jokes and socks to prove it.
             </p>
-          </li>
-          <li>
-            <div>
-              <img
-                alt="Dynamic Rendering"
-                src="https://img.icons8.com/cotton/64/000000/rocket-take-off.png"
-              />
-            </div>
-            <h3>Dynamic</h3>
+          </div>
+        </li>
+        {/* <li>
+          <h1>Musician</h1>
+          <div>
+            <h2>Musician</h2>
             <p>
-              I create fun, animated, modern webpages that interact with users.
+              Okay, calling myself a musician might be taking it a bit far, but
+              I've played guitar since I was a kid. There's probably no better
+              way to clear my head. Just don't ask me to sing.
             </p>
-          </li>
-        </div>
-      </div>
+          </div>
+        </li> */}
+      </ul>
     </div>
   );
 };

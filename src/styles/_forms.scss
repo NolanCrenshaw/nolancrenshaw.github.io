@@ -15,6 +15,7 @@
     padding: 1rem;
     font-size: 1.5rem;
     border-radius: 6px;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -24,12 +25,13 @@
     margin: 0.5rem 0;
     padding: 1rem;
 
-    color: black;
+    color: $_darkblue;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
 
     border-radius: 6px;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -50,14 +52,14 @@
     justify-content: space-between;
     button {
       height: 5rem;
-      width: 45%;
+      width: 47%;
 
       background-color: $_yellow;
       border: 4px solid $_darkyellow;
       border-radius: 8px;
-      box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
 
-      color: black;
+      color: $_darkblue;
       font-size: 2rem;
       font-weight: 600;
       cursor: pointer;

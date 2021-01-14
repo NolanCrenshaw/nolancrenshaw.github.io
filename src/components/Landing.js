@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 const Landing = () => {
   return (
-    <div className="landing-container">
+    <div className="landing-container" id="landing">
       <div className="landing_top">
         <div className="personal_image">
           <motion.img
@@ -63,8 +63,8 @@ const Landing = () => {
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#works">
-                <span>Works</span>
+              <HashLink smooth to="#projects">
+                <span>Projects</span>
                 <div />
               </HashLink>
             </li>
@@ -167,25 +167,27 @@ const Landing = () => {
           className="about-me"
         >
           <motion.div whileHover={{ scale: 1.2, x: 10 }}>
-            <span>My Story</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-arrow-right"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="#efa649"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <line x1="13" y1="18" x2="19" y2="12" />
-              <line x1="13" y1="6" x2="19" y2="12" />
-            </svg>
-            <div />
+            <HashLink smooth to="#about">
+              <span>My Story</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-right"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#efa649"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="13" y1="18" x2="19" y2="12" />
+                <line x1="13" y1="6" x2="19" y2="12" />
+              </svg>
+              <div />
+            </HashLink>
           </motion.div>
         </motion.div>
       </div>
