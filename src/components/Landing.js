@@ -10,7 +10,7 @@ const Landing = () => {
           <motion.img
             initial={{ opacity: 0, x: -50, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
+            transition={{ delay: 1, duration: 1.5 }}
             alt="portrait"
             src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_png.png"
           />
@@ -79,7 +79,7 @@ const Landing = () => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1, duration: 1.3 }}
+          transition={{ delay: 2, duration: 1.3 }}
           className="intro-box"
         >
           <h3>- Who I Am.</h3>
@@ -163,7 +163,7 @@ const Landing = () => {
         <motion.div
           initial={{ opacity: 0, x: 150 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2, duration: 1 }}
+          transition={{ delay: 1.2, duration: 1.2 }}
           className="about-me"
         >
           <motion.div whileHover={{ scale: 1.2, x: 10 }}>
