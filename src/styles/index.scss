@@ -9,6 +9,7 @@ $_min_content_height: 90vh;
 $_cyberpunk-green: rgba(37, 226, 110, 1);
 $_muted-green: #216869;
 $_yellow: #efa649;
+$_darkyellow: #b47624;
 $_offwhite: #ebebec;
 $_offgray: #999aa2;
 $_darkblue: #1d1e29;
@@ -38,10 +39,12 @@ h3 {
   font-size: 1.6rem;
   font-weight: 400;
 }
-p {
+p,
+pre {
   color: $_offgray;
   font-size: 1.4rem;
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 li {
   font-size: 2rem;
@@ -64,6 +67,7 @@ a {
 
 @import "../../node_modules/include-media/dist/include-media";
 
+@import "forms";
 @import "main";
 @import "landing";
 @import "loading";
