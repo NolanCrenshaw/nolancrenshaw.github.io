@@ -8,9 +8,9 @@ const Landing = () => {
       <div className="landing_top">
         <div className="personal_image">
           <motion.img
-            initial={{ opacity: 0, x: -150, y: 150 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 2, duration: 1.5 }}
+            initial={{ opacity: 0, x: -50, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+            transition={{ delay: 1, duration: 0.8 }}
             alt="portrait"
             src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_png.png"
           />
@@ -37,14 +37,14 @@ const Landing = () => {
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 1.5 }}
+            transition={{ delay: 0.7, duration: 1 }}
           >
             Nolan
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 1.5 }}
+            transition={{ delay: 1, duration: 1 }}
           >
             Crenshaw.
           </motion.h1>
@@ -53,7 +53,7 @@ const Landing = () => {
         <motion.nav
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 2 }}
+          transition={{ delay: 2, duration: 2 }}
         >
           <ul>
             <li>
@@ -77,9 +77,9 @@ const Landing = () => {
           </ul>
         </motion.nav>
         <motion.div
-          initial={{ opacity: 0, x: 250 }}
+          initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2, duration: 1.5 }}
+          transition={{ delay: 1, duration: 1.3 }}
           className="intro-box"
         >
           <h3>- Who I Am.</h3>
@@ -92,7 +92,7 @@ const Landing = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 2 }}
+          transition={{ delay: 2, duration: 1 }}
           className="social-links"
         >
           <ul>
@@ -163,7 +163,7 @@ const Landing = () => {
         <motion.div
           initial={{ opacity: 0, x: 150 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2, duration: 1.5 }}
+          transition={{ delay: 2, duration: 1 }}
           className="about-me"
         >
           <motion.div whileHover={{ scale: 1.2, x: 10 }}>
@@ -193,7 +193,7 @@ const Landing = () => {
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3.5, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <div className="contact-box">
             <motion.div
