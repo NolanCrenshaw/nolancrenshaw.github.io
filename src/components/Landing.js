@@ -57,13 +57,13 @@ const Landing = () => {
         >
           <ul>
             <li>
-              <HashLink smooth to="about_me">
+              <HashLink smooth to="#skills">
                 <span>Skills</span>
                 <div />
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="works">
+              <HashLink smooth to="#works">
                 <span>Works</span>
                 <div />
               </HashLink>
@@ -77,9 +77,9 @@ const Landing = () => {
           </ul>
         </motion.nav>
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 70 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2, duration: 1.3 }}
+          transition={{ delay: 2, duration: 1.5 }}
           className="intro-box"
         >
           <h3>- Who I Am.</h3>
@@ -163,7 +163,7 @@ const Landing = () => {
         <motion.div
           initial={{ opacity: 0, x: 150 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1.2, duration: 1.2 }}
+          transition={{ delay: 1.2, duration: 1.8 }}
           className="about-me"
         >
           <motion.div whileHover={{ scale: 1.2, x: 10 }}>
