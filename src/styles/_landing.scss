@@ -1,14 +1,262 @@
 .landing-container {
   height: 100vh;
   width: 100%;
+  position: relative;
 
-  background-color: aqua;
-  .landing_bg {
-  }
-  .landing_glass-panel {
-    div {
+  background: linear-gradient(
+    to left,
+    rgb(51, 54, 70) 0%,
+    rgb(37, 39, 52) 100%
+  );
+  color: $_offwhite;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .landing_top {
+    height: 70vh;
+    max-width: 1080px;
+    padding: 0 5rem 0 5rem;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1fr;
+    grid-template-rows: 16vh 40vh 17vh;
+
+    .personal_image {
+      grid-column: 2/3;
+      grid-row: 2/4;
+      position: relative;
+
+      img {
+        height: 60rem;
+        width: auto;
+        position: absolute;
+        top: -13rem;
+        left: -20rem;
+        z-index: 0;
+      }
+    }
+
+    .landing_icon {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: flex-end;
+      height: 60px;
+      width: 60px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
+    }
+
+    .name-box {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-top: 6rem;
+      z-index: 2;
+
+      h1 {
+        font-size: 7rem;
+        font-weight: 600;
+        line-height: 6.5rem;
+        z-index: 2;
+      }
+      div {
+        height: 6px;
+        width: 48px;
+        margin: 2rem 0 0 0.2rem;
+        background-color: $_yellow;
+      }
+    }
+
+    nav {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      align-self: flex-end;
+
       ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
         li {
+          margin-right: 3rem;
+          display: flex;
+
+          color: $_offgray;
+          font-size: 2.3rem;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all;
+          transition-duration: 0.5s;
+
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+
+          div {
+            height: 6px;
+            width: 6px;
+            margin-top: 0.5rem;
+            border-radius: 50%;
+            background-color: none;
+            transition: all;
+            transition-duration: 0.5s;
+          }
+
+          &:hover {
+            color: $_offwhite;
+            div {
+              background-color: $_yellow;
+            }
+          }
+        }
+      }
+    }
+
+    .intro-box {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      width: 300px;
+      margin-top: 8rem;
+
+      h2 {
+        margin-top: 1rem;
+      }
+      p {
+        margin-top: 2rem;
+      }
+    }
+
+    .social-links {
+      grid-column: 1/2;
+      grid-row: 3/4;
+
+      ul {
+        display: flex;
+        li {
+          margin-right: 1.5rem;
+          cursor: pointer;
+          svg {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+
+    .about-me {
+      grid-column: 3/4;
+      grid-row: 3/4;
+      position: relative;
+      color: $_yellow;
+      font-size: 1.5rem;
+
+      div:nth-child(1) {
+        width: 10rem;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        svg {
+          margin: 1px 0 0 1rem;
+        }
+        div {
+          height: 1px;
+          width: 0;
+          position: absolute;
+          top: 25px;
+          left: 0;
+          background-color: none;
+          transition: all;
+          transition-duration: 1s;
+        }
+        &:hover {
+          div {
+            width: 9rem;
+            background-color: $_yellow;
+          }
+        }
+      }
+    }
+  }
+  .landing_bottom {
+    height: 30vh;
+    width: 100%;
+    padding: 0 5rem 0 5rem;
+    position: relative;
+    z-index: 2;
+
+    background-color: $_darkblue;
+
+    display: flex;
+    justify-content: center;
+
+    section {
+      width: 100%;
+      max-width: 1080px;
+      padding: 0 5rem;
+      align-self: center;
+
+      // display: grid;
+      // grid-template-columns: 1fr 0.6fr 1fr;
+      // grid-template-rows: 1fr;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .contact-box {
+        grid-column: 1/2;
+        h2 {
+          margin-top: 1rem;
+        }
+        p {
+          margin-top: 1rem;
+        }
+        .contact_link {
+          position: relative;
+          color: $_yellow;
+          font-size: 1.5rem;
+
+          cursor: pointer;
+
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          svg {
+            margin: 1px 0 0 1rem;
+          }
+          div {
+            height: 1px;
+            width: 0;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: none;
+            transition: all;
+            transition-duration: 1s;
+          }
+          &:hover {
+            div {
+              width: 11.4rem;
+              background-color: $_yellow;
+            }
+          }
+        }
+      }
+      div:nth-child(2) {
+        max-width: 500px;
+        grid-column: 3/4;
+        p {
+          margin-top: 0.5rem;
         }
       }
     }

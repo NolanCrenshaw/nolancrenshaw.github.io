@@ -8,6 +8,10 @@ $breakpoints: (
 $_min_content_height: 90vh;
 $_cyberpunk-green: rgba(37, 226, 110, 1);
 $_muted-green: #216869;
+$_yellow: #efa649;
+$_offwhite: #ebebec;
+$_offgray: #999aa2;
+$_darkblue: #1d1e29;
 
 // Default Styling
 * {
@@ -19,17 +23,25 @@ html {
   font-size: 62.5%;
 }
 body {
-  color: black;
+  color: $_offwhite;
   font-family: "Poppins", sans-serif;
 }
 h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+h3 {
+  color: $_offgray;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 p {
-  font-size: 2rem;
+  color: $_offgray;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 li {
   font-size: 2rem;
@@ -60,6 +72,7 @@ a {
 @import "about";
 @import "portfolio";
 @import "resume";
+@import "contact";
 @import "footer";
 @import "webdevsvg";
 @import "programmersvg";
