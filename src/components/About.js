@@ -36,16 +36,21 @@ const About = () => {
           </div>
         </li>
         <li>
-          <h1>Dad</h1>
+          <h1>Family</h1>
+          <img
+            id="dad_pic"
+            alt="dad portrait"
+            src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_with_baby.png"
+          />
           <div>
-            <h2>Dad</h2>
+            <h2>Family</h2>
             <p>
               I would me amiss to not list my beautiful family. I've gone full
               dad these days, and I have the bad jokes and socks to prove it.
             </p>
           </div>
         </li>
-        <li>
+        {/* <li>
           <h1>Musician</h1>
           <div>
             <h2>Musician</h2>
@@ -55,7 +60,7 @@ const About = () => {
               way to clear my head. Just don't ask me to sing.
             </p>
           </div>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

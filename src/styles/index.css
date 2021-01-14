@@ -129,7 +129,7 @@ a {
 
 .contact-form div:nth-child(4) button {
   height: 5rem;
-  width: 48%;
+  width: 47%;
   background-color: #efa649;
   border: 4px solid #b47624;
   border-radius: 8px;
@@ -573,6 +573,12 @@ a {
   background-color: #1d1e29;
 }
 
+.skills-container h4 {
+  margin: 3rem 13rem;
+  color: #efa649;
+  font-size: 5rem;
+}
+
 .skills-container section {
   height: 75vh;
   width: 100%;
@@ -731,6 +737,86 @@ a {
 .skills-container section .glass_panel div svg {
   max-height: 100%;
   max-width: 100%;
+}
+
+.projects-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5rem 0;
+  background: -webkit-gradient(linear, right top, left top, from(#333646), to(#252734));
+  background: linear-gradient(to left, #333646 0%, #252734 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects-container h4 {
+  margin: 3rem 13rem;
+  color: #efa649;
+  font-size: 5rem;
+}
+
+.projects-container ul {
+  min-height: 30rem;
+  width: 80%;
+  margin: 5rem 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.projects-container ul li {
+  height: 40vh;
+  width: 100%;
+  padding: 3rem;
+  margin: 2rem 0;
+  position: relative;
+  border-radius: 12px;
+  border: 3px solid #efa649;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1d1e29), to(#1d1e2950));
+  background: linear-gradient(#1d1e29 50%, #1d1e2950 100%);
+}
+
+.projects-container ul li .link-box {
+  height: 50px;
+  width: 220px;
+  position: absolute;
+  bottom: 30px;
+  right: 70px;
+  z-index: 5;
+  color: #ebebec;
+  border-radius: 6px;
+  -webkit-box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.3);
+          box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.3);
+  background-color: #1d1e29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-container ul li .link-box a {
+  color: #ebebec;
+  text-decoration: none;
 }
 
 .loading-container {
@@ -1271,8 +1357,8 @@ a {
   min-height: 100vh;
   width: 100%;
   padding: 3rem 2rem 8rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #1d1e29), to(#333646));
-  background: linear-gradient(#1d1e29 20%, #333646 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #1d1e29), color-stop(66%, #333646), to(#999aa2));
+  background: linear-gradient(#1d1e29 33%, #333646 66%, #999aa2 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1328,8 +1414,8 @@ a {
   border-radius: 2px;
   -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.8), -1rem -1rem 2rem rgba(0, 0, 0, 0.8);
           box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.8), -1rem -1rem 2rem rgba(0, 0, 0, 0.8);
-  background: -webkit-gradient(linear, left top, left bottom, from(#999aa2), to(#ebebec));
-  background: linear-gradient(#999aa2 0%, #ebebec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(153, 154, 162, 0.4)), to(#ebebec));
+  background: linear-gradient(rgba(153, 154, 162, 0.4) 0%, #ebebec 100%);
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 0.5s;
@@ -1362,6 +1448,11 @@ a {
   transition: all;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+.about-container ul li #dad_pic {
+  height: 80%;
+  width: auto;
 }
 
 .about-container ul li div {
@@ -1416,6 +1507,10 @@ a {
 
 .about-container ul li:hover img {
   width: 140%;
+}
+
+.about-container ul li:hover #dad_pic {
+  height: 90%;
 }
 
 .about-container ul li:hover div {
@@ -1742,8 +1837,6 @@ a {
 
 .contact-container section .contact_infobox div {
   width: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
   margin: 3rem 0;
   border-bottom: 1px solid white;
   border-radius: 50%;

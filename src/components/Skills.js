@@ -7,6 +7,7 @@ import ProgrammingSVG from "./svg_library/ProgrammingSVG";
 const Skills = () => {
   return (
     <div className="skills-container" id="skills">
+      <h4>What I Do.</h4>
       <section>
         <div id="shape_one" />
         <div className="text-box">
@@ -132,8 +133,8 @@ const Skills = () => {
           </p>
           <h3>RESTful API.</h3>
           <p>
-            The web is all about making the right requests. I build clean and
-            efficient response systems to satisfy the HTTP gremlins.
+            The web is all about request and response. I build clean and
+            efficient APIs that power dynamic applications.
           </p>
         </div>
       </section>
@@ -197,9 +198,9 @@ const Skills = () => {
           </p>
           <h3>The Whole Spectrum.</h3>
           <p>
-            Whether you need a straight-foward static site for you business, or
-            your team prioritizes dynamic scalability, there's a product for
-            you.
+            Whether you need a straight-foward static site for your business, or
+            your team prioritizes server-side rendering and dynamic scalability,
+            I can help you find the right fit.
           </p>
         </div>
         <div className="glass_panel">

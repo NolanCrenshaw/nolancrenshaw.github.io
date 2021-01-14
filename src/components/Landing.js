@@ -63,8 +63,8 @@ const Landing = () => {
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#works">
-                <span>Works</span>
+              <HashLink smooth to="#projects">
+                <span>Projects</span>
                 <div />
               </HashLink>
             </li>
