@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
+  // Variable Access
+  const userID = `${process.env.REACT_APP_EMAILJS_USER_ID}`;
+  const ejsSERVICE = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
+  const ejsTEMPLATE = `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`;
+
   // State
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
@@ -24,12 +29,11 @@ const ContactForm = () => {
   };
   const submitHandle = async (e) => {
     e.preventDefault();
-    const vars = await fetchContactVars();
     const res = await emailjs.sendForm(
-      vars.service,
-      vars.template,
+      ejsSERVICE,
+      ejsTEMPLATE,
       e.target,
-      vars.user
+      userID
     );
     if (res.text !== "OK") {
       // -- TODO -- Error Handling
@@ -79,7 +83,7 @@ const ContactForm = () => {
           <motion.button whileHover={{ scale: 1.2 }} type="submit" value="Send">
             Submit
           </motion.button>
-          <motion.button whileHover={{ scale: 1.2 }} onClick={clearHandle}>
+          <motion.button whileHover={{ scale: 1.2 }} onClick={clearForm}>
             Clear Form
           </motion.button>
         </div>
