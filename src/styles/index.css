@@ -358,6 +358,7 @@ a {
   grid-row: 2/3;
   width: 300px;
   margin-top: 8rem;
+  z-index: 2;
 }
 
 .landing-container .landing_top .intro-box h2 {
@@ -761,51 +762,15 @@ a {
 }
 
 .projects-container ul {
-  min-height: 30rem;
-  width: 80%;
-  margin: 5rem 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.projects-container ul li {
-  height: 40vh;
+  min-height: 60vh;
   width: 100%;
-  padding: 3rem;
   margin: 2rem 0;
-  position: relative;
-  border-radius: 12px;
-  border: 3px solid #efa649;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1d1e29), to(#1d1e2950));
-  background: linear-gradient(#1d1e29 50%, #1d1e2950 100%);
-}
-
-.projects-container ul li .link-box {
-  height: 50px;
-  width: 220px;
-  position: absolute;
-  bottom: 30px;
-  right: 70px;
-  z-index: 5;
-  color: #ebebec;
-  border-radius: 6px;
-  -webkit-box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.3);
-          box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.3);
-  background-color: #1d1e29;
+  padding: 0 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -814,9 +779,133 @@ a {
           align-items: center;
 }
 
-.projects-container ul li .link-box a {
-  color: #ebebec;
+.projects-container ul li {
+  height: 300px;
+  width: 430px;
+  margin: 2rem 0;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #1d1e29;
+  -webkit-box-shadow: 5px 5px 10px #efa7495b, 0 5px 5px #efa74957;
+          box-shadow: 5px 5px 10px #efa7495b, 0 5px 5px #efa74957;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 183, 192, 0.603)), to(#ebebec));
+  background: linear-gradient(rgba(182, 183, 192, 0.603) 0%, #ebebec 100%);
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects-container ul li h1 {
+  margin: 3rem;
+  text-shadow: 1px 1px 2px #1d1e29;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.projects-container ul li img {
+  height: auto;
+  min-height: 60%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
+          box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
+}
+
+.projects-container ul li .reveal-box {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  z-index: 5;
+  border-radius: 0 0 12px 12px;
+  -webkit-box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
+          box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ebebec), to(rgba(182, 183, 192, 0.5)));
+  background: linear-gradient(#ebebec 0%, rgba(182, 183, 192, 0.5) 100%);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
+}
+
+.projects-container ul li .reveal-box div:nth-child(1) {
+  height: 90%;
+  width: 400px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-container ul li .reveal-box div:nth-child(1) p {
+  margin-top: 1.5rem;
+  color: #1d1e29;
+  text-shadow: 0.5px 0.5px 1px white;
+  font-size: 2rem;
+}
+
+.projects-container ul li .reveal-box div:nth-child(1) div {
+  width: 100%;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-container ul li .reveal-box div:nth-child(1) div a {
+  color: #1d1e29;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-container ul li .reveal-box div:nth-child(1) div a:hover {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px #efa649, -1px -1px 3px #ebebec;
+}
+
+.projects-container ul li .reveal-box div:nth-child(1) div h3 {
+  margin: 0 1rem;
+}
+
+.projects-container ul li:hover {
+  height: 350px;
+  width: 480px;
+  border-radius: 12px;
+}
+
+.projects-container ul li:hover h1 {
+  font-size: 4.2rem;
+}
+
+.projects-container ul li:hover .reveal-box {
+  bottom: 0;
 }
 
 .loading-container {
@@ -1354,11 +1443,11 @@ a {
 }
 
 .about-container {
-  min-height: 100vh;
+  min-height: 60vh;
   width: 100%;
   padding: 3rem 2rem 8rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #1d1e29), color-stop(66%, #333646), to(#999aa2));
-  background: linear-gradient(#1d1e29 33%, #333646 66%, #999aa2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 54, 70, 0.842)), to(#1d1e29));
+  background: linear-gradient(rgba(51, 54, 70, 0.842) 0%, #1d1e29 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,9 +1455,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1377,11 +1466,12 @@ a {
 .about-container div:nth-child(1) {
   min-height: 15rem;
   width: 90%;
-  margin: 2rem 0 5rem 0;
+  margin: 5rem 0;
   padding: 3rem 15rem;
 }
 
 .about-container div:nth-child(1) h1 {
+  margin-bottom: 2rem;
   color: #efa649;
   font-size: 5rem;
 }

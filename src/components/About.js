@@ -17,7 +17,7 @@ const About = () => {
           absorbing all that the development world has to offer.
         </p>
       </div>
-      <h1>Life Beyond Programming.</h1>
+      {/* <h1>Life Beyond Programming.</h1>
       <ul>
         <li>
           <h1>Raft Guide</h1>
@@ -50,7 +50,7 @@ const About = () => {
             </p>
           </div>
         </li>
-        {/* <li>
+        <li>
           <h1>Musician</h1>
           <div>
             <h2>Musician</h2>
@@ -60,8 +60,8 @@ const About = () => {
               way to clear my head. Just don't ask me to sing.
             </p>
           </div>
-        </li> */}
-      </ul>
+        </li>
+      </ul> */}
     </div>
   );
 };
