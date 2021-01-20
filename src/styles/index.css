@@ -199,6 +199,15 @@ a {
       grid-template-rows: 16vh 40vh 17vh;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top {
+    -ms-grid-columns: 1fr 0.7fr 1fr 1fr;
+        grid-template-columns: 1fr 0.7fr 1fr 1fr;
+    -ms-grid-rows: 10vh 1fr 2fr 1fr;
+        grid-template-rows: 10vh 1fr 2fr 1fr;
+  }
+}
+
 .landing-container .landing_top .personal_image {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -209,13 +218,31 @@ a {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .personal_image {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+  }
+}
+
 .landing-container .landing_top .personal_image img {
   height: calc(55rem + 5%);
   width: auto;
   position: absolute;
   bottom: 0;
-  left: -20rem;
+  right: -20rem;
   z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .landing-container .landing_top .personal_image img {
+    height: 80%;
+    right: -20%;
+  }
 }
 
 .landing-container .landing_top .landing_icon {
@@ -232,10 +259,25 @@ a {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .landing_icon {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .landing-container .landing_top .landing_icon svg {
   position: absolute;
   top: -10px;
   left: -10px;
+}
+
+@media (max-width: 1024px) {
+  .landing-container .landing_top .landing_icon svg {
+    height: 200%;
+    width: 200%;
+  }
 }
 
 .landing-container .landing_top .name-box {
@@ -249,6 +291,18 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .name-box {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    justify-self: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .landing-container .landing_top .name-box h1 {
   font-size: 7rem;
   font-weight: 600;
@@ -256,11 +310,25 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .name-box h1 {
+    font-size: 12rem;
+    line-height: 12rem;
+  }
+}
+
 .landing-container .landing_top .name-box div {
   height: 6px;
   width: 48px;
   margin: 2rem 0 0 0.2rem;
   background-color: #efa649;
+}
+
+@media (max-width: 1024px) {
+  .landing-container .landing_top .name-box div {
+    height: 12px;
+    width: 85px;
+  }
 }
 
 .landing-container .landing_top nav {
@@ -361,12 +429,41 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .intro-box {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 .landing-container .landing_top .intro-box h2 {
   margin-top: 1rem;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .intro-box h2 {
+    font-size: 6rem;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
 .landing-container .landing_top .intro-box p {
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .landing-container .landing_top .intro-box p {
+    width: 70%;
+    color: #ebebec;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px black;
+  }
 }
 
 .landing-container .landing_top .social-links {
@@ -378,10 +475,42 @@ a {
   grid-row: 3/4;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .social-links {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    height: 100%;
+    width: 100%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 10rem;
+  }
+}
+
 .landing-container .landing_top .social-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1024px) {
+  .landing-container .landing_top .social-links ul {
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .landing-container .landing_top .social-links ul li {
@@ -389,9 +518,22 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .landing-container .landing_top .social-links ul li {
+    margin-right: 3rem;
+  }
+}
+
 .landing-container .landing_top .social-links ul li svg {
   height: 30px;
   width: 30px;
+}
+
+@media (max-width: 1024px) {
+  .landing-container .landing_top .social-links ul li svg {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .landing-container .landing_top .about-me {
