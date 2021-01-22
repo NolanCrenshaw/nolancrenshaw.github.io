@@ -79,6 +79,13 @@ a {
           align-items: center;
 }
 
+@media (max-width: 520px) {
+  .contact-form {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+
 .contact-form input {
   height: 5rem;
   width: 99%;
@@ -1888,11 +1895,25 @@ a {
           align-items: center;
 }
 
+@media (max-width: 520px) {
+  .about-container {
+    padding: 2rem 2rem;
+  }
+}
+
 .about-container div:nth-child(1) {
   min-height: 15rem;
   width: 90%;
   margin: 5rem 0;
   padding: 3rem 15rem;
+}
+
+@media (max-width: 520px) {
+  .about-container div:nth-child(1) {
+    width: 100%;
+    margin: 0 0 5rem 0;
+    padding: 0;
+  }
 }
 
 .about-container div:nth-child(1) h1 {
@@ -2301,6 +2322,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 520px) {
+  .contact-container {
+    height: auto;
+  }
 }
 
 .contact-container section {
@@ -2316,11 +2344,28 @@ a {
           align-items: center;
 }
 
+@media (max-width: 520px) {
+  .contact-container section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact-container section .section-divider {
   height: 300px;
   width: 2px;
   border-radius: 40%;
   background-color: #999aa2;
+}
+
+@media (max-width: 520px) {
+  .contact-container section .section-divider {
+    height: 2px;
+    width: 50%;
+    margin: 3rem 0;
+  }
 }
 
 .contact-container section .contact_infobox {
@@ -2346,8 +2391,28 @@ a {
           align-items: flex-start;
 }
 
+@media (max-width: 520px) {
+  .contact-container section .contact_infobox {
+    height: auto;
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
 .contact-container section .contact_infobox h2 {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 520px) {
+  .contact-container section .contact_infobox h2 {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-container section .contact_infobox p {
+    margin-bottom: 1rem;
+  }
 }
 
 .contact-container section .contact_infobox div {
@@ -2355,6 +2420,12 @@ a {
   margin: 3rem 0;
   border-bottom: 1px solid white;
   border-radius: 50%;
+}
+
+@media (max-width: 520px) {
+  .contact-container section .contact_infobox div {
+    display: none;
+  }
 }
 
 .footer-container {

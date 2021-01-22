@@ -6,8 +6,6 @@ const Contact = () => {
   return (
     <div className="contact-container" id="contact">
       <section>
-        <ContactForm />
-        <div className="section-divider" />
         <div className="contact_infobox">
           <h2>Schedule a meeting.</h2>
           <p>I'm available for hire!</p>
@@ -27,6 +25,8 @@ const Contact = () => {
             might have.
           </p>
         </div>
+        <div className="section-divider" />
+        <ContactForm />
       </section>
     </div>
   );

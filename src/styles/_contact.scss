@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+
+  @include media("<=phone") {
+    height: auto;
+  }
 
   section {
     width: 100%;
@@ -18,11 +23,21 @@
     justify-content: center;
     align-items: center;
 
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+
     .section-divider {
       height: 300px;
       width: 2px;
       border-radius: 40%;
       background-color: $_offgray;
+
+      @include media("<=phone") {
+        height: 2px;
+        width: 50%;
+        margin: 3rem 0;
+      }
     }
 
     .contact_infobox {
@@ -39,8 +54,23 @@
       justify-content: center;
       align-items: flex-start;
 
+      @include media("<=phone") {
+        height: auto;
+        max-width: 100%;
+        padding: 2rem;
+      }
+
       h2 {
         margin-bottom: 2rem;
+
+        @include media("<=phone") {
+          margin: 2rem 0;
+        }
+      }
+      p {
+        @include media("<=phone") {
+          margin-bottom: 1rem;
+        }
       }
       div {
         // height: 1px;
@@ -49,6 +79,10 @@
         margin: 3rem 0;
         border-bottom: 1px solid white;
         border-radius: 50%;
+
+        @include media("<=phone") {
+          display: none;
+        }
       }
     }
   }
