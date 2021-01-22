@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
 
-  @include media("<=phone") {
+  @include media("<=desktop") {
     height: auto;
   }
 
@@ -29,6 +29,14 @@
     display: grid;
     grid-template-columns: 1fr 0.7fr 1fr;
     grid-template-rows: 16vh 40vh 17vh;
+
+    @include media("<desktop", ">phone") {
+      height: 95vh;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 12vh 30vh 35vh 18vh;
+      padding: 1rem 1rem;
+    }
 
     @include media("<=phone") {
       height: 95vh;
@@ -43,9 +51,12 @@
       grid-row: 2/4;
       position: relative;
 
+      @include media("<=desktop") {
+        grid-row: 2/5;
+        z-index: 0;
+      }
       @include media("<=phone") {
         grid-row: 3/5;
-        z-index: 0;
       }
 
       img {
@@ -56,6 +67,10 @@
         right: 0;
         z-index: 0;
 
+        @include media("<=desktop") {
+          height: 85%;
+          right: calc(55rem -100%);
+        }
         @include media("<=phone") {
           height: 75%;
           right: 0;
