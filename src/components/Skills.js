@@ -9,7 +9,7 @@ const Skills = () => {
     <div className="skills-container" id="skills">
       <h4>What I Do.</h4>
       <section>
-        <div id="shape_one" />
+        <div className="skill_shape" id="shape_one" />
         <div className="text-box">
           <h1>Front End</h1>
           <ul>
@@ -77,7 +77,7 @@ const Skills = () => {
         </div>
       </section>
       <section>
-        <div id="shape_two" />
+        <div className="skill_shape" id="shape_two" />
         <div className="glass_panel">
           <FolderSVG />
         </div>
@@ -139,7 +139,7 @@ const Skills = () => {
         </div>
       </section>
       <section>
-        <div id="shape_three" />
+        <div className="skill_shape" id="shape_three" />
         <div className="text-box">
           <h1>Deploy</h1>
           <ul>
