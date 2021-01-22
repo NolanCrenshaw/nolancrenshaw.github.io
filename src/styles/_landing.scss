@@ -303,6 +303,7 @@
             @include media("<=phone") {
               height: 50px;
               width: 50px;
+              transform: translateY(5px);
             }
           }
         }
@@ -374,7 +375,7 @@
     justify-content: center;
 
     @include media("<=phone") {
-      height: 50vh;
+      height: auto;
       padding: 0 1rem;
 
       overflow: hidden;
@@ -391,7 +392,7 @@
       align-items: center;
 
       @include media("<=phone") {
-        padding: 1rem;
+        padding: 2rem 1rem;
         flex-direction: column;
         align-items: flex-start;
       }

@@ -229,7 +229,8 @@ const Landing = () => {
           </div>
           <div>
             <h2>
-              Whether it's front-end or back-end, I can provide solutions.
+              As a Full-Stack Developer, I can see the job through from start to
+              finish.
             </h2>
             <p>
               Let me build you a modern, responsive website, and/or an API to
