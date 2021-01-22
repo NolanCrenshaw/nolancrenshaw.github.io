@@ -214,12 +214,12 @@ a {
 
 @media (max-width: 520px) {
   .landing-container .landing_top {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 12vh 30vh 38vh 20vh;
-        grid-template-rows: 12vh 30vh 38vh 20vh;
+    -ms-grid-rows: 12vh 30vh 35vh 18vh;
+        grid-template-rows: 12vh 30vh 35vh 18vh;
     padding: 1rem 1rem;
   }
 }
@@ -254,8 +254,8 @@ a {
 
 @media (max-width: 520px) {
   .landing-container .landing_top .personal_image img {
-    height: 90%;
-    right: -10%;
+    height: 75%;
+    right: 0;
   }
 }
 
@@ -746,7 +746,7 @@ a {
 
 @media (max-width: 520px) {
   .landing-container .landing_bottom section {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem 0 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
