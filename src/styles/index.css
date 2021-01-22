@@ -909,7 +909,7 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -1119,7 +1119,7 @@ a {
 
 @media (max-width: 520px) {
   .projects-container {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem 5rem 1rem;
   }
 }
 
@@ -1178,6 +1178,20 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
+.projects-container ul li:hover {
+  height: 350px;
+  width: 480px;
+  border-radius: 12px;
+}
+
+.projects-container ul li:hover h1 {
+  font-size: 4.2rem;
+}
+
+.projects-container ul li:hover .reveal-box {
+  bottom: 0;
+}
+
 @media (max-width: 520px) {
   .projects-container ul li {
     height: auto;
@@ -1194,6 +1208,14 @@ a {
     border: none;
     border-radius: 0;
     background: none;
+  }
+  .projects-container ul li:hover {
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .projects-container ul li:hover h1 {
+    font-size: 3rem;
   }
 }
 
@@ -1329,33 +1351,23 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 520px) {
-  .projects-container ul li .reveal-box div:nth-child(1) div a {
-    font-size: 1.8rem;
-  }
-}
-
 .projects-container ul li .reveal-box div:nth-child(1) div a:hover {
   font-size: 2.5rem;
   text-shadow: 1px 1px 3px #efa649, -1px -1px 3px #ebebec;
 }
 
+@media (max-width: 520px) {
+  .projects-container ul li .reveal-box div:nth-child(1) div a {
+    font-size: 1.8rem;
+  }
+  .projects-container ul li .reveal-box div:nth-child(1) div a:hover {
+    font-size: 1.8rem;
+    text-shadow: none;
+  }
+}
+
 .projects-container ul li .reveal-box div:nth-child(1) div h3 {
   margin: 0 1rem;
-}
-
-.projects-container ul li:hover {
-  height: 350px;
-  width: 480px;
-  border-radius: 12px;
-}
-
-.projects-container ul li:hover h1 {
-  font-size: 4.2rem;
-}
-
-.projects-container ul li:hover .reveal-box {
-  bottom: 0;
 }
 
 .loading-container {

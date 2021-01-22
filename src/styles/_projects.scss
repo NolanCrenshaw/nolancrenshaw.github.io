@@ -13,7 +13,7 @@
   flex-direction: column;
 
   @include media("<=phone") {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem 5rem 1rem;
   }
 
   h4 {
@@ -61,6 +61,19 @@
       overflow: hidden;
       transition: all 0.5s ease-in-out;
 
+      &:hover {
+        height: 350px;
+        width: 480px;
+        border-radius: 12px;
+
+        h1 {
+          font-size: 4.2rem;
+        }
+        .reveal-box {
+          bottom: 0;
+        }
+      }
+
       @include media("<=phone") {
         height: auto;
         width: 100%;
@@ -70,6 +83,16 @@
         border: none;
         border-radius: 0;
         background: none;
+
+        &:hover {
+          height: auto;
+          width: 100%;
+          border-radius: 0;
+
+          h1 {
+            font-size: 3rem;
+          }
+        }
       }
 
       h1 {
@@ -164,32 +187,24 @@
               text-decoration: none;
               transition: all 0.3s ease-in-out;
 
-              @include media("<=phone") {
-                font-size: 1.8rem;
-              }
-
               &:hover {
                 font-size: 2.5rem;
                 text-shadow: 1px 1px 3px $_yellow, -1px -1px 3px $_offwhite;
+              }
+
+              @include media("<=phone") {
+                font-size: 1.8rem;
+
+                &:hover {
+                  font-size: 1.8rem;
+                  text-shadow: none;
+                }
               }
             }
             h3 {
               margin: 0 1rem;
             }
           }
-        }
-      }
-
-      &:hover {
-        height: 350px;
-        width: 480px;
-        border-radius: 12px;
-
-        h1 {
-          font-size: 4.2rem;
-        }
-        .reveal-box {
-          bottom: 0;
         }
       }
     }
