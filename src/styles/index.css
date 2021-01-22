@@ -857,7 +857,7 @@ a {
 
 @media (max-width: 520px) {
   .skills-container {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 
@@ -902,6 +902,7 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-bottom: 5rem;
   }
 }
 
@@ -970,7 +971,7 @@ a {
 
 @media (max-width: 520px) {
   .skills-container section .text-box {
-    padding: 1rem;
+    padding: 0;
     width: 95%;
   }
 }
@@ -980,10 +981,24 @@ a {
   font-size: 5rem;
 }
 
+@media (max-width: 520px) {
+  .skills-container section .text-box h1 {
+    font-size: 4rem;
+  }
+}
+
 .skills-container section .text-box ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 520px) {
+  .skills-container section .text-box ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .skills-container section .text-box ul li {
@@ -1000,6 +1015,12 @@ a {
           align-items: center;
 }
 
+@media (max-width: 520px) {
+  .skills-container section .text-box ul li {
+    margin: 0.2rem;
+  }
+}
+
 .skills-container section .text-box ul li img {
   height: 40px;
   width: 40px;
@@ -1012,6 +1033,12 @@ a {
   padding: 0.3rem;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.7)));
   background: linear-gradient(white 0%, rgba(255, 255, 255, 0.7) 100%);
+}
+
+@media (max-width: 520px) {
+  .skills-container section .text-box ul .icon_scrim {
+    margin-right: 0.2rem;
+  }
 }
 
 .skills-container section .text-box ul .icon_scrim img {
@@ -1050,6 +1077,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 520px) {
+  .skills-container section .glass_panel {
+    display: none;
+  }
 }
 
 .skills-container section .glass_panel div {

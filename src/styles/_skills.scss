@@ -5,7 +5,7 @@
   background-color: $_darkblue;
 
   @include media("<=phone") {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   h4 {
@@ -33,6 +33,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+      margin-bottom: 5rem;
     }
 
     .skill_shape {
@@ -89,16 +90,25 @@
       align-items: flex-start;
 
       @include media("<=phone") {
-        padding: 1rem;
+        padding: 0;
         width: 95%;
       }
 
       h1 {
         color: $_offwhite;
         font-size: 5rem;
+
+        @include media("<=phone") {
+          font-size: 4rem;
+        }
       }
       ul {
         display: flex;
+
+        @include media("<=phone") {
+          width: 100%;
+          flex-wrap: wrap;
+        }
 
         li {
           margin-right: 0.8rem;
@@ -106,6 +116,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          @include media("<=phone") {
+            margin: 0.2rem;
+          }
 
           img {
             height: 40px;
@@ -121,6 +135,11 @@
             rgba(255, 255, 255, 1) 0%,
             rgba(255, 255, 255, 0.7) 100%
           );
+
+          @include media("<=phone") {
+            margin-right: 0.2rem;
+          }
+
           img {
             height: 35px;
             width: 35px;
@@ -157,6 +176,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include media("<=phone") {
+        display: none;
+      }
 
       div {
         height: 100%;
