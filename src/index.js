@@ -13,8 +13,8 @@ TagManager.initialize(tagManagerArgs);
 
 // ~~ Core Render ~~
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>,
+  </>,
   document.getElementById("root")
 );
