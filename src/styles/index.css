@@ -1087,6 +1087,12 @@ a {
   background-color: #1d1e29;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container {
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 520px) {
   .skills-container {
     padding: 1.5rem;
@@ -1097,6 +1103,13 @@ a {
   margin: 3rem 13rem;
   color: #efa649;
   font-size: 5rem;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container h4 {
+    margin: 4rem 0 2rem 2rem;
+    font-size: 8rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1121,7 +1134,7 @@ a {
           align-items: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) and (min-width: 521px) {
   .skills-container section {
     height: auto;
     -webkit-box-orient: vertical;
@@ -1139,6 +1152,23 @@ a {
 }
 
 @media (max-width: 520px) {
+  .skills-container section {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 1024px) {
   .skills-container section .skill_shape {
     display: none;
   }
@@ -1201,6 +1231,13 @@ a {
           align-items: flex-start;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box {
+    padding: 2rem;
+    width: 90%;
+  }
+}
+
 @media (max-width: 520px) {
   .skills-container section .text-box {
     padding: 0;
@@ -1211,6 +1248,12 @@ a {
 .skills-container section .text-box h1 {
   color: #ebebec;
   font-size: 5rem;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box h1 {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1225,9 +1268,10 @@ a {
   display: flex;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .skills-container section .text-box ul {
     width: 100%;
+    margin: 2rem 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1247,6 +1291,12 @@ a {
           align-items: center;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box ul li {
+    margin-right: 1.5rem;
+  }
+}
+
 @media (max-width: 520px) {
   .skills-container section .text-box ul li {
     margin: 0.2rem;
@@ -1258,6 +1308,13 @@ a {
   width: 40px;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box ul li img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
 .skills-container section .text-box ul .icon_scrim {
   height: 40px;
   width: 40px;
@@ -1265,6 +1322,14 @@ a {
   padding: 0.3rem;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.7)));
   background: linear-gradient(white 0%, rgba(255, 255, 255, 0.7) 100%);
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box ul .icon_scrim {
+    height: 60px;
+    width: 60px;
+    margin-right: 1.5rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1278,13 +1343,32 @@ a {
   width: 35px;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box ul .icon_scrim img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .skills-container section .text-box h3 {
   margin: 1rem 0 0.5rem 0;
   font-size: 2rem;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box h3 {
+    font-size: 3rem;
+  }
+}
+
 .skills-container section .text-box p {
   color: #ebebec;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .skills-container section .text-box p {
+    font-size: 2rem;
+  }
 }
 
 .skills-container section .glass_panel {
@@ -1311,7 +1395,7 @@ a {
           align-items: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .skills-container section .glass_panel {
     display: none;
   }
