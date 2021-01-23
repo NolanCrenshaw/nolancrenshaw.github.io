@@ -4,6 +4,9 @@
   padding: 5rem 0;
   background-color: $_darkblue;
 
+  @include media("<=desktop", ">phone") {
+    padding: 2rem;
+  }
   @include media("<=phone") {
     padding: 1.5rem;
   }
@@ -13,6 +16,10 @@
     color: $_yellow;
     font-size: 5rem;
 
+    @include media("<=desktop", ">phone") {
+      margin: 4rem 0 2rem 2rem;
+      font-size: 8rem;
+    }
     @include media("<=phone") {
       margin: 0 0 2rem 0;
     }
@@ -28,6 +35,13 @@
     justify-content: space-evenly;
     align-items: center;
 
+    @include media("<=desktop", ">phone") {
+      height: auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 6rem;
+    }
     @include media("<=phone") {
       height: auto;
       flex-direction: column;
@@ -37,7 +51,7 @@
     }
 
     .skill_shape {
-      @include media("<=phone") {
+      @include media("<=desktop") {
         display: none;
       }
     }
@@ -89,6 +103,10 @@
       justify-content: center;
       align-items: flex-start;
 
+      @include media("<=desktop", ">phone") {
+        padding: 2rem;
+        width: 90%;
+      }
       @include media("<=phone") {
         padding: 0;
         width: 95%;
@@ -98,6 +116,9 @@
         color: $_offwhite;
         font-size: 5rem;
 
+        @include media("<=desktop", ">phone") {
+          font-size: 6rem;
+        }
         @include media("<=phone") {
           font-size: 4rem;
         }
@@ -105,8 +126,9 @@
       ul {
         display: flex;
 
-        @include media("<=phone") {
+        @include media("<=desktop") {
           width: 100%;
+          margin: 2rem 0;
           flex-wrap: wrap;
         }
 
@@ -117,6 +139,9 @@
           justify-content: center;
           align-items: center;
 
+          @include media("<=desktop", ">phone") {
+            margin-right: 1.5rem;
+          }
           @include media("<=phone") {
             margin: 0.2rem;
           }
@@ -124,6 +149,11 @@
           img {
             height: 40px;
             width: 40px;
+
+            @include media("<=desktop", ">phone") {
+              height: 60px;
+              width: 60px;
+            }
           }
         }
         .icon_scrim {
@@ -136,6 +166,11 @@
             rgba(255, 255, 255, 0.7) 100%
           );
 
+          @include media("<=desktop", ">phone") {
+            height: 60px;
+            width: 60px;
+            margin-right: 1.5rem;
+          }
           @include media("<=phone") {
             margin-right: 0.2rem;
           }
@@ -143,15 +178,28 @@
           img {
             height: 35px;
             width: 35px;
+
+            @include media("<=desktop", ">phone") {
+              height: 50px;
+              width: 50px;
+            }
           }
         }
       }
       h3 {
         margin: 1rem 0 0.5rem 0;
         font-size: 2rem;
+
+        @include media("<=desktop", ">phone") {
+          font-size: 3rem;
+        }
       }
       p {
         color: $_offwhite;
+
+        @include media("<=desktop", ">phone") {
+          font-size: 2rem;
+        }
       }
     }
 
@@ -177,7 +225,7 @@
       justify-content: center;
       align-items: center;
 
-      @include media("<=phone") {
+      @include media("<=desktop") {
         display: none;
       }
 
