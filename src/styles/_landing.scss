@@ -41,7 +41,7 @@
     @include media("<=phone") {
       height: 95vh;
       width: 100%;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
       grid-template-rows: 12vh 30vh 35vh 18vh;
       padding: 1rem;
     }
@@ -70,7 +70,7 @@
 
         @include media("<=desktop", ">phone") {
           height: 65%;
-          left: 0;
+          left: 20;
         }
         @include media("<=phone") {
           height: 75%;
@@ -146,8 +146,8 @@
           text-shadow: 1px 1px 1px black;
         }
         @include media("<=phone") {
-          font-size: 6rem;
-          line-height: 6rem;
+          font-size: 5.5rem;
+          line-height: 5.5rem;
           text-shadow: 1px 1px 1px black;
         }
       }
@@ -163,8 +163,8 @@
           margin: 1rem 0.2rem;
         }
         @include media("<=phone") {
-          width: 45px;
-          margin: 0.5rem 0;
+          width: 40px;
+          margin: 0.5rem 0 0.5rem 0.1rem;
         }
       }
     }
@@ -177,7 +177,7 @@
       @include media("<=desktop", ">phone") {
         height: 100%;
         width: 100%;
-        grid-column: 2/4;
+        grid-column: 2/3;
         position: relative;
         padding: 5rem 10rem 0 0;
 
@@ -208,8 +208,7 @@
         }
         @include media("<=phone") {
           width: 100%;
-          margin-left: 1rem;
-          justify-content: center;
+          justify-content: space-evenly;
           align-items: center;
         }
 
@@ -258,7 +257,7 @@
             }
             @include media("<=phone") {
               span {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
               }
             }
 
@@ -377,7 +376,7 @@
         display: flex;
 
         @include media("<=phone") {
-          height: 60%;
+          height: 50%;
           width: 95%;
           justify-content: space-evenly;
           align-items: center;

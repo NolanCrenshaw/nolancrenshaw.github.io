@@ -235,8 +235,8 @@ a {
   .landing-container .landing_top {
     height: 95vh;
     width: 100%;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 0.2fr 1fr;
+        grid-template-columns: 0.2fr 1fr;
     -ms-grid-rows: 12vh 30vh 35vh 18vh;
         grid-template-rows: 12vh 30vh 35vh 18vh;
     padding: 1rem;
@@ -283,7 +283,7 @@ a {
 @media (max-width: 1024px) and (min-width: 621px) {
   .landing-container .landing_top .personal_image img {
     height: 65%;
-    left: 0;
+    left: 20;
   }
 }
 
@@ -402,8 +402,8 @@ a {
 
 @media (max-width: 620px) {
   .landing-container .landing_top .name-box h1 {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
     text-shadow: 1px 1px 1px black;
   }
 }
@@ -425,8 +425,8 @@ a {
 
 @media (max-width: 620px) {
   .landing-container .landing_top .name-box div {
-    width: 45px;
-    margin: 0.5rem 0;
+    width: 40px;
+    margin: 0.5rem 0 0.5rem 0.1rem;
   }
 }
 
@@ -446,8 +446,8 @@ a {
     height: 100%;
     width: 100%;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
     position: relative;
     padding: 5rem 10rem 0 0;
     display: -webkit-box;
@@ -509,10 +509,9 @@ a {
 @media (max-width: 620px) {
   .landing-container .landing_top nav ul {
     width: 100%;
-    margin-left: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -593,7 +592,7 @@ a {
 
 @media (max-width: 620px) {
   .landing-container .landing_top nav ul li a span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -771,7 +770,7 @@ a {
 
 @media (max-width: 620px) {
   .landing-container .landing_top .social-links ul {
-    height: 60%;
+    height: 50%;
     width: 95%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -1323,6 +1322,13 @@ a {
   }
 }
 
+@media (max-width: 620px) {
+  .skills-container section .text-box ul li img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
 .skills-container section .text-box ul .icon_scrim {
   height: 40px;
   width: 40px;
@@ -1342,7 +1348,9 @@ a {
 
 @media (max-width: 620px) {
   .skills-container section .text-box ul .icon_scrim {
-    margin-right: 0.2rem;
+    height: 3.3rem;
+    width: 3.3rem;
+    margin: 0.3rem;
   }
 }
 
@@ -1355,6 +1363,13 @@ a {
   .skills-container section .text-box ul .icon_scrim img {
     height: 50px;
     width: 50px;
+  }
+}
+
+@media (max-width: 620px) {
+  .skills-container section .text-box ul .icon_scrim img {
+    height: 3.1rem;
+    width: 3.1rem;
   }
 }
 
