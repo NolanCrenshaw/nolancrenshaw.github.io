@@ -2,10 +2,6 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import Splash from "./Splash";
-import Portfolio from "./Portfolio";
-import Resume from "./Resume";
-
 import Landing from "./Landing";
 import Skills from "./Skills";
 import Projects from "./Projects";
