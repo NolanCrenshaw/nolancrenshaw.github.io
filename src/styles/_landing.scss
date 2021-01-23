@@ -357,7 +357,7 @@
 
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: flex-end;
         z-index: 2;
       }
       @include media("<=phone") {
@@ -400,6 +400,7 @@
               height: 50px;
               width: 50px;
               margin-right: 1rem;
+              margin-bottom: 2rem;
               transform: translateY(5px);
             }
             @include media("<=phone") {
