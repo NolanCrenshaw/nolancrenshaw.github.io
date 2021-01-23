@@ -79,6 +79,13 @@ a {
           align-items: center;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .contact-form {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+}
+
 @media (max-width: 520px) {
   .contact-form {
     width: 100%;
@@ -1426,6 +1433,12 @@ a {
           flex-direction: column;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container {
+    padding: 2rem 2rem 10rem 2rem;
+  }
+}
+
 @media (max-width: 520px) {
   .projects-container {
     padding: 1.5rem 1rem 5rem 1rem;
@@ -1436,6 +1449,13 @@ a {
   margin: 3rem 13rem;
   color: #efa649;
   font-size: 5rem;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container h4 {
+    margin: 4rem 0 2rem 2rem;
+    font-size: 8rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1463,7 +1483,7 @@ a {
           align-items: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .projects-container ul {
     height: auto;
     margin: 0;
@@ -1501,6 +1521,33 @@ a {
   bottom: 0;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container ul li {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+  }
+  .projects-container ul li:hover {
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .projects-container ul li:hover h1 {
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 520px) {
   .projects-container ul li {
     height: auto;
@@ -1535,6 +1582,13 @@ a {
   transition: all 0.8s ease-in-out;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container ul li h1 {
+    margin: 4rem 0;
+    font-size: 4rem;
+  }
+}
+
 @media (max-width: 520px) {
   .projects-container ul li h1 {
     margin: 2rem 0;
@@ -1551,7 +1605,7 @@ a {
           box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .projects-container ul li img {
     position: static;
     border: 3px solid #ebebec;
@@ -1585,7 +1639,7 @@ a {
   transition: all 0.8s ease-in-out 0.5s;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .projects-container ul li .reveal-box {
     position: static;
     -webkit-backdrop-filter: none;
@@ -1616,11 +1670,26 @@ a {
           align-items: center;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container ul li .reveal-box div:nth-child(1) {
+    width: 100%;
+    font-size: 3rem;
+    margin: 2rem;
+  }
+}
+
 .projects-container ul li .reveal-box div:nth-child(1) p {
   margin-top: 1.5rem;
   color: #1d1e29;
   text-shadow: 0.5px 0.5px 1px white;
   font-size: 2rem;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container ul li .reveal-box div:nth-child(1) p {
+    font-size: 3rem;
+    margin: 1rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1644,7 +1713,7 @@ a {
           align-items: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .projects-container ul li .reveal-box div:nth-child(1) div {
     margin: 1rem;
     -webkit-box-pack: center;
@@ -1663,6 +1732,17 @@ a {
 .projects-container ul li .reveal-box div:nth-child(1) div a:hover {
   font-size: 2.5rem;
   text-shadow: 1px 1px 3px #efa649, -1px -1px 3px #ebebec;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .projects-container ul li .reveal-box div:nth-child(1) div a {
+    font-size: 3rem;
+    margin: 0 2rem;
+  }
+  .projects-container ul li .reveal-box div:nth-child(1) div a:hover {
+    font-size: 3rem;
+    text-shadow: none;
+  }
 }
 
 @media (max-width: 520px) {
@@ -2234,9 +2314,15 @@ a {
           align-items: center;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .about-container {
+    padding: 4rem;
+  }
+}
+
 @media (max-width: 520px) {
   .about-container {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 }
 
@@ -2245,6 +2331,14 @@ a {
   width: 90%;
   margin: 5rem 0;
   padding: 3rem 15rem;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .about-container div:nth-child(1) {
+    width: 100%;
+    margin: 0 0 5rem 0;
+    padding: 0;
+  }
 }
 
 @media (max-width: 520px) {
@@ -2261,8 +2355,21 @@ a {
   font-size: 5rem;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .about-container div:nth-child(1) h1 {
+    margin: 2rem 0;
+    font-size: 8rem;
+  }
+}
+
 .about-container div:nth-child(1) p {
   font-size: 2rem;
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .about-container div:nth-child(1) p {
+    font-size: 3rem;
+  }
 }
 
 .about-container ul {
@@ -2664,7 +2771,7 @@ a {
   overflow: hidden;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .contact-container {
     height: auto;
   }
@@ -2683,7 +2790,7 @@ a {
           align-items: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .contact-container section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2699,7 +2806,7 @@ a {
   background-color: #999aa2;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .contact-container section .section-divider {
     height: 2px;
     width: 50%;
@@ -2730,6 +2837,14 @@ a {
           align-items: flex-start;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .contact-container section .contact_infobox {
+    height: auto;
+    max-width: 100%;
+    padding: 4rem;
+  }
+}
+
 @media (max-width: 520px) {
   .contact-container section .contact_infobox {
     height: auto;
@@ -2742,9 +2857,23 @@ a {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 1024px) and (min-width: 521px) {
+  .contact-container section .contact_infobox h2 {
+    margin: 2rem 0;
+    font-size: 4rem;
+  }
+}
+
 @media (max-width: 520px) {
   .contact-container section .contact_infobox h2 {
     margin: 2rem 0;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 521px) {
+  .contact-container section .contact_infobox p {
+    margin-bottom: 1rem;
+    font-size: 3rem;
   }
 }
 
@@ -2761,7 +2890,7 @@ a {
   border-radius: 50%;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .contact-container section .contact_infobox div {
     display: none;
   }
@@ -2774,7 +2903,7 @@ a {
   background-color: #1d1e29;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .footer-container {
     height: auto;
   }

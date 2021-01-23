@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: column;
 
+  @include media("<=desktop", ">phone") {
+    padding: 2rem 2rem 10rem 2rem;
+  }
   @include media("<=phone") {
     padding: 1.5rem 1rem 5rem 1rem;
   }
@@ -21,6 +24,10 @@
     color: $_yellow;
     font-size: 5rem;
 
+    @include media("<=desktop", ">phone") {
+      margin: 4rem 0 2rem 2rem;
+      font-size: 8rem;
+    }
     @include media("<=phone") {
       margin: 2rem 0;
       line-height: 5rem;
@@ -38,7 +45,7 @@
     justify-content: space-evenly;
     align-items: center;
 
-    @include media("<=phone") {
+    @include media("<=desktop") {
       height: auto;
       margin: 0;
       padding: 0;
@@ -74,6 +81,26 @@
         }
       }
 
+      @include media("<=desktop", ">phone") {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        background: none;
+
+        &:hover {
+          height: auto;
+          width: 100%;
+          border-radius: 0;
+
+          h1 {
+            font-size: 5rem;
+          }
+        }
+      }
       @include media("<=phone") {
         height: auto;
         width: 100%;
@@ -100,6 +127,10 @@
         text-shadow: 1px 1px 2px $_darkblue;
         transition: all 0.8s ease-in-out;
 
+        @include media("<=desktop", ">phone") {
+          margin: 4rem 0;
+          font-size: 4rem;
+        }
         @include media("<=phone") {
           margin: 2rem 0;
         }
@@ -112,7 +143,7 @@
         bottom: 0;
         box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
 
-        @include media("<=phone") {
+        @include media("<=desktop") {
           position: static;
           border: 3px solid $_offwhite;
           margin: 0 0 1rem 0;
@@ -139,7 +170,7 @@
         align-items: center;
         transition: all 0.8s ease-in-out 0.5s;
 
-        @include media("<=phone") {
+        @include media("<=desktop") {
           position: static;
           backdrop-filter: none;
           border-radius: 0;
@@ -159,12 +190,21 @@
           justify-content: center;
           align-items: center;
 
+          @include media("<=desktop", ">phone") {
+            width: 100%;
+            font-size: 3rem;
+            margin: 2rem;
+          }
           p {
             margin-top: 1.5rem;
             color: $_darkblue;
             text-shadow: 0.5px 0.5px 1px white;
             font-size: 2rem;
 
+            @include media("<=desktop", ">phone") {
+              font-size: 3rem;
+              margin: 1rem;
+            }
             @include media("<=phone") {
               font-size: 1.5rem;
               margin: 1rem;
@@ -177,7 +217,7 @@
             justify-content: flex-start;
             align-items: center;
 
-            @include media("<=phone") {
+            @include media("<=desktop") {
               margin: 1rem;
               justify-content: center;
             }
@@ -192,6 +232,15 @@
                 text-shadow: 1px 1px 3px $_yellow, -1px -1px 3px $_offwhite;
               }
 
+              @include media("<=desktop", ">phone") {
+                font-size: 3rem;
+                margin: 0 2rem;
+
+                &:hover {
+                  font-size: 3rem;
+                  text-shadow: none;
+                }
+              }
               @include media("<=phone") {
                 font-size: 1.8rem;
 

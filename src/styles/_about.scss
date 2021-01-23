@@ -10,8 +10,11 @@
   justify-content: center;
   align-items: center;
 
+  @include media("<=desktop", ">phone") {
+    padding: 4rem;
+  }
   @include media("<=phone") {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 
   div:nth-child(1) {
@@ -20,6 +23,11 @@
     margin: 5rem 0;
     padding: 3rem 15rem;
 
+    @include media("<=desktop", ">phone") {
+      width: 100%;
+      margin: 0 0 5rem 0;
+      padding: 0;
+    }
     @include media("<=phone") {
       width: 100%;
       margin: 0 0 5rem 0;
@@ -30,9 +38,18 @@
       margin-bottom: 2rem;
       color: $_yellow;
       font-size: 5rem;
+
+      @include media("<=desktop", ">phone") {
+        margin: 2rem 0;
+        font-size: 8rem;
+      }
     }
     p {
       font-size: 2rem;
+
+      @include media("<=desktop", ">phone") {
+        font-size: 3rem;
+      }
     }
   }
 

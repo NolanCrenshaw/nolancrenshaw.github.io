@@ -5,7 +5,7 @@
 
   background-color: $_darkblue;
 
-  @include media("<=phone") {
+  @include media("<=desktop") {
     height: auto;
   }
 
