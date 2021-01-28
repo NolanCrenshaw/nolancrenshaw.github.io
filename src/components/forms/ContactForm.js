@@ -80,10 +80,19 @@ const ContactForm = () => {
           placeholder="Your Message"
         />
         <div>
-          <motion.button whileHover={{ scale: 1.2 }} type="submit" value="Send">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.1 }}
+            type="submit"
+            value="Send"
+          >
             Submit
           </motion.button>
-          <motion.button whileHover={{ scale: 1.2 }} onClick={clearForm}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.1 }}
+            onClick={clearForm}
+          >
             Clear Form
           </motion.button>
         </div>

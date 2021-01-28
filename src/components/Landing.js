@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
+import { useHistory } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const Landing = () => {
+  const history = useHistory();
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      history.push("#landing");
+    }
+  }, [inView]);
+
   return (
-    <div className="landing-container" id="landing">
+    <div className="landing-container" id="landing" ref={ref}>
       <div className="landing_top">
         <div className="personal_image">
           <motion.img

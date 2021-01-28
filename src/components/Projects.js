@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  const history = useHistory();
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      history.push("#projects");
+    }
+  }, [inView]);
+
   return (
     <div className="projects-container" id="projects">
-      <h4>My Work.</h4>
+      <h4 ref={ref}>My Work.</h4>
       <ul>
         <li>
           <h1>New Wing Order</h1>

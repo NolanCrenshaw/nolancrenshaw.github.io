@@ -12,6 +12,8 @@ html {
 body {
   color: #ebebec;
   font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {

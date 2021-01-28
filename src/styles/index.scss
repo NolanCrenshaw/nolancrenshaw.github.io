@@ -26,6 +26,8 @@ html {
 body {
   color: $_offwhite;
   font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1 {
   font-size: 2.5rem;

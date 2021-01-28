@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const history = useHistory();
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      history.push("#about");
+    }
+  }, [inView]);
+
   return (
     <div className="about-container" id="about">
       <div>
-        <h1>About Me.</h1>
+        <h1 ref={ref}>About Me.</h1>
         <p>
           I am Web-Developer living in Chattanooga, Tennessee. My core languages
           are JavaScript and Python, with a focus on React and Flask frameworks.

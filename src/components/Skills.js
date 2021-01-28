@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 import DesignSVG from "./svg_library/DesignSVG";
 import FolderSVG from "./svg_library/FolderSVG";
 import ProgrammingSVG from "./svg_library/ProgrammingSVG";
 
 const Skills = () => {
+  const history = useHistory();
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      history.push("#skills");
+    }
+  }, [inView]);
+
   return (
     <div className="skills-container" id="skills">
-      <h4>What I Do.</h4>
+      <h4 ref={ref}>What I Do.</h4>
       <section>
         <div className="skill_shape" id="shape_one" />
         <div className="text-box">

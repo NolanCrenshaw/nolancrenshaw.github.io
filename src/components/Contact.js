@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 import ContactForm from "./forms/ContactForm";
 
 const Contact = () => {
+  const history = useHistory();
+  const { ref, inView, entry } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      history.push("#contact");
+    }
+  }, [inView]);
+
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container" id="contact" ref={ref}>
       <section>
         <div className="contact_infobox">
           <h2>Schedule a meeting.</h2>
