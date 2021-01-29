@@ -23,7 +23,7 @@ const Landing = () => {
             animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
             transition={{ delay: 1, duration: 1.5 }}
             alt="portrait"
-            src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_png.png"
+            src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/portrait_small.png"
           />
         </div>
         <div className="landing_icon">
