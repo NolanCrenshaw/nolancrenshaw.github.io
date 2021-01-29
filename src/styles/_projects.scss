@@ -4,8 +4,8 @@
   padding: 5rem 0;
 
   background: linear-gradient(
-    to left,
-    rgb(51, 54, 70) 0%,
+    $_darkblue 0%,
+    rgb(51, 54, 70) 50%,
     rgb(37, 39, 52) 100%
   );
 
@@ -37,6 +37,7 @@
   ul {
     min-height: 60vh;
     width: 100%;
+
     margin: 2rem 0;
     padding: 0 5rem;
 
@@ -45,217 +46,333 @@
     justify-content: space-evenly;
     align-items: center;
 
-    @include media("<=desktop") {
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
+    // @include media("<=desktop") {
+    //   height: auto;
+    //   margin: 0;
+    //   padding: 0;
+    // }
 
     li {
-      height: 300px;
-      width: 95%;
+      height: 450px;
+      width: 350px;
+      // max-width: 1920px;
+
       // padding: 3rem;
       margin: 5rem 0;
       position: relative;
 
       border-radius: 12px;
-      border: 1px solid $_darkblue;
-      // box-shadow: 5px 5px 10px #efa7495b, 0 5px 5px #efa74957;
+      border: 3px solid $_offwhite;
       background: linear-gradient(
-        rgba(182, 183, 192, 0.603) 0%,
-        $_offwhite 100%
+        255deg,
+        rgba(182, 183, 192, 0) 0%,
+        rgba(182, 183, 192, 0.15) 50%,
+        rgba(182, 183, 192, 0.25) 75%,
+        rgba(182, 183, 192, 0.3) 100%
       );
       overflow: hidden;
       transition: all 0.5s ease-in-out;
 
+      display: flex;
+      flex-direction: column;
+
       &:hover {
-        // height: 350px;
-        // width: 480px;
         border-radius: 12px;
 
-        h1 {
-          font-size: 4.2rem;
-        }
-        .reveal-box {
-          bottom: 0;
-        }
-      }
-
-      @include media("<=desktop", ">phone") {
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        box-shadow: none;
-        border: none;
-        border-radius: 0;
-        background: none;
-
-        &:hover {
-          height: auto;
-          width: 100%;
-          border-radius: 0;
-
-          h1 {
-            font-size: 5rem;
-          }
-        }
-      }
-      @include media("<=phone") {
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        box-shadow: none;
-        border: none;
-        border-radius: 0;
-        background: none;
-
-        &:hover {
-          height: auto;
-          width: 100%;
-          border-radius: 0;
+        .title-box {
+          animation: search-animation 5s ease-in-out;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
 
           h1 {
             font-size: 3rem;
+            transform: translateZ(50px);
+            text-shadow: -5px -5px 10px rgba(29, 30, 41, 0.5),
+              5px 5px 10px rgba(29, 30, 41, 0.5);
+          }
+          .title-shape_A {
+            transform: translateZ(-50px);
+            box-shadow: -5px -5px 20px $_darkblue, 5px 5px 20px $_darkblue;
+          }
+        }
+        .img-box {
+          img {
+            filter: blur(40px);
+            opacity: 0.2;
+          }
+          .reveal-box {
+            bottom: 0;
           }
         }
       }
 
-      h1 {
-        margin: 3rem;
-        text-shadow: 1px 1px 2px $_darkblue;
-        transition: all 0.8s ease-in-out;
-
-        @include media("<=desktop", ">phone") {
-          margin: 4rem 0;
-          font-size: 4rem;
-        }
-        @include media("<=phone") {
-          margin: 2rem 0;
-        }
-      }
-      img {
-        height: auto;
-        min-height: 60%;
+      .title-box {
+        height: 60%;
         width: 100%;
-        position: absolute;
-        top: -10px;
-        box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
+        min-width: 280px;
+        position: relative;
 
-        @include media("<=desktop") {
-          position: static;
-          border: 3px solid $_offwhite;
-          margin: 0 0 1rem 0;
-        }
-      }
-
-      .reveal-box {
-        height: 70%;
-        width: 100%;
-        position: absolute;
-        bottom: -100%;
-        z-index: 5;
-
-        border-radius: 0 0 12px 12px;
-        box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
-        background: linear-gradient(
-          $_offwhite 0%,
-          rgba(182, 183, 192, 0.5) 100%
-        );
-        backdrop-filter: blur(20px);
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        animation: none;
+        // transform: rotateY(10deg) rotateX(5deg);
 
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.8s ease-in-out 0.2s;
 
-        @include media("<=desktop") {
-          position: static;
-          backdrop-filter: none;
-          border-radius: 0;
-          border: 3px solid $_offwhite;
-          background: none;
-          background-color: $_offwhite;
+        h1 {
+          margin: 3rem;
+          z-index: 2;
+
+          font-size: 2.5rem;
+          text-shadow: -2px 2px 3px $_darkblue;
+          transition: all 1s ease-in-out;
+
+          // @include media("<=desktop", ">phone") {
+          //   margin: 4rem 0;
+          //   font-size: 4rem;
+          // }
+          // @include media("<=phone") {
+          //   margin: 2rem 0;
+          // }
+        }
+        .title-shape_A {
+          height: 150px;
+          width: 150px;
+          position: absolute;
+          z-index: 1;
+          transition: all 0.5s ease-in-out;
+          transform: rotateY(0);
+          transform-delay: 0.5s;
+          opacity: 1;
+
+          border-radius: 50%;
+          box-shadow: -5px -2px 20px rgba(0, 0, 0, 0.2),
+            -5px 2px 20px rgba(0, 0, 0, 0.2);
+          background: linear-gradient(95deg, $_yellow, $_darkyellow);
+
+          // animation: swing-animation 5s ease;
+
+          justify-self: center;
+          align-self: center;
+        }
+      }
+
+      .img-box {
+        height: 40%;
+        width: auto;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+
+          transition: all 0.8s ease-in-out;
+          transition-delay: 0.5s;
+
+          // border: 4px solid $_offwhite;
+          box-shadow: 5px -2px 20px rgba(0, 0, 0, 0.2),
+            5px 2px 20px rgba(0, 0, 0, 0.2);
+
+          // @include media("<=desktop") {
+          //   position: static;
+          //   border: 3px solid $_offwhite;
+          //   margin: 0 0 1rem 0;
+          // }
         }
 
-        div:nth-child(1) {
-          height: 90%;
-          width: 400px;
+        .reveal-box {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          bottom: -100%;
+          // bottom: 0;
+          z-index: 5;
 
-          border-radius: 12px;
+          // box-shadow: -3px -3px 8px rgba(46, 46, 46, 0.3);
+          background: linear-gradient(
+            45deg,
+            rgba(182, 183, 192, 0.5) 0%,
+            rgba(182, 183, 192, 0.2) 100%
+          );
+          // backdrop-filter: blur(20px);
 
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
+          transition: all 0.8s ease-in-out 0.2s;
 
-          @include media("<=desktop", ">phone") {
-            width: 100%;
-            font-size: 3rem;
-            margin: 2rem;
-          }
-          p {
-            margin-top: 1.5rem;
-            color: $_darkblue;
-            text-shadow: 0.5px 0.5px 1px white;
-            font-size: 2rem;
+          // @include media("<=desktop") {
+          //   position: static;
+          //   backdrop-filter: none;
+          //   border-radius: 0;
+          //   border: 3px solid $_offwhite;
+          //   background: none;
+          //   background-color: $_offwhite;
+          // }
 
-            @include media("<=desktop", ">phone") {
-              font-size: 3rem;
-              margin: 1rem;
-            }
-            @include media("<=phone") {
-              font-size: 1.5rem;
-              margin: 1rem;
-            }
-          }
-          div {
-            width: 100%;
-            margin: 2rem 0;
+          div:nth-child(1) {
+            height: 90%;
+            width: 400px;
+
+            border-radius: 12px;
+
             display: flex;
+            flex-direction: column;
             justify-content: flex-start;
             align-items: center;
 
-            @include media("<=desktop") {
-              margin: 1rem;
+            // @include media("<=desktop", ">phone") {
+            //   width: 100%;
+            //   font-size: 3rem;
+            //   margin: 2rem;
+            // }
+            p {
+              height: 70px;
+              margin: 2rem;
+              color: $_offwhite;
+              text-shadow: 0.5px 0.5px 1px $_darkblue;
+              font-size: 1.5rem;
+              line-height: 2rem;
+
+              // @include media("<=desktop", ">phone") {
+              //   font-size: 3rem;
+              //   margin: 1rem;
+              // }
+              // @include media("<=phone") {
+              //   font-size: 1.5rem;
+              //   margin: 1rem;
+              // }
+            }
+            div {
+              width: 100%;
+              margin: 2rem 0;
+              display: flex;
               justify-content: center;
-            }
+              align-items: center;
 
-            a {
-              color: $_darkblue;
-              text-decoration: none;
-              transition: all 0.3s ease-in-out;
+              // @include media("<=desktop") {
+              //   margin: 1rem;
+              //   justify-content: center;
+              // }
 
-              &:hover {
-                font-size: 2.5rem;
-                text-shadow: 1px 1px 3px $_yellow, -1px -1px 3px $_offwhite;
-              }
+              a {
+                color: $_yellow;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
 
-              @include media("<=desktop", ">phone") {
-                font-size: 3rem;
-                margin: 0 2rem;
+                text-shadow: 1px 1px 5px $_darkblue, -1px -1px 5px $_darkblue;
 
                 &:hover {
+                  font-size: 2.1rem;
+                  text-shadow: 2px 2px 10px $_darkblue,
+                    -2px -2px 10px $_darkblue;
+                }
+
+                @include media("<=desktop", ">phone") {
                   font-size: 3rem;
-                  text-shadow: none;
-                }
-              }
-              @include media("<=phone") {
-                font-size: 1.8rem;
+                  margin: 0 2rem;
 
-                &:hover {
+                  &:hover {
+                    font-size: 3rem;
+                    text-shadow: none;
+                  }
+                }
+                @include media("<=phone") {
                   font-size: 1.8rem;
-                  text-shadow: none;
+
+                  &:hover {
+                    font-size: 1.8rem;
+                    text-shadow: none;
+                  }
                 }
               }
-            }
-            h3 {
-              margin: 0 1rem;
+              h3 {
+                margin: 0 1rem;
+              }
             }
           }
         }
       }
+
+      // @include media("<=desktop", ">phone") {
+      //   height: auto;
+      //   width: 100%;
+      //   display: flex;
+      //   flex-direction: column;
+      //   box-shadow: none;
+      //   border: none;
+      //   border-radius: 0;
+      //   background: none;
+
+      //   &:hover {
+      //     height: auto;
+      //     width: 100%;
+      //     border-radius: 0;
+
+      //     h1 {
+      //       font-size: 5rem;
+      //     }
+      //   }
+      // }
+      // @include media("<=phone") {
+      //   height: auto;
+      //   width: 100%;
+      //   display: flex;
+      //   flex-direction: column;
+      //   box-shadow: none;
+      //   border: none;
+      //   border-radius: 0;
+      //   background: none;
+
+      //   &:hover {
+      //     height: auto;
+      //     width: 100%;
+      //     border-radius: 0;
+
+      //     h1 {
+      //       font-size: 3rem;
+      //     }
+      //   }
+      // }
     }
+  }
+}
+
+// Keyframe Declarations
+
+@keyframes search-animation {
+  0% {
+    transform: rotateY(0) rotateX(0);
+  }
+  15% {
+    transform: rotateY(10deg) rotateX(-10deg);
+  }
+  25% {
+    transform: rotateY(0) rotateX(10deg);
+  }
+  37% {
+    transform: rotateY(-15deg) rotateX(0);
+  }
+  50% {
+    transform: rotateY(5deg) rotateX(-10deg);
+  }
+  62% {
+    transform: rotateY(0) rotateX(-15deg);
+  }
+  75% {
+    transform: rotateY(10deg) rotateX(-10deg);
+  }
+  87% {
+    transform: rotateY(15deg) rotateX(15deg);
+  }
+  100% {
+    transform: rotateY(0) rotateX(0);
   }
 }
