@@ -9,7 +9,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (inView) {
-      history.push("#projects");
+      history.replace("#projects");
     }
   }, [inView]);
 

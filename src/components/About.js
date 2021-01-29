@@ -8,7 +8,7 @@ const About = () => {
 
   useEffect(() => {
     if (inView) {
-      history.push("#about");
+      history.replace("#about");
     }
   }, [inView]);
 

@@ -10,7 +10,7 @@ const Contact = () => {
 
   useEffect(() => {
     if (inView) {
-      history.push("#contact");
+      history.replace("#contact");
     }
   }, [inView]);
 

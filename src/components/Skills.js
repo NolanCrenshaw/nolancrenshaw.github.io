@@ -12,7 +12,7 @@ const Skills = () => {
 
   useEffect(() => {
     if (inView) {
-      history.push("#skills");
+      history.replace("#skills");
     }
   }, [inView]);
 

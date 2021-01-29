@@ -10,7 +10,7 @@ const Landing = () => {
 
   useEffect(() => {
     if (inView) {
-      history.push("#landing");
+      history.replace("#landing");
     }
   }, [inView]);
 
