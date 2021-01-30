@@ -4,9 +4,9 @@ import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   // Variable Access
-  const userID = `${process.env.REACT_APP_EMAILJS_USER_ID}`;
-  const ejsSERVICE = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
-  const ejsTEMPLATE = `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`;
+  const userID = "";
+  const ejsSERVICE = "";
+  const ejsTEMPLATE = "";
 
   // State
   const [firstname, setFirstname] = useState("");

@@ -98,5 +98,29 @@
         }
       }
     }
+
+    .contact_basic {
+      height: 100%;
+      width: 45%;
+      padding: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        margin: 0.5rem 0;
+        color: $_offgray;
+        font-size: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: $_yellow;
+        font-size: 1.25rem;
+        font-style: italic;
+      }
+    }
   }
 }

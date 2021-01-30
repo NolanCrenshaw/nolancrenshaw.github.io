@@ -2401,6 +2401,38 @@ a {
   }
 }
 
+.contact-container section .contact_basic {
+  height: 100%;
+  width: 45%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container section .contact_basic p {
+  margin: 0.5rem 0;
+  color: #999aa2;
+  font-size: 2rem;
+}
+
+.contact-container section .contact_basic a {
+  text-decoration: none;
+  color: #efa649;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
 .footer-container {
   height: 20vh;
   width: 100%;

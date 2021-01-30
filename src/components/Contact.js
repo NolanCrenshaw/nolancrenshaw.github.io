@@ -37,7 +37,16 @@ const Contact = () => {
           </p>
         </div>
         <div className="section-divider" />
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <div className="contact_basic">
+          <div>
+            <h2>Send me an email:</h2>
+            <p>nolan.crenshaw@gmail.com</p>
+            <a href="mailto:nolan.crenshaw@gmail.com">
+              Click here for a mailto: link
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
