@@ -47,25 +47,28 @@ const Projects = () => {
         </li>
         <li>
           <div className="title-box">
-            <h1>Chatter</h1>
+            <h1>Emergency Relief Catering</h1>
             <div className="title-shape_A" />
           </div>
           <div className="img-box">
             <img
-              alt="chatter_landing"
-              src="https://nwobucky.s3.us-east-2.amazonaws.com/chatter_capture.jpg"
+              alt="ercc_landing"
+              src="https://ghubpagebucky.s3.us-east-2.amazonaws.com/ercc_page/ercc_screencap.jpg"
             />
             <div className="reveal-box">
               <div>
                 <p>
-                  A clone of the social media giant "Twitter," Chatter was the
-                  result of a group seven-day sprint. It served as an advanced
-                  lesson in pair-programming and teamwork.
+                  A Single Page app for a catering company that specializes in
+                  disaster relief and large volume. Deployed on Netlify
                 </p>
                 <div>
-                  <a href="https://chatter-clone.herokuapp.com/">Live Site</a>
+                  <a href="https://eloquent-hermann-270b39.netlify.app">
+                    Live Site
+                  </a>
                   <h3>|</h3>
-                  <a href="https://github.com/DaedalusG/Chatter">GitHub</a>
+                  <a href="https://github.com/NolanCrenshaw/emergency-relief-catering-company">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
