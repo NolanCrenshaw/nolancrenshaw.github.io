@@ -1501,6 +1501,14 @@ a {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .projects-container ul {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .projects-container ul li {
   height: 450px;
   width: 350px;
