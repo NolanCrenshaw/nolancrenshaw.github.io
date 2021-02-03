@@ -2429,6 +2429,12 @@ a {
           align-items: center;
 }
 
+@media (max-width: 1023px) {
+  .contact-container section .contact_basic {
+    margin-bottom: 3rem;
+  }
+}
+
 .contact-container section .contact_basic p {
   margin: 0.5rem 0;
   color: #999aa2;
