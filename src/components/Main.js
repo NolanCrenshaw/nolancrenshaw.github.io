@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Landing from "./Landing";
@@ -19,12 +19,23 @@ const Main = () => {
         className="main-container"
       >
         <Router>
-          <Landing />
-          <Skills />
-          <Projects />
-          <About />
-          <Contact />
-          <Footer />
+          <Switch>
+            <Route exact path="/">
+              <>
+                <Landing />
+                <Skills />
+                <Projects />
+                <About />
+                <Contact />
+                <Footer />
+              </>
+            </Route>
+            <Route exact path="/viget">
+              <>
+                <h1>Hello Viget</h1>
+              </>
+            </Route>
+          </Switch>
         </Router>
       </motion.div>
     </>
