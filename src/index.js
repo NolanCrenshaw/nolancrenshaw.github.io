@@ -6,12 +6,10 @@ import "./styles/index.css";
 import App from "./App";
 
 // ~~ Google Tag Manager Init
-if (process.env.REACT_APP_ENVIRONMENT !== "development") {
-  const tagManagerArgs = {
-    gtmId: "GTM-TSTQJ4X",
-  };
-  TagManager.initialize(tagManagerArgs);
-}
+const tagManagerArgs = {
+  gtmId: "GTM-TSTQJ4X",
+};
+TagManager.initialize(tagManagerArgs);
 
 // ~~ Core Render ~~
 ReactDOM.render(
