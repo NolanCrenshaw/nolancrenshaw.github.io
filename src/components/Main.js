@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Viget from "./Viget";
 
 const Main = () => {
   return (
@@ -31,9 +32,7 @@ const Main = () => {
               </>
             </Route>
             <Route exact path="/viget">
-              <>
-                <h1>Hello Viget</h1>
-              </>
+              <Viget />
             </Route>
           </Switch>
         </Router>

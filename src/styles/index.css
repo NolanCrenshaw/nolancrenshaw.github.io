@@ -2530,4 +2530,11 @@ a {
   color: #999aa2;
   text-decoration: none;
 }
+
+.viget-container {
+  height: auto;
+  width: 100%;
+  max-width: 1920px;
+  background-color: rgba(0, 255, 255, 0.438);
+}
 /*# sourceMappingURL=index.css.map */
