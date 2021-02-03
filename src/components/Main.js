@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Viget from "./Viget";
+import Viget from "./uniques/Viget";
 
 const Main = () => {
   return (
