@@ -2533,6 +2533,7 @@ a {
 
 .unique {
   height: auto;
+  min-height: 100vh;
   width: 100%;
   max-width: 1920px;
   display: -webkit-box;
@@ -2542,16 +2543,86 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.viget-container {
-  background-color: rgba(0, 255, 255, 0.5);
+.viget-container .logo-container {
+  height: 100px;
+  width: 400px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.viget-container .logo-container .elipse-container:nth-of-type(1) {
+  height: 1px;
+  width: 1px;
+  -webkit-animation-name: blueAnimation;
+          animation-name: blueAnimation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+}
+
+.viget-container .logo-container .elipse-container:nth-of-type(2) {
+  height: 10px;
+  width: 10px;
+  -webkit-animation-name: orangeAnimation;
+          animation-name: orangeAnimation;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+}
+
+.viget-container .logo-container .elipse-container div {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.viget-container .logo-container .elipse-container #elipse_one {
+  height: 23px;
+  width: 23px;
+  top: 10px;
+  left: 0;
+  background-color: #4cacc9;
+}
+
+.viget-container .logo-container .elipse-container #elipse_two {
+  height: 13px;
+  width: 13px;
+  top: 0;
+  left: 20px;
+  background-color: #ff8800;
+}
+
+.viget-container .logo-container span {
+  position: absolute;
+  top: -18px;
+  left: 40px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 4.8rem;
+  font-family: "Assistant", sans-serif;
+  font-weight: 400;
+  font-stretch: 150%;
 }
 
 .branchtech-container {
@@ -2560,5 +2631,65 @@ a {
 
 .carbonfive-container {
   background-color: rgba(244, 165, 96, 0.5);
+}
+
+@-webkit-keyframes blueAnimation {
+  0% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+  25% {
+    -webkit-transform: translateX(5px) translateY(5px) scale(1.2);
+            transform: translateX(5px) translateY(5px) scale(1.2);
+  }
+  50% {
+    -webkit-transform: translateX(10px) translateY(-5px) scale(1);
+            transform: translateX(10px) translateY(-5px) scale(1);
+  }
+  75% {
+    -webkit-transform: translateX(-5px) translateY(-5px) scale(0.8);
+            transform: translateX(-5px) translateY(-5px) scale(0.8);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes blueAnimation {
+  0% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+  25% {
+    -webkit-transform: translateX(5px) translateY(5px) scale(1.2);
+            transform: translateX(5px) translateY(5px) scale(1.2);
+  }
+  50% {
+    -webkit-transform: translateX(10px) translateY(-5px) scale(1);
+            transform: translateX(10px) translateY(-5px) scale(1);
+  }
+  75% {
+    -webkit-transform: translateX(-5px) translateY(-5px) scale(0.8);
+            transform: translateX(-5px) translateY(-5px) scale(0.8);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+@-webkit-keyframes orangeAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes orangeAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=index.css.map */
