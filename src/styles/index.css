@@ -2572,8 +2572,8 @@ a {
           animation-fill-mode: both;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .viget-container .logo-container .elipse-container:nth-of-type(2) {
@@ -2589,8 +2589,8 @@ a {
           animation-fill-mode: both;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .viget-container .logo-container .elipse-container div {
