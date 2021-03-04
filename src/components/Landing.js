@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
 const Landing = () => {
@@ -178,7 +178,7 @@ const Landing = () => {
           className="about-me"
         >
           <motion.div whileHover={{ scale: 1.2, x: 10 }}>
-            <HashLink smooth to="#about">
+            <Link smooth to="/harvest">
               <span>My Story</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ const Landing = () => {
                 <line x1="13" y1="6" x2="19" y2="12" />
               </svg>
               <div />
-            </HashLink>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
