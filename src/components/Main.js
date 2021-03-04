@@ -35,7 +35,7 @@ const Main = () => {
             <Route exact path="/viget">
               <Viget />
             </Route>
-            <Route exact path="/harvest_grove">
+            <Route path="/harvest_grove">
               <HarvestGrove />
             </Route>
           </Switch>
