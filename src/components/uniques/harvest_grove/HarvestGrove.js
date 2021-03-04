@@ -49,7 +49,7 @@ const HarvestGrove = () => {
           <svg
             className="plot-map"
             viewBox="0 0 1920 1166"
-            fill="transparent"
+            fill="red"
             xmlns="http://www.w3.org/2000/svg"
           >
             {plot_map_lines ? (

@@ -178,7 +178,7 @@ const Landing = () => {
           className="about-me"
         >
           <motion.div whileHover={{ scale: 1.2, x: 10 }}>
-            <Link smooth to="/harvest">
+            <HashLink smooth to="#about">
               <span>My Story</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ const Landing = () => {
                 <line x1="13" y1="6" x2="19" y2="12" />
               </svg>
               <div />
-            </Link>
+            </HashLink>
           </motion.div>
         </motion.div>
       </div>
