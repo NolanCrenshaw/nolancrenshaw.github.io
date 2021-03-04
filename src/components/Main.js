@@ -9,6 +9,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Viget from "./uniques/Viget";
+import HarvestGrove from "./uniques/harvest_grove/HarvestGrove";
 
 const Main = () => {
   return (
@@ -33,6 +34,9 @@ const Main = () => {
             </Route>
             <Route exact path="/viget">
               <Viget />
+            </Route>
+            <Route exact path="/harvest_grove">
+              <HarvestGrove />
             </Route>
           </Switch>
         </Router>
