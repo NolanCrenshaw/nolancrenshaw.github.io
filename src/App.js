@@ -15,6 +15,6 @@ const App = () => {
     }, 4000);
   }, []);
 
-  return <>{loaded ? <Away /> : <Loading />}</>;
+  return <>{loaded ? <Main /> : <Loading />}</>;
 };
 export default App;
