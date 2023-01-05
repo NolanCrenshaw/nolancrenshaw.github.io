@@ -1,0 +1,15 @@
+.away-container {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media("<=desktop") {
+    height: auto;
+  }
+}

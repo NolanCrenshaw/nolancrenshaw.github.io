@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Main from "./components/Main";
 import Loading from "./components/Loading";
+import Away from "./components/Away";
 
 const App = () => {
   /*
@@ -14,6 +15,6 @@ const App = () => {
     }, 4000);
   }, []);
 
-  return <>{loaded ? <Main /> : <Loading />}</>;
+  return <>{loaded ? <Away /> : <Loading />}</>;
 };
 export default App;
